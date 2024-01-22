@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="styles1.css">
+        <link rel="stylesheet" href="styles2.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,600;1,6..12,200;1,6..12,300;1,6..12,600&display=swap" rel="stylesheet">
+        <title>Etienne Dufour</title>
+    </head>
+    <body>
+        <div class="sidebar">
+            <img src="Autre/logo1-white.png">
+            <a href="index.html #infos" class="nav">mes infos</a>
+            <a href="index.html #projets" class="nav">mes projets</a>
+        </div>
+
+        <div class="baniere-holder">
+            <div class="baniere-text">
+                <h1>Le jeu du Paria</h1>
+                <div class="baniere-tags">
+                    <p class="colored">game design</p>
+                    <p class="colored">game art</p>
+                </div>
+            </div>
+            <img class="baniere" src="Paria/baniere.png">
+        </div>
+
+        <section>
+            <div class="project-grid">
+                <!-- --- -->
+                <h2 class="project-grid-item full titre"> > Présentation du projet</h2>
+
+                <p class="project-grid-item trois-quart text">
+                    Pour ma candidature au CNAM ENJMIN en 2022, j’ai eu à concevoir un jeu centré sur le principe de conformisme social.
+                    J’ai donc entièrement conçu un “party game”, pensé pour être joué avec un smartphone, et j’ai rédigé son Game Design Document.
+                </p>
+
+                <a class="project-grid-item quart" href="Paria/GDD-Jeu_du_paria.pdf" target="_blank" download><img src="Paria/pageDePDF.png"></a>
+
+                <!-- --- -->
+                <h2 class="project-grid-item full titre"> > La thématique: le conformisme social</h2>
+
+                <p class="project-grid-item demi text">
+                    La vidéo de référence met en scène l’expérience de Asch, mettant en évidence le concept psychosociologique du conformisme
+                    social. Il s’agit du processus poussant naturellement les individus à imiter un groupe afin de s’y intégrer. <br><br>Ce processus engendre plusieurs effets.
+                    C’est un puissant mécanisme de cohésion sociale, mais qui a cependant également pour effet de faire perdre à chacun son individualité. Deux notions s’opposent
+                    clairement: la singularité et le regard du groupe.
+                </p>
+
+                <div class="project-grid-item demi "><video controls autoplay muted src="Paria/video.mp4"></video></div>
+
+                <!-- --- -->
+                <h2 class="project-grid-item full titre"> > Concept du jeu</h2>
+
+                <p class="project-grid-item full text">
+                    Le “jeu du paria” est un jeu d’ambiance pour support mobile comparable aux applications. Cette expérience ludique met au défi
+                    les joueurs de défendre leur objectif individuel tout en prenant en compte le regard des autres, tout ça dans une ambiance fun et décalée.
+                </p>
+
+                <div class="project-grid-item tier"><img src="Paria/mockup.png"></div>
+
+                <p class="project-grid-item deux-tier text">
+                    Un thème est attribué à chaque joueur. Lors de la première phase du jeu, des mots vont leur être proposés. Il devront sélectionner ceux de leurs choix, avec pour objectif, en fin de partie,
+                    de justifier en quoi ces mots s’incluent dans leurs thèmes. Cependant les mots choisis doivent également être sélectionnés en fonction d’une autre variable:
+                    le choix du groupe. Lorsqu’un joueur est seul à choisir un mot, sa “jauge de paria” augmente et il perd des points. Il est donc intéressant d’analyser les actions
+                    des autres participants, afin d’anticiper leurs réponses et ainsi éviter de devenir le paria!
+                </p>
+
+                <p class="project-grid-item full text">
+                    J’ai théorisé l'expérience utilisateur et décrit plus en détail le
+                    gameplay dans le GDD. N’hésitez pas à le consulter!
+                </p>
+
+                <!-- --- -->
+                <h2 class="project-grid-item full titre"> > L’univers visuel</h2>
+
+                <p class="project-grid-item full text">
+                    Le jeu du paria met en évidence une mécanique sociale profonde avec humour et légèreté. L’univers du jeu se veut jovial, absurde,
+                    mesquin, jouant de ce décalage entre le sujet et l’ambiance.<br><br>J’ai fait des recherches pour proposer une esthétique basée sur ces trois enjeux: diversité, dynamisme
+                    et synthétisme. Les formes géométriques et l’association de nombreuses couleurs vives me permettent d’exprimer visuellement le fond de mon expérience.
+                </p>
+
+                <div class="project-grid-item demi"><img src="Paria/interface1.png"></div>
+                <div class="project-grid-item demi"><img src="Paria/interface2.png"></div>
+                <div class="project-grid-item demi"><img src="Paria/interface3.png"></div>
+                <div class="project-grid-item demi"><img src="Paria/interface4.png"></div>
+                <div class="project-grid-item full"><img src="Paria/personnages.png"></div>
+
+            </div>
+        </section>
+
+        <footer>
+            <p><br><br><br><br></p>
+        </footer>
+
+
+        <!-- JS -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // barre
+                var sidebar = document.querySelector('.sidebar');
+                sidebar.style.left = '0';
+
+            });
+        </script>
+
+    </body>
+</html>
