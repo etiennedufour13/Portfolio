@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="styles1.css">
+        <link rel="stylesheet" href="styles2.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,600;1,6..12,200;1,6..12,300;1,6..12,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+        <title>Etienne Dufour - Nomades</title>
+    </head>
+    <body>
+        <div class="sidebar">
+            <img src="Autre/logo1-white.png">
+            <a href="index.html #infos" class="nav">mes infos</a>
+            <a href="index.html #projets" class="nav">mes projets</a>
+        </div>
+
+        <div class="baniere-holder">
+            <div class="baniere-text">
+                <h1>Artisan meurtrier</h1>
+                <div class="baniere-tags">
+                    <p class="colored">game design</p>
+                    <p class="colored">game art</p>
+                    <p class="colored">développement</p>
+                </div>
+            </div>
+            <img class="baniere" src="Artisan/baniere.jpg">
+        </div>
+
+        <section>
+            <div class="project-grid">
+
+                <!-- --- -->
+                <h2 class="project-grid-item titre"> > Contexte du projet</h2>
+
+                <p class="project-grid-item trois-quart text">
+                    Dans le cadre de mon travail en freelance, j’ai été contacté par l’écrivain Matthieu Urban dans l’objectif de réaliser une démo de jeu, reprenant
+                    l’univers dark fantasy de son livre.<br><br>Je me suis chargé de réaliser une partie des animations, de concevoir les mécaniques de jeu et de
+                    le développer sur Unity.
+                </p>
+
+                <div class="project-grid-item quart image"><img src="Artisan/livre.jpg"></div>
+
+                <div class="project-grid-item full"><iframe  controls autoplay muted src="video.mp4"></iframe></div>
+
+                <!-- --- -->
+                <h2 class="project-grid-item full titre"> > La conception du gameplay</h2>
+
+                <div class="project-grid-item tier image"><img src="Artisan/combat.gif"></div>
+
+                <p class="project-grid-item deux-tier text">
+                    Le coeur du jeu consiste à incarner chef, un chasseur de prime, à travers différentes missions durant lesquelles il aura à affronter des
+                    ennemis. Le système de combat, basé sur des mécaniques de parades et de ripostes se voulant subtiles et complexes à maitriser.
+                </p>
+
+                <p class="project-grid-item full text">
+                    Concevoir le système de combats et des ennemis intelligeant pour ensuite les développer sur Unity fut le défis principal de ce projet.
+                </p>
+
+                <div class="project-grid-item demi image"><img src="Artisan/spawn.gif"></div>
+                <div class="project-grid-item demi image"><img src="Artisan/execution.gif"></div>
+
+            </div>
+        </section>
+
+        <footer>
+            <p><br><br><br><br></p>
+        </footer>
+
+
+        <!-- JS -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // barre
+                var sidebar = document.querySelector('.sidebar');
+                sidebar.style.left = '0';
+
+            });
+        </script>
+
+    </body>
+</html>
