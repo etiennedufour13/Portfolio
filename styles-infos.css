@@ -37,12 +37,19 @@
     height: 100%;
 }
 
-.grid-item-infos h1 {
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    font-size: 3rem;
-}
+    .grid-item-infos h1 {
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size: 3rem;
+        white-space: nowrap;
+    }
+
+    .grid-item-infos h2 {
+        color: black;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+    }
 
     .grid-item-infos p {
         color: black;
@@ -53,11 +60,11 @@
 .picture {
     box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
     border-radius: 10px;
-    grid-column: 8 / 13;
+    grid-column: 8 / 14;
     grid-row: 1 / 6;
 }
 
 .texts {
-    grid-column: 2 / 7;
+    grid-column: 1 / 7;
     grid-row: 1 / 6;
 }

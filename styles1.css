@@ -66,9 +66,9 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
-.grid-item:hover {
-    transform: scale(1.03);
-}
+    .grid-item:hover {
+        transform: scale(1.07) rotate(-1deg);
+    }
 
 .grid-item img {
     object-fit: cover;
@@ -89,6 +89,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
+    pointer-events: none;
 }
 
 .grid-text h2 {
