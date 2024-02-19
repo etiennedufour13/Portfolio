@@ -37,7 +37,7 @@
         <!-- ---------------------------------------------------------------- INFOS --- -->
         <section class="presentation" id="presentation">
             <h2>Ma présentation vidéo:</h2>
-            <video controls volume="0.5" autoplay src="Autre/video_de_presentation_v2.mp4"></video>
+            <video controls autoplay playsinline src="Autre/video_de_presentation_v2.mp4"></video>
         </section>
 
         <!-- ---------------------------------------------------------------- PROJETS --- -->
@@ -256,6 +256,21 @@
             voirElements.forEach(voirElement => {
                 observer.observe(voirElement);
             });
+
+            // vidéo
+            const video = document.querySelector('presentation video');
+
+            const observerVideo = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    // Si la vidéo n'est pas visible à l'écran
+                    if (!entry.isIntersecting) {
+                        // Arrêtez la lecture de la vidéo
+                        video.pause();
+                    }
+                });
+            });
+
+            observerVideo.observe(video);
 
         });
     </script>
