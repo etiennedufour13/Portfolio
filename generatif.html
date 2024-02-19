@@ -4,8 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles -->
     <link rel="stylesheet" href="styles1.css">
     <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles-sidebar.css">
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
@@ -14,13 +17,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,600;1,6..12,200;1,6..12,300;1,6..12,600&display=swap" rel="stylesheet">
-    <title>Etienne Dufour</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>Etienne Dufour - Generation</title>
 </head>
 <body>
     <div class="sidebar">
-        <img src="Autre/logo1-white.png">
-        <a href="index.html #infos" class="nav">mes infos</a>
-        <a href="index.html #projets" class="nav">mes projets</a>
+        <a href="index.html #generation"><img src="Autre/fleche-blanc.png"></a>
+
+        <a href="index.html #presentation" class="nav nav-presentation">présentation</a>
+        <a href="index.html #generation" class="nav nav-projets">projets</a>
+        <a href="index.html #contact" class="nav nav-contact">me contacter</a>
     </div>
 
     <div class="baniere-holder">
@@ -37,11 +44,10 @@
     <section>
         <div class="project-grid">
 
-            <h2 class="project-grid-item full titre"> > Une expérience hybride</h2>
+            <!-- intro -->
+            <a class="project-grid-item quart only-phone" href="Generation/Memoire_Jeux_Hybrides.pdf" target="_blank" download><img src="Generation/memoire.png"></a>
 
-            <a class="project-grid-item quart" href="Generation/Memoire_Jeux_Hybrides.pdf" target="_blank" download><img src="Generation/memoire.png"></a>
-
-            <p class="project-grid-item trois-quart text">
+            <p class="project-grid-item trois-quart text only-phone">
                 Dans le cadre de mon mémoire de DNMADE à l’ENSAAMA, j’ai exploré le potentiel du jeu hybride. J’ai réalisé une série
                 d’expériences qui avaient pour but d’explorer les possibilités apportées par le numérique dans le contexte d’une expérience ludique tangible.<br><br>Ce projet met
                 en avant le potentiel apporté par la génération procédurale dans le cadre d’une expérience ludique tangible. J’ai développé une application permettant, à partir de
@@ -50,6 +56,7 @@
 
             <div class="project-grid-item full"><video controls autoplay muted src="Generation/video1.mp4"></video></div>
 
+            <!-- partie2 -->
             <h2 class="project-grid-item full titre"> > L’esthétique du matériel</h2>
 
             <p class="project-grid-item full text">
@@ -78,6 +85,13 @@
             sidebar.style.left = '0';
             sidebar.style.top = '0';
 
+            // nav
+            var nav1 = document.querySelector('.nav-presentation');
+            nav1.style.margin = '50px 0 50px 0';
+            var nav2 = document.querySelector('.nav-projets');
+            nav2.style.margin = '50px 0 50px 0';
+            var nav3 = document.querySelector('.nav-contact');
+            nav3.style.margin = '50px 0 50px 0';
         });
     </script>
 
