@@ -1,0 +1,24 @@
+﻿/* --------------------------------------------------------------------- ORDINATEUR -- */
+@media (min-width: 768px) {
+    main {
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        height: 100vh;
+        scroll-behavior: smooth;
+    }
+
+    section {
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+    }
+
+    /* Masquer la barre de défilement pour Chrome, Safari et Edge */
+    html::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Masquer la barre de défilement pour Firefox */
+    html {
+        scrollbar-width: none;
+    }
+}
