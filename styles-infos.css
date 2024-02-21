@@ -1,31 +1,61 @@
 ﻿/* ---------------------------------------------------------- oridinateur ----- */
 @media (min-width: 768px){
-    .presentation {
+    #presentation {
         width: 100%;
         height: 100vh;
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        background-color: white;
+        background: linear-gradient(to bottom, white 80%, #F5F5F7 100%);
+    }
+        #presentation video {
+            width: 50%;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+            border-radius: 5px;
+            z-index: 2;
+            margin-bottom: 3%;
+        }
+
+    .infos-moving-image {
+        position: absolute;
+        width: 75vw;
+        height: 55vw;
+        margin-bottom: 3%;
     }
 
-    .presentation video {
-        width: 60%;
+    .fleches-infos-activator {
+        position: absolute;
+        top: 2px;
+        height: 2%;
+        width: 2%;
+        z-index: 100;
     }
 
-    .presentation h2 {
-        margin: 0 0 10px 0;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 700;
-        font-size: 1.4rem;
-        font-style: italic;
+    /* FLECHES DE SCROLL */
+    .scroll-infos {
+        position: absolute;
+        bottom: 0;
+        width: 3%;
+        margin-bottom: 2vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: opacity 4s ease-in-out;
     }
+        .scroll-infos img {
+            width: 100%;
+        }
 }
 
 
 /* ---------------------------------------------------------- téléphone ----- */
 @media (max-width: 767px){
-    .presentation {
+    #presentation {
         width: 100%;
         box-sizing: border-box;
         margin: 100px 0 20px 0;
@@ -35,13 +65,13 @@
         flex-direction: column;
     }
 
-    .presentation video {
+    #presentation video {
         width: 100%;
         max-height: 100%;
         margin: 10px;
     }
 
-    .presentation h2 {
+    #presentation h2 {
         margin: 0;
         font-family: 'Poppins', sans-serif;
         font-weight: 700;

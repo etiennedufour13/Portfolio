@@ -1,0 +1,82 @@
+﻿
+#galerie {
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: white;
+    background: linear-gradient(to bottom, white 80%, #F5F5F7 100%);
+}
+
+.grille-galerie {
+    width: 60vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.galerie-projet {
+    height: 11.7vw;
+    position: relative;
+    overflow: hidden;
+}
+    .galerie-projet img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        object-position: center;
+    }
+    .galerie-projet h3 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: none;
+        z-index: 2;
+        margin: 10px;
+        font-family: "Anton", sans-serif;
+        font-weight: 400;
+        font-size: 2.5em;
+        color: white;
+    }
+
+.galerie-img {
+    filter: brightness(0.8);
+}
+
+.galerie-gif {
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+    .galerie-gif:hover {
+        opacity: 1;
+    }
+
+/* filtres */
+.galerie-filtres {
+    width: 60vw;
+    margin-bottom: 10px;
+}
+
+.filtres-text {
+    font-style: italic;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* tags */
+.game-design-tag {
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+    .game-design-tag:hover {
+        color: red;
+    }

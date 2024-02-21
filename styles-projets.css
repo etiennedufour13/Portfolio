@@ -1,10 +1,25 @@
 ﻿
 /* --------------------------------------------------------------------- ORDINATEUR -- */
 @media (min-width: 768px){
+    #projets {
+        width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #F5F5F7;
+        padding-bottom: 20vh;
+        background: linear-gradient(to bottom, #F5F5F7 80%, white 100%);
+    }
+
     .index-projet {
         width: 100%;
-        height: 100vh;
+        height: 40vh;
         display: flex;
+        margin: 10px 0 10px 0;
+        background-color: white;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
     }
 
     /* -- partie de gauche: image -- */
@@ -13,8 +28,7 @@
         height: 100%;
         overflow: hidden;
         position: relative;
-        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000 10%, #000 90%, rgba(0, 0, 0, 0) 100%);
-        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000 10%, #000 90%, rgba(0, 0, 0, 0) 100%);
+
     }
 
     .index-projet-image img {
@@ -47,11 +61,11 @@
     }
 
     .index-projet-description-contenu {
-        margin: 5vh;
+        margin: 0 2% 0 2%;
     }
 
     .voir-plus {
-        margin: 5vh -75px 5vh 5vh;
+        margin: 0 2% 0 2%;
         align-self: flex-end;
         font-family: 'Poppins', sans-serif;
         font-weight: 700;
@@ -60,17 +74,20 @@
         text-decoration: none;
         transition: margin 0.6s ease-in-out, transform 0.3s ease-in-out;
     }
-    .voir-plus:hover {
-        transform: scale(1.06);
-    }
+        .voir-plus:hover {
+            transform: scale(1.06);
+        }
 
     /* titre */
     .index-projet-description h1 {
+
         z-index: 10;
         font-family: "Anton", sans-serif;
         font-weight: 400;
-        font-size: 4em;
+        font-size: 2.5em;
+        font-style: normal;
         margin: 0;
+        padding: 0;
     }
 
     /* tags */
@@ -79,6 +96,7 @@
         flex-direction: row;
         align-items: flex-start;
         justify-content: flex-start;
+        flex-wrap: wrap;
     }
 
     .index-projet-description-tags p {
@@ -97,6 +115,7 @@
         font-family: 'Nunito Sans', sans-serif;
         font-weight: 400;
         text-align: justify;
+        margin: 0;
     }
 
     .index-projet-description-text::after {

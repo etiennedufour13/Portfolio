@@ -1,279 +1,332 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- styles -->
-    <link rel="stylesheet" href="styles1.css">
-    <link rel="stylesheet" href="styles-sidebar.css">
-    <link rel="stylesheet" href="styles-infos.css">
-    <link rel="stylesheet" href="styles-projets.css">
-    <link rel="stylesheet" href="styles-contact.css">
-    <link rel="stylesheet" href="styles-scroll.css">
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,600;1,6..12,200;1,6..12,300;1,6..12,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <title>Etienne Dufour</title>
-</head>
-<body>
-    <!-- ---------------------------------------------------------------- SIDEBAR --- -->
-    <div class="sidebar">
-        <img src="Autre/logo1-white.png">
-        <a href="#presentation" class="nav nav-presentation">présentation</a>
-        <a href="#nomades" class="nav nav-projets">projets</a>
-        <a href="#contact" class="nav nav-contact">me contacter</a>
-    </div>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- styles -->
+        <link rel="stylesheet" href="styles1.css">
+        <link rel="stylesheet" href="styles-sidebar.css">
+        <link rel="stylesheet" href="styles-infos.css">
+        <link rel="stylesheet" href="styles-projets.css">
+        <link rel="stylesheet" href="styles-contact.css">
+        <link rel="stylesheet" href="styles-scroll.css">
+        <link rel="stylesheet" href="styles-galerie.css">
+        <link rel="stylesheet" href="styles-intro.css">
+        <!-- JS -->
+        <script src="galerie_system.js"></script>
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,600;1,6..12,200;1,6..12,300;1,6..12,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <title>Etienne Dufour</title>
+    </head>
+    <body>
+        <!-- ---------------------------------------------------------------- SIDEBAR --- -->
+        <div class="sidebar">
+            <a href="#presentation" class="nav nav-presentation">présentation</a>
+            <a href="#nomades" class="nav nav-projets">projets</a>
+            <a href="#contact" class="nav nav-contact">me contacter</a>
+        </div>
 
-    <main>
-        <!-- ---------------------------------------------------------------- INFOS --- -->
-        <section class="presentation" id="presentation">
-            <h2>Ma présentation vidéo:</h2>
-            <video controls autoplay playsinline src="Autre/video_de_presentation_v2.mp4"></video>
-        </section>
+        <main>
+            <!-- ---------------------------------------------------------------- INTRO --- -->
+            <section id="introduction" class="introduction">
+                <div class="bar-activator"></div>
 
-        <!-- ---------------------------------------------------------------- PROJETS --- -->
-        <!-- nomades -->
-        <section class="index-projet" id="nomades">
-            <div class="index-projet-image">
-                <img src="Nomades/vignette.jpg" class="image-top">
-                <img src="Nomades/vignette.gif">
-            </div>
-            <div class="index-projet-description">
-                <div class="index-projet-description-contenu">
-                    <h1>Nomades</h1>
-                    <div class="index-projet-description-tags"><p>game design</p><p>game art</p><p>développement</p></div>
-                    <p class="index-projet-description-text">
-                        Nomades est un jeu hybride réalisé dans le cadre de mon mémoire de DNMADE qui traite de l’association du numérique au
-                        tangible dans le contexte des expériences ludiques.<br><br>Dans ce jeu, vous incarnez une tribu nomade du paléolithique. Votre objectif est d’explorer les environnements
-                        qui vous entourent, de développer votre groupe en fabricant des objets et de survivre aux différents défis que vous rencontrerez.
-                    </p>
+                <div class="introduction-text">
+                    <h2>Bienvenue sur...</h2>
+                    <h1>mon portfolio</h1>
+                    <h2>en ligne!</h2>
+                    <img src="Autre/intro-shape1.gif" class="moving-shape-intro">
                 </div>
-                <div class="voir-plus">
-                    <a href="nomades.html"><p>voir plus -></p></a>
+
+                <div class="scroll-down"><p>scrollez pour naviguer</p><img src="Autre/scroll1.gif"></div>
+            </section>
+
+            <!-- ---------------------------------------------------------------- INFOS --- -->
+            <section id="presentation">
+                <div class="fleches-infos-activator"></div>
+
+                <video controls poster="Autre/poster1.png" src="Autre/video_de_presentation_v2.mp4"></video>
+                <img src="Autre/intro-shape1.gif" class="infos-moving-image">
+
+                <div class="scroll-infos"><img src="Autre/scroll-fleches.gif"></div>
+            </section>
+
+            <!-- ---------------------------------------------------------------- PROJETS --- -->
+            <section id="projets">
+                <h1 class="titre-de-section">Quelques projets...</h1>
+
+                <!-- nomades -->
+                <div class="index-projet" id="nomades">
+                    <div class="index-projet-image">
+                        <img src="Nomades/vignette.jpg" class="image-top">
+                        <img src="Nomades/vignette.gif">
+                    </div>
+                    <div class="index-projet-description">
+                        <div class="index-projet-description-contenu">
+                            <h1>Nomades</h1>
+                            <div class="index-projet-description-tags">
+                                <p class="game-design-tag">game design</p>
+                                <p>game art</p>
+                                <p>développement</p>
+                            </div>
+                            <p class="index-projet-description-text">
+                                Nomades est un jeu hybride réalisé dans le cadre de mon mémoire de DNMADE qui traite de l’association du numérique au
+                                tangible dans le contexte des expériences ludiques.
+                            </p>
+                        </div>
+                        <div class="voir-plus">
+                            <a href="nomades.html"><p>voir plus -></p></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <!-- Génération -->
-        <section class="index-projet" id="generation">
-            <div class="index-projet-image">
-                <img src="Generation/vignette.jpg" class="image-top">
-                <img src="Generation/vignette.gif">
-            </div>
-            <div class="index-projet-description">
-                <div class="index-projet-description-contenu">
-                    <h1>Plateau procédural</h1>
-                    <div class="index-projet-description-tags"><p>développement</p><p>game art</p></div>
-                    <p class="index-projet-description-text">
-                        Dans le cadre de mon mémoire de DNMADE à l’ENSAAMA, j’ai exploré le potentiel du jeu hybride. J’ai réalisé une série
-                        d’expériences qui avaient pour but d’explorer les possibilités apportées par le numérique dans le contexte d’une expérience ludique tangible.<br><br>Ce projet met
-                        en avant le potentiel apporté par la génération procédurale dans le cadre d’une expérience ludique tangible. J’ai développé une application permettant, à partir de
-                        paramètres modulables, de générer un terrain unique pouvant être ensuite installé sur le plateau physique.
-                    </p>
+                <!-- Génération -->
+                <div class="index-projet" id="generation">
+                    <div class="index-projet-image">
+                        <img src="Generation/vignette.jpg" class="image-top">
+                        <img src="Generation/vignette.gif">
+                    </div>
+                    <div class="index-projet-description">
+                        <div class="index-projet-description-contenu">
+                            <h1>Plateau procédural</h1>
+                            <div class="index-projet-description-tags">
+                                <p class="game-design-tag">game design</p>
+                                <p>développement</p>
+                                <p>game art</p>
+                            </div>
+                            <p class="index-projet-description-text">
+                                Dans le cadre de mon mémoire de DNMADE à l’ENSAAMA, j’ai exploré le potentiel du jeu hybride. J’ai réalisé une série
+                                d’expériences qui avaient pour but d’explorer les possibilités apportées par le numérique dans le contexte d’une expérience ludique tangible.<br><br>Ce projet met
+                                en avant le potentiel apporté par la génération procédurale dans le cadre d’une expérience ludique tangible. J’ai développé une application permettant, à partir de
+                                paramètres modulables, de générer un terrain unique pouvant être ensuite installé sur le plateau physique.
+                            </p>
+                        </div>
+                        <div class="voir-plus">
+                            <a href="generatif.html"><p>voir plus -></p></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="voir-plus">
-                    <a href="generatif.html"><p>voir plus -></p></a>
+                <!-- olympus race -->
+                <div class="index-projet" id="olympus">
+                    <div class="index-projet-image">
+                        <img src="Olympus/menu.png" class="image-top">
+                        <img src="Olympus/vignette.gif">
+                    </div>
+                    <div class="index-projet-description">
+                        <div class="index-projet-description-contenu">
+                            <h1>Olympus race</h1>
+                            <div class="index-projet-description-tags">
+                                <p class="game-design-tag">game design</p>
+                                <p>game art</p>
+                                <p>développement</p>
+                            </div>
+                            <p class="index-projet-description-text">
+                                Pendant ma 2e année d’étude à l’ENSAAMA, j’ai effectué un stage de plusieurs mois à VR&Co, une salle d’arcade parisienne. L’objectif
+                                a été de réaliser un jeu de rythme en réalité virtuelle afin de le proposer au public de la salle d’arcade.
+                            </p>
+                        </div>
+                        <div class="voir-plus">
+                            <a href="olympus.html"><p>voir plus -></p></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <!-- olympus race -->
-        <section class="index-projet" id="olympus">
-            <div class="index-projet-image">
-                <img src="Olympus/menu.png" class="image-top">
-                <img src="Olympus/vignette.gif">
-            </div>
-            <div class="index-projet-description">
-                <div class="index-projet-description-contenu">
-                    <h1>Olympus race</h1>
-                    <div class="index-projet-description-tags"><p>game design</p><p>développement</p><p>game art</p><p>son</p></div>
-                    <p class="index-projet-description-text">
-                        Pendant ma 2e année d’étude à l’ENSAAMA, j’ai effectué un stage de plusieurs mois à VR&Co, une salle d’arcade parisienne. L’objectif
-                        a été de réaliser un jeu de rythme en réalité virtuelle afin de le proposer au public de la salle d’arcade.
-                    </p>
-                </div>
-                <div class="voir-plus">
-                    <a href="olympus.html"><p>voir plus -></p></a>
-                </div>
-            </div>
-        </section>
-        <!-- concave -->
-        <!--<section class="index-projet" id="concave">
-            <div class="index-projet-image">
-                <img src="Concave/convexe2.png">
-            </div>
-            <div class="index-projet-description">
-                <div class="index-projet-description-contenu">
-                    <h1>Concave convexe</h1>
-                    <div class="index-projet-description-tags"><p>développement</p></div>
-                    <p class="index-projet-description-text">
-                        Dans le cadre d’un cours d’étude du numérique, nous avons étudié les enjeux de la VR. La demande à été de réaliser deux espaces, pouvant être
-                        visionnés dans des casques de réalité virtuelle.<br><br>Les notions de concave et convexe, arrondis vers l’intérieur ou vers l’extérieur sont
-                        des notions subtiles qui poussent analyser le ressenti des utilisateurs face à un environnement composé.
-                    </p>
-                </div>
-                <div class="voir-plus">
-                    <a href="concave.html"><p>voir plus -></p></a>
-                </div>
-            </div>
-        </section>-->
-        <!-- modele -->
-        <!--<section class="index-projet" id="modele">
-            <div class="index-projet-image">
-                <img src="Modeles/fusain1.jpeg">
-            </div>
-            <div class="index-projet-description">
-                <div class="index-projet-description-contenu">
-                    <h1>Modèle vivant</h1>
-                    <div class="index-projet-description-tags"><p>travail plastique</p></div>
-                    <p class="index-projet-description-text">
-                        En cours de pratique plastique à l’ENSAAMA, j’ai eu l’occasion de pratiquer le dessin de modèle vivant. Cela m’a permis
-                        de me familiariser à l’utilisation d’outils tels que le crayon, le bic ou le fusain mais également de mieux comprendre la structure d’un corps humain et comment
-                        l’exprimer plastiquement.
-                    </p>
-                </div>
-                <div class="voir-plus">
-                    <a href="modele.html"><p>voir plus -></p></a>
-                </div>
-            </div>
-        </section>-->
-        <!-- croquis -->
-        <!--<section class="index-projet" id="modele">
-            <div class="index-projet-image">
-                <img src="Croquis/image3.jpeg">
-            </div>
-            <div class="index-projet-description">
-                <div class="index-projet-description-contenu">
-                    <h1>Carnet de croquis</h1>
-                    <div class="index-projet-description-tags"><p>travail plastique</p></div>
-                    <p class="index-projet-description-text">
-                        Lors de ma 1ère année de DNMADE, nous avons eu pour devoir de tenir un carnet de croquis d’observation régulier dans le but de nous
-                        familiariser avec l’expression plastique et nous pousser à étudier les formes qui nous entourent.<br><br>
-                        J’ai depuis continué cette pratique, dessinant régulièrement, généralement dans les transports en commun.
-                    </p>
-                </div>
-                <div class="voir-plus">
-                    <a href="croquis.html"><p>voir plus -></p></a>
-                </div>
-            </div>-->
-        <!--</section>-->
-        <!-- jeu du paria -->
-        <!--<section class="index-projet" id="paria">
-            <div class="index-projet-image">
-                <img src="Paria/vignette.gif">
-            </div>
-            <div class="index-projet-description">
-                <div class="index-projet-description-contenu">
-                    <h1>Le jeu du paria</h1>
-                    <div class="index-projet-description-tags"><p>game design</p><p>game art</p></div>
-                    <p class="index-projet-description-text">
-                        Pour ma candidature au CNAM ENJMIN en 2022, j’ai eu à concevoir un jeu centré sur le principe de conformisme social.
-                        J’ai donc entièrement conçu un “party game”, pensé pour être joué avec un smartphone, et j’ai rédigé son Game Design Document.
-                    </p>
-                </div>
-                <div class="voir-plus">
-                    <a href="paria.html"><p>voir plus -></p></a>
-                </div>
-            </div>
-        </section>-->
-        <!-- pious in the cages -->
-        <!--<section class="index-projet" id="pious">
-            <div class="index-projet-image">
-                <img src="Pious/vignette1.gif">
-            </div>
-            <div class="index-projet-description">
-                <div class="index-projet-description-contenu">
-                    <h1>Pious in the cages</h1>
-                    <div class="index-projet-description-tags"><p>game design</p><p>game art</p><p>développement</p></div>
-                    <p class="index-projet-description-text">
-                        À l'occasion de la "Mini Jame Gam #6", j'ai conçu et réalisé en équipe un platformer d'action en 48h: Pious in the Cages.
-                        Le thème "Out of time" ainsi que l'objet "Key" étaient contraints.<br><br>Je me suis associé à <a href="https://fr.linkedin.com/in/claraboussard">Clara Boussard</a> qui
-                        s’est occupé des graphismes. Je me suis occupé de penser le jeu, le développer sur Unity et de réaliser du son adaptatif.
-                    </p>
-                </div>
-                <div class="voir-plus">
-                    <a href="pious.html"><p>voir plus -></p></a>
-                </div>
-            </div>
-        </section>-->
+
+            </section>
 
 
-        <!-- ---------------------------------------------------------------- INFOS --- -->
-        <section class="presentation" id="contact">
-            <h2>Ma période de stage:</h2>
-            <p>conventionné par mon école</p>
-            <p>durée de 3 à 4 mois</p>
-            <p>à partir du 6 mai</p>
-            <h2>Me contacter:</h2>
-            <p>06 42 59 01 16</p>
-            <p>etiennedufour13@gmail.com</p>
-        </section>
+            <!-- ---------------------------------------------------------------- GALERIE --- -->
+            <section id="galerie">
+                <h1 class="titre-de-section">Plus de projets !</h1>
 
-    </main>
+                <div class="galerie-filtres">
+                    <p class="filtres-text">filtres :</p>
+                    <div class="index-projet-description-tags">
+                        <p onclick="cacherGaleriesProjet(true, false);" class="game-design-tag">game design</p>
+                        <p onclick="cacherGaleriesProjet(false, true);">unity</p>
+                        <p onclick="cacherGaleriesProjet(false, true);">web</p>
+                        <p onclick="cacherGaleriesProjet(false, true);">travail plastique</p>
+                        <p onclick="cacherGaleriesProjet(false, true);">travail audio</p>
+                        <p onclick="cacherGaleriesProjet(false, true);">modélisation 3D</p>
+                    </div>
+                </div>
+
+                <div class="grille-galerie">
+                    <!-- nomades -->
+                    <a class="galerie-projet game-design travail-plastique" href="nomades.html">
+                        <h3>Nomades</h3>
+                        <img class="galerie-gif" src="Nomades/vignette.gif">
+                        <img class="galerie-img" src="Nomades/vignette.jpg">
+                    </a>
+                    <!-- generation -->
+                    <a class="galerie-projet travail-plastique developpement" href="generatif.html">
+                        <h3>Plateau procédural</h3>
+                        <img class="galerie-gif" src="Generation/vignette.gif">
+                        <img class="galerie-img" src="Generation/vignette.jpg">
+                    </a>
+                    <!-- olympus -->
+                    <a class="galerie-projet game-design developpement travail-audio" href="olympus.html">
+                        <h3>Olympus race</h3>
+                        <img class="galerie-gif" src="Olympus/vignette.gif">
+                        <img class="galerie-img" src="Olympus/menu.png">
+                    </a>
+                    <!-- artisan -->
+                    <a class="galerie-projet game-design developpement" href="artisan.html">
+                        <h3>Artisan meurtrier</h3>
+                        <img class="galerie-gif" src="Artisan/vignette.gif">
+                        <img class="galerie-img" src="Artisan/baniere.jpg">
+                    </a>
+                    <!-- modeles -->
+                    <a class="galerie-projet travail-plastique" href="modele.html">
+                        <h3>Modeles vivants</h3>
+                        <img class="galerie-gif" src="Modeles/vignette.jpeg">
+                        <img class="galerie-img" src="Modeles/vignette.jpeg">
+                    </a>
+                    <!-- pious -->
+                    <a class="galerie-projet game-design developpement travail-audio" href="pious.html">
+                        <h3>Pious in the cages</h3>
+                        <img class="galerie-gif" src="Pious/cages.gif">
+                        <img class="galerie-img" src="Pious/baniere.jpg">
+                    </a>
+                    <!-- space -->
+                    <a class="galerie-projet game-design developpement" href="space.html">
+                        <h3>Makey makey</h3>
+                        <img class="galerie-gif" src="Space/hurt.gif">
+                        <img class="galerie-img" src="Space/baniere.jpg">
+                    </a>
+
+                </div>
+
+            </section>
+
+
+
+
+            <!-- ---------------------------------------------------------------- CONTACT --- -->
+            <section id="contact">
+                <h1 class="contactez-moi ">Contactez moi !</h1>
+
+                <div class="contact-text">
+                    <h2>Ma période de stage:</h2>
+                    <p>conventionné par mon école</p>
+                    <p>durée de 3 à 4 mois</p>
+                    <p>à partir du 6 mai<br><br></p>
+                    <h2>Me contacter:</h2>
+                    <p>06 42 59 01 16</p>
+                    <p>etiennedufour13@gmail.com</p>
+
+                    <img src="Autre/intro-shape1.gif" class="moving-shape-contact">
+                </div>
+            </section>
+
+        </main>
    
 
 
-    <!-- ---------------------------------------------------------------- JS --- -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // barre
-            var sidebar = document.querySelector('.sidebar');
-            sidebar.style.left = '0';
-            sidebar.style.top = '0';
+        <!-- ---------------------------------------------------------------- JS --- -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // start
+                var scrollDown = document.querySelector('.scroll-down');
+                scrollDown.style.opacity = '1';
 
-            // éléments
-            var nav1 = document.querySelector('.nav-presentation');
-            nav1.style.margin = '50px 0 50px 0';
-            var nav2 = document.querySelector('.nav-projets');
-            nav2.style.margin = '50px 0 50px 0';
-            var nav3 = document.querySelector('.nav-contact');
-            nav3.style.margin = '50px 0 50px 0';
 
-            // voir plus
-            const voirElements = document.querySelectorAll('.voir-plus');
 
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    // Si l'élément est visible à l'écran
-                    if (entry.isIntersecting) {
-                        // Supprimez la marge gauche pour revenir à la position normale
-                        entry.target.style.marginRight= '5vh';
-                    }
-                    if (!entry.isIntersecting) {
-                        // Faites quelque chose lorsque l'élément sort de la visibilité
-                        entry.target.style.marginRight = '-75px'; // Décalage de l'élément vers la gauche
-                    }
+                // voir plus
+                const voirElements = document.querySelectorAll('.voir-plus');
+
+                const observerVoirPlus = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.style.marginRight = '2%';
+
+                        }
+                        if (!entry.isIntersecting) {
+                            entry.target.style.marginRight = '-75px';
+                        }
+                    });
                 });
-            });
 
-            voirElements.forEach(voirElement => {
-                observer.observe(voirElement);
-            });
-
-            // vidéo
-            const video = document.querySelector('presentation video');
-
-            const observerVideo = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    // Si la vidéo n'est pas visible à l'écran
-                    if (!entry.isIntersecting) {
-                        // Arrêtez la lecture de la vidéo
-                        video.pause();
-                    }
+                voirElements.forEach(voirElement => {
+                    observerVoirPlus.observe(voirElement);
                 });
+
+                // bar-activator (petit objet en haut de page)
+                const barActivator = document.querySelector('.bar-activator');
+
+                const observerIntro = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            // barre
+                            var sidebar = document.querySelector('.sidebar');
+                            sidebar.style.left = '-50px';
+
+                            // éléments
+                            var nav1 = document.querySelector('.nav-presentation');
+                            nav1.style.marginRight = '75px';
+                            var nav2 = document.querySelector('.nav-projets');
+                            nav2.style.marginRight = '75px';
+                            var nav3 = document.querySelector('.nav-contact');
+                            nav3.style.marginRight = '75px';
+
+                            //scroll
+                            var scrollDown = document.querySelector('.scroll-down');
+                            scrollDown.style.opacity = '1';
+                        } else {
+                            // barre
+                            var sidebar = document.querySelector('.sidebar');
+                            sidebar.style.left = '0';
+                            sidebar.style.top = '0';
+
+                            // éléments
+                            var nav1 = document.querySelector('.nav-presentation');
+                            nav1.style.marginRight = '0';
+                            var nav2 = document.querySelector('.nav-projets');
+                            nav2.style.marginRight = '0';
+                            var nav3 = document.querySelector('.nav-contact');
+                            nav3.style.marginRight = '0';
+
+                            //scroll
+                            var scrollDown = document.querySelector('.scroll-down');
+                            scrollDown.style.transition = 'opacity 0.5s ease-in-out';
+                            scrollDown.style.opacity = '0';
+                        }
+                    });
+                });
+
+                observerIntro.observe(barActivator);
+
+                // fleches dans la page info (qui disparait)
+                const flechesActivator = document.querySelector('.fleches-infos-activator');
+
+                const observerInfos = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            //scroll
+                            var scrollInfos = document.querySelector('.scroll-infos');
+                            scrollInfos.style.transition = 'opacity 4s ease-in-out';
+                            scrollInfos.style.opacity = '1';
+                        } else {
+                            //scroll
+                            var scrollInfos = document.querySelector('.scroll-infos');
+                            scrollInfos.style.transition = 'opacity 0.5s ease-in-out';
+                            scrollInfos.style.opacity = '0';
+                        }
+                    });
+                });
+
+                observerInfos.observe(flechesActivator);
             });
+        
+        </script>
 
-            observerVideo.observe(video);
-
-        });
-    </script>
-
-</body>
+    </body>
 </html>
