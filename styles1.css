@@ -6,18 +6,29 @@ html {
 }
 
 body {
+    /* palette de couleur */
+    --presque-noir: #242326;
+    --gris-tres-clair: #F5F5F7;
+    --gris-clair: #E1DCE3;
+    --white: white;
+    --red-1: #f35c48;
+    --red-2: #cb697c;
+    --blue-1: #5499ee;
+    --blue-2: #7783d2;
+    --blue-3: #5a55c0;
+    --green-1: #3cc3a8;
+    /* propriétés */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
     overflow-y: scroll;
     background-color: white;
-
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #242326;
+    color: var(--presque-noir);
 }
 
 a {

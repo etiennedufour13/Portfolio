@@ -13,8 +13,6 @@
         <link rel="stylesheet" href="styles-scroll.css">
         <link rel="stylesheet" href="styles-galerie.css">
         <link rel="stylesheet" href="styles-intro.css">
-        <!-- JS -->
-        <script src="galerie_system.js"></script>
         <!-- fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +21,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,600;1,6..12,200;1,6..12,300;1,6..12,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
         <title>Etienne Dufour</title>
@@ -32,7 +30,8 @@
         <!-- ---------------------------------------------------------------- SIDEBAR --- -->
         <div class="sidebar">
             <a href="#presentation" class="nav nav-presentation">présentation</a>
-            <a href="#nomades" class="nav nav-projets">projets</a>
+            <a href="#projets" class="nav nav-projets">projets</a>
+            <a href="#galerie" class="nav nav-galerie">galerie</a>
             <a href="#contact" class="nav nav-contact">me contacter</a>
         </div>
 
@@ -75,9 +74,8 @@
                         <div class="index-projet-description-contenu">
                             <h1>Nomades</h1>
                             <div class="index-projet-description-tags">
-                                <p class="game-design-tag">game design</p>
-                                <p>game art</p>
-                                <p>développement</p>
+                                <p class="game-design-tag pas-filter">game design</p>
+                                <p class="travail-plastique-tag pas-filter">travail plastique</p>
                             </div>
                             <p class="index-projet-description-text">
                                 Nomades est un jeu hybride réalisé dans le cadre de mon mémoire de DNMADE qui traite de l’association du numérique au
@@ -99,9 +97,9 @@
                         <div class="index-projet-description-contenu">
                             <h1>Plateau procédural</h1>
                             <div class="index-projet-description-tags">
-                                <p class="game-design-tag">game design</p>
-                                <p>développement</p>
-                                <p>game art</p>
+                                <p class="game-design-tag pas-filter">game design</p>
+                                <p class="unity-tag pas-filter">unity</p>
+                                <p class="travail-audio-tag pas-filter">travail audio</p>
                             </div>
                             <p class="index-projet-description-text">
                                 Dans le cadre de mon mémoire de DNMADE à l’ENSAAMA, j’ai exploré le potentiel du jeu hybride. J’ai réalisé une série
@@ -125,9 +123,8 @@
                         <div class="index-projet-description-contenu">
                             <h1>Olympus race</h1>
                             <div class="index-projet-description-tags">
-                                <p class="game-design-tag">game design</p>
-                                <p>game art</p>
-                                <p>développement</p>
+                                <p class="game-design-tag pas-filter">game design</p>
+                                <p class="travail-plastique-tag pas-filter">travail plastique</p>
                             </div>
                             <p class="index-projet-description-text">
                                 Pendant ma 2e année d’étude à l’ENSAAMA, j’ai effectué un stage de plusieurs mois à VR&Co, une salle d’arcade parisienne. L’objectif
@@ -149,17 +146,18 @@
 
                 <div class="galerie-filtres">
                     <p class="filtres-text">filtres :</p>
-                    <div class="index-projet-description-tags">
-                        <p onclick="cacherGaleriesProjet(true, false);" class="game-design-tag">game design</p>
-                        <p onclick="cacherGaleriesProjet(false, true);">unity</p>
-                        <p onclick="cacherGaleriesProjet(false, true);">web</p>
-                        <p onclick="cacherGaleriesProjet(false, true);">travail plastique</p>
-                        <p onclick="cacherGaleriesProjet(false, true);">travail audio</p>
-                        <p onclick="cacherGaleriesProjet(false, true);">modélisation 3D</p>
+                    <div class="index-projet-description-tags filter">
+                        <p class="game-design-tag filter">game design</p>
+                        <p class="unity-tag filter">unity</p>
+                        <p class="web-tag filter">web</p>
+                        <p class="travail-plastique-tag filter">travail plastique</p>
+                        <p class="travail-audio-tag filter">travail audio</p>
+                        <p class="modelisation-tag filter">modélisation 3D</p>
                     </div>
                 </div>
 
                 <div class="grille-galerie">
+                    <p class="vide">aucun projet ne correspond à cette combinaison</p>
                     <!-- nomades -->
                     <a class="galerie-projet game-design travail-plastique" href="nomades.html">
                         <h3>Nomades</h3>
@@ -167,19 +165,19 @@
                         <img class="galerie-img" src="Nomades/vignette.jpg">
                     </a>
                     <!-- generation -->
-                    <a class="galerie-projet travail-plastique developpement" href="generatif.html">
+                    <a class="galerie-projet travail-plastique unity" href="generatif.html">
                         <h3>Plateau procédural</h3>
                         <img class="galerie-gif" src="Generation/vignette.gif">
                         <img class="galerie-img" src="Generation/vignette.jpg">
                     </a>
                     <!-- olympus -->
-                    <a class="galerie-projet game-design developpement travail-audio" href="olympus.html">
+                    <a class="galerie-projet game-design unity travail-audio modelisation" href="olympus.html">
                         <h3>Olympus race</h3>
                         <img class="galerie-gif" src="Olympus/vignette.gif">
                         <img class="galerie-img" src="Olympus/menu.png">
                     </a>
                     <!-- artisan -->
-                    <a class="galerie-projet game-design developpement" href="artisan.html">
+                    <a class="galerie-projet game-design unity" href="artisan.html">
                         <h3>Artisan meurtrier</h3>
                         <img class="galerie-gif" src="Artisan/vignette.gif">
                         <img class="galerie-img" src="Artisan/baniere.jpg">
@@ -191,16 +189,52 @@
                         <img class="galerie-img" src="Modeles/vignette.jpeg">
                     </a>
                     <!-- pious -->
-                    <a class="galerie-projet game-design developpement travail-audio" href="pious.html">
+                    <a class="galerie-projet game-design unity travail-audio" href="pious.html">
                         <h3>Pious in the cages</h3>
                         <img class="galerie-gif" src="Pious/cages.gif">
                         <img class="galerie-img" src="Pious/baniere.jpg">
                     </a>
                     <!-- space -->
-                    <a class="galerie-projet game-design developpement" href="space.html">
+                    <a class="galerie-projet game-design unity" href="space.html">
                         <h3>Makey makey</h3>
                         <img class="galerie-gif" src="Space/hurt.gif">
                         <img class="galerie-img" src="Space/baniere.jpg">
+                    </a>
+                    <!-- reflection -->
+                    <a class="galerie-projet game-design unity modelisation" href="">
+                        <h3>Reflection game</h3>
+                        <img class="galerie-gif" src="Reflection/vignette.png">
+                        <img class="galerie-img" src="Reflection/vignette.png">
+                    </a>
+                    <!-- baluchon -->
+                    <a class="galerie-projet video" href="baluchon.html">
+                        <h3>Baluchonnage</h3>
+                        <img class="galerie-gif" src="Baluchon/vignette.gif">
+                        <img class="galerie-img" src="Baluchon/baniere.jpg">
+                    </a>
+                    <!-- jeu du paria -->
+                    <a class="galerie-projet game-design travail-plastique" href="paria.html">
+                        <h3>Jeu du paria</h3>
+                        <img class="galerie-gif" src="Paria/vignette.gif">
+                        <img class="galerie-img" src="Paria/vignette.png">
+                    </a>
+                    <!-- concave convexe-->
+                    <a class="galerie-projet unity modelisation" href="concave.html">
+                        <h3>Concave convexe</h3>
+                        <img class="galerie-gif" src="Concave/vignette.png">
+                        <img class="galerie-img" src="Concave/vignette.png">
+                    </a>
+                    <!-- growing -->
+                    <a class="galerie-projet game-design travail-plastique" href="growing.html">
+                        <h3>Growing</h3>
+                        <img class="galerie-gif" src="Growing/vignette.jpg">
+                        <img class="galerie-img" src="Growing/vignette.jpg">
+                    </a>
+                    <!-- croquis -->
+                    <a class="galerie-projet travail-plastique" href="croquis.html">
+                        <h3>Croquis</h3>
+                        <img class="galerie-gif" src="Croquis/vignette.jpeg">
+                        <img class="galerie-img" src="Croquis/vignette.jpeg">
                     </a>
 
                 </div>
@@ -228,8 +262,11 @@
             </section>
 
         </main>
-   
 
+
+        <!-- JS -->
+        <script src="galerie_system.js"></script>
+        <script src="sidebar_system.js"></script>
 
         <!-- ---------------------------------------------------------------- JS --- -->
         <script>
@@ -267,15 +304,17 @@
                         if (entry.isIntersecting) {
                             // barre
                             var sidebar = document.querySelector('.sidebar');
-                            sidebar.style.left = '-50px';
+                            sidebar.style.left = '-70px';
 
                             // éléments
                             var nav1 = document.querySelector('.nav-presentation');
                             nav1.style.marginRight = '75px';
                             var nav2 = document.querySelector('.nav-projets');
                             nav2.style.marginRight = '75px';
-                            var nav3 = document.querySelector('.nav-contact');
+                            var nav3 = document.querySelector('.nav-galerie');
                             nav3.style.marginRight = '75px';
+                            var nav4 = document.querySelector('.nav-contact');
+                            nav4.style.marginRight = '75px';
 
                             //scroll
                             var scrollDown = document.querySelector('.scroll-down');
@@ -291,8 +330,10 @@
                             nav1.style.marginRight = '0';
                             var nav2 = document.querySelector('.nav-projets');
                             nav2.style.marginRight = '0';
-                            var nav3 = document.querySelector('.nav-contact');
+                            var nav3 = document.querySelector('.nav-galerie');
                             nav3.style.marginRight = '0';
+                            var nav4 = document.querySelector('.nav-contact');
+                            nav4.style.marginRight = '0';
 
                             //scroll
                             var scrollDown = document.querySelector('.scroll-down');
@@ -325,7 +366,7 @@
 
                 observerInfos.observe(flechesActivator);
             });
-        
+
         </script>
 
     </body>

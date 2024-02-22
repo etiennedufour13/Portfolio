@@ -4,12 +4,13 @@
     padding: 0;
     position: fixed;
     top: 0;
-    left: -50px; /* pos initiale */
+    left: -70px; /* pos initiale */
     transition: left 0.5s ease-in-out;
-    width: 50px;
+    min-width: 50px;
+    width: 4.15vw;
     height: 100%;
     /* Aspect */
-    background-color: #242326;
+    background-color: var(--presque-noir);
     z-index: 1000;
     /* Elements */
     display: flex;
@@ -23,7 +24,7 @@
 .sidebar img {
     margin: 5px 0 30px 0;
     width: 22px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 .sidebar img:hover {
     transform: scale(1.08);
@@ -36,23 +37,36 @@
     margin-right: 75px; /* pose initiale */
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 300;
-    font-style: italic;
+    font-size: 1.15em;
     text-decoration: none;
     color: #E1DCE3;
+    position: relative;
 }
+    .nav.active {
+        padding: 3px 10px;
+        border: 1px solid;
+        border-radius: 15px;
+        color: var(--presque-noir);
+        background-color: var(--white);
+        font-style: italic;
+    }
+
 @media (min-width: 768px ) {
     .nav:hover {
-        transform: rotate(-88deg) scale(1.06);
+    transform: rotate(-88deg) scale(1.06);
     }
 }
-
 
 .nav-presentation {
     transition: margin 1s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .nav-projets {
-    transition: margin 1.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: margin 1.2s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.nav-galerie {
+    transition: margin 1.4s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .nav-contact {
