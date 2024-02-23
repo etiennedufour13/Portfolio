@@ -35,16 +35,21 @@
             <a href="#contact" class="nav nav-contact">me contacter</a>
         </div>
 
+        <div class="sidebar-mobile">
+            <a href="#presentation" class="nav nav-presentation">présentation</a>
+            <a href="#galerie" class="nav nav-galerie">projets</a>
+            <a href="#contact" class="nav nav-contact">me contacter</a>
+        </div>
+
         <main>
             <!-- ---------------------------------------------------------------- INTRO --- -->
             <section id="introduction" class="introduction">
                 <div class="bar-activator"></div>
 
                 <div class="introduction-text">
-                    <h2>Bienvenue sur...</h2>
-                    <h1>mon portfolio</h1>
-                    <h2>en ligne!</h2>
-                    <img src="Autre/intro-shape1.gif" class="moving-shape-intro">
+                    <h1>Mon Portfolio</h1>
+                    <h2>Etienne Dufour</h2>
+                    <img src="Autre/intro-shape2.gif" class="moving-shape-intro">
                 </div>
 
                 <div class="scroll-down"><p>scrollez pour naviguer</p><img src="Autre/scroll1.gif"></div>
@@ -54,15 +59,19 @@
             <section id="presentation">
                 <div class="fleches-infos-activator"></div>
 
-                <video controls poster="Autre/poster1.png" src="Autre/video_de_presentation_v2.mp4"></video>
-                <img src="Autre/intro-shape1.gif" class="infos-moving-image">
+                <video controls poster="Autre/poster1.png">
+                    <source src="Autre/video_de_presentation_v3-1.mp4" type="video/mp4">
+                    <source src="Autre/video_de_presentation_v3-2.webm" type="video/webm">
+                    Votre navigateur ne parvient pas à charger la vidéo :(
+                </video>
+                <img src="Autre/intro-shape2.gif" class="infos-moving-image">
 
                 <div class="scroll-infos"><img src="Autre/scroll-fleches.gif"></div>
             </section>
 
             <!-- ---------------------------------------------------------------- PROJETS --- -->
             <section id="projets">
-                <h1 class="titre-de-section">Quelques projets...</h1>
+                <h1 class="titre-de-section">Voici quelques projets...</h1>
 
                 <!-- nomades -->
                 <div class="index-projet" id="nomades">
@@ -76,40 +85,15 @@
                             <div class="index-projet-description-tags">
                                 <p class="game-design-tag pas-filter">game design</p>
                                 <p class="travail-plastique-tag pas-filter">travail plastique</p>
+                                <p class="unity-tag pas-filter">unity</p>
                             </div>
                             <p class="index-projet-description-text">
-                                Nomades est un jeu hybride réalisé dans le cadre de mon mémoire de DNMADE qui traite de l’association du numérique au
-                                tangible dans le contexte des expériences ludiques.
+                                Nomades est un jeu solo, narratif, de gestion dans lequel vous incarnez une tribu du paléolithique.
+                                Cette expérience à pour particularité d’associer du matériel tangible à un support numérique.
                             </p>
                         </div>
                         <div class="voir-plus">
                             <a href="nomades.html"><p>voir plus -></p></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Génération -->
-                <div class="index-projet" id="generation">
-                    <div class="index-projet-image">
-                        <img src="Generation/vignette.jpg" class="image-top">
-                        <img src="Generation/vignette.gif">
-                    </div>
-                    <div class="index-projet-description">
-                        <div class="index-projet-description-contenu">
-                            <h1>Plateau procédural</h1>
-                            <div class="index-projet-description-tags">
-                                <p class="game-design-tag pas-filter">game design</p>
-                                <p class="unity-tag pas-filter">unity</p>
-                                <p class="travail-audio-tag pas-filter">travail audio</p>
-                            </div>
-                            <p class="index-projet-description-text">
-                                Dans le cadre de mon mémoire de DNMADE à l’ENSAAMA, j’ai exploré le potentiel du jeu hybride. J’ai réalisé une série
-                                d’expériences qui avaient pour but d’explorer les possibilités apportées par le numérique dans le contexte d’une expérience ludique tangible.<br><br>Ce projet met
-                                en avant le potentiel apporté par la génération procédurale dans le cadre d’une expérience ludique tangible. J’ai développé une application permettant, à partir de
-                                paramètres modulables, de générer un terrain unique pouvant être ensuite installé sur le plateau physique.
-                            </p>
-                        </div>
-                        <div class="voir-plus">
-                            <a href="generatif.html"><p>voir plus -></p></a>
                         </div>
                     </div>
                 </div>
@@ -124,7 +108,9 @@
                             <h1>Olympus race</h1>
                             <div class="index-projet-description-tags">
                                 <p class="game-design-tag pas-filter">game design</p>
-                                <p class="travail-plastique-tag pas-filter">travail plastique</p>
+                                <p class="unity-tag pas-filter">unity</p>
+                                <p class="travail-audio-tag pas-filter">travail audio</p>
+                                <p class="modelisation-tag pas-filter">modelisation 3D</p>
                             </div>
                             <p class="index-projet-description-text">
                                 Pendant ma 2e année d’étude à l’ENSAAMA, j’ai effectué un stage de plusieurs mois à VR&Co, une salle d’arcade parisienne. L’objectif
@@ -136,20 +122,46 @@
                         </div>
                     </div>
                 </div>
+                <!-- baluchon -->
+                <div class="index-projet" id="baluchon">
+                    <div class="index-projet-image">
+                        <img src="Baluchon/baniere.jpg" class="image-top">
+                        <img src="Baluchon/vignette.gif">
+                    </div>
+                    <div class="index-projet-description">
+                        <div class="index-projet-description-contenu">
+                            <h1>Le baluchonnage</h1>
+                            <div class="index-projet-description-tags">
+                                <p class="web-tag pas-filter">vidéo</p>
+                            </div>
+                            <p class="index-projet-description-text">
+                                Projet vidéo réalisé pour Baluchon France visant à expliquer au grand public le fonctionnement du
+                                baluchonnage, un système d’aide à domicile longue durée.
+                            </p>
+                        </div>
+                        <div class="voir-plus">
+                            <a href="baluchon.html"><p>voir plus -></p></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="fleches-projets-activator"></div>
+                <div class="scroll-projets"><img src="Autre/scroll-fleches.gif"></div>
 
             </section>
 
 
             <!-- ---------------------------------------------------------------- GALERIE --- -->
             <section id="galerie">
-                <h1 class="titre-de-section">Plus de projets !</h1>
+                <h1 class="titre-de-section titre-galerie">Voici plus de projets !</h1>
 
                 <div class="galerie-filtres">
                     <p class="filtres-text">filtres :</p>
                     <div class="index-projet-description-tags filter">
                         <p class="game-design-tag filter">game design</p>
                         <p class="unity-tag filter">unity</p>
-                        <p class="web-tag filter">web</p>
+                        <p class="web-tag filter">vidéo</p>
                         <p class="travail-plastique-tag filter">travail plastique</p>
                         <p class="travail-audio-tag filter">travail audio</p>
                         <p class="modelisation-tag filter">modélisation 3D</p>
@@ -176,17 +188,17 @@
                         <img class="galerie-gif" src="Olympus/vignette.gif">
                         <img class="galerie-img" src="Olympus/menu.png">
                     </a>
-                    <!-- artisan -->
-                    <a class="galerie-projet game-design unity" href="artisan.html">
-                        <h3>Artisan meurtrier</h3>
-                        <img class="galerie-gif" src="Artisan/vignette.gif">
-                        <img class="galerie-img" src="Artisan/baniere.jpg">
+                    <!-- baluchon -->
+                    <a class="galerie-projet web" href="baluchon.html">
+                        <h3>Baluchonnage</h3>
+                        <img class="galerie-gif" src="Baluchon/vignette.gif">
+                        <img class="galerie-img" src="Baluchon/baniere.jpg">
                     </a>
-                    <!-- modeles -->
-                    <a class="galerie-projet travail-plastique" href="modele.html">
-                        <h3>Modeles vivants</h3>
-                        <img class="galerie-gif" src="Modeles/vignette.jpeg">
-                        <img class="galerie-img" src="Modeles/vignette.jpeg">
+                    <!-- dessin d'observation' -->
+                    <a class="galerie-projet travail-plastique" href="croquis.html">
+                        <h3>Dessin d'observation</h3>
+                        <img class="galerie-gif" src="Croquis/vignette.jpeg">
+                        <img class="galerie-img" src="Croquis/vignette.jpeg">
                     </a>
                     <!-- pious -->
                     <a class="galerie-projet game-design unity travail-audio" href="pious.html">
@@ -200,42 +212,19 @@
                         <img class="galerie-gif" src="Space/hurt.gif">
                         <img class="galerie-img" src="Space/baniere.jpg">
                     </a>
-                    <!-- reflection -->
-                    <a class="galerie-projet game-design unity modelisation" href="">
-                        <h3>Reflection game</h3>
-                        <img class="galerie-gif" src="Reflection/vignette.png">
-                        <img class="galerie-img" src="Reflection/vignette.png">
+                    <!-- growing -->
+                    <a class="galerie-projet game-design travail-plastique" href="growing.html">
+                        <h3>Growing</h3>
+                        <img class="galerie-gif" src="Growing/baniere.jpg">
+                        <img class="galerie-img" src="Growing/baniere.jpg">
                     </a>
-                    <!-- baluchon -->
-                    <a class="galerie-projet video" href="baluchon.html">
-                        <h3>Baluchonnage</h3>
-                        <img class="galerie-gif" src="Baluchon/vignette.gif">
-                        <img class="galerie-img" src="Baluchon/baniere.jpg">
-                    </a>
-                    <!-- jeu du paria -->
+                    <!-- paria -->
                     <a class="galerie-projet game-design travail-plastique" href="paria.html">
                         <h3>Jeu du paria</h3>
                         <img class="galerie-gif" src="Paria/vignette.gif">
                         <img class="galerie-img" src="Paria/vignette.png">
                     </a>
-                    <!-- concave convexe-->
-                    <a class="galerie-projet unity modelisation" href="concave.html">
-                        <h3>Concave convexe</h3>
-                        <img class="galerie-gif" src="Concave/vignette.png">
-                        <img class="galerie-img" src="Concave/vignette.png">
-                    </a>
-                    <!-- growing -->
-                    <a class="galerie-projet game-design travail-plastique" href="growing.html">
-                        <h3>Growing</h3>
-                        <img class="galerie-gif" src="Growing/vignette.jpg">
-                        <img class="galerie-img" src="Growing/vignette.jpg">
-                    </a>
-                    <!-- croquis -->
-                    <a class="galerie-projet travail-plastique" href="croquis.html">
-                        <h3>Croquis</h3>
-                        <img class="galerie-gif" src="Croquis/vignette.jpeg">
-                        <img class="galerie-img" src="Croquis/vignette.jpeg">
-                    </a>
+
 
                 </div>
 
@@ -257,7 +246,7 @@
                     <p>06 42 59 01 16</p>
                     <p>etiennedufour13@gmail.com</p>
 
-                    <img src="Autre/intro-shape1.gif" class="moving-shape-contact">
+                    <img src="Autre/intro-shape2.gif" class="moving-shape-contact">
                 </div>
             </section>
 
@@ -365,6 +354,27 @@
                 });
 
                 observerInfos.observe(flechesActivator);
+
+                // fleches dans la page projets (qui disparait)
+                const flechesActivatorProjet = document.querySelector('.fleches-projets-activator');
+
+                const observerProjets = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            //scroll
+                            var scrollProjets = document.querySelector('.scroll-projets');
+                            scrollProjets.style.transition = 'opacity 4s ease-in-out';
+                            scrollProjets.style.opacity = '1';
+                        } else {
+                            //scroll
+                            var scrollProjets = document.querySelector('.scroll-projets');
+                            scrollProjets.style.transition = 'opacity 0.5s ease-in-out';
+                            scrollProjets.style.opacity = '0';
+                        }
+                    });
+                });
+
+                observerProjets.observe(flechesActivatorProjet);
             });
 
         </script>

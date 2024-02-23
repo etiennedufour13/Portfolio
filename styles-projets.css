@@ -9,8 +9,9 @@
         justify-content: center;
         flex-direction: column;
         background-color: #F5F5F7;
-        padding-bottom: 20vh;
+        padding-bottom: 10vh;
         background: linear-gradient(to bottom, #F5F5F7 80%, white 100%);
+        position:relative;
     }
 
     .index-projet {
@@ -123,116 +124,39 @@
         display: inline-block;
     }
 
+    /* fleche de scroll */
+    .fleches-projets-activator {
+        position: absolute;
+        bottom: 90vh;
+        height: 2%;
+        width: 2%;
+        z-index: 100;
+    }
+
+    .scroll-projets{
+        position: absolute;
+        bottom: 0;
+        width: 3%;
+        margin-bottom: 2vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: opacity 4s ease-in-out;
+    }
+        .scroll-projets img {
+            width: 100%;
+        }
+
 }
 
 /* --------------------------------------------------------------------- MOBILE -- */
 @media (max-width: 767px) {
-    main {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 100%;
-    }
-
-    .index-projet {
-        height: 30vh;
-
-        box-sizing: border-box;
-        margin: 10px;
-
-        position: relative;
-        border-radius: 10px;
-
-        overflow: hidden;
-    }
-
-    /* -- partie de gauche: image -- */
-    .index-projet-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    .index-projet-image img {
-        object-fit: cover;
-        filter: brightness(0.8);
-        width: 100%;
-        height: 100%;
-    }
-
-    /* -- partie de droite: description -- */
-    .index-projet-description {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    .index-projet-description-contenu {
-        z-index: 2;
-        box-sizing: border-box;
-        width: 100%;
-        height: 100%;
-        padding: 15px;
-        color: white;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end; /* Aligner les éléments au bas sur l'axe principal */
-        align-items: flex-start;
-    }
-
-    .voir-plus {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 3;
-    }
-
-    .voir-plus p {
-        width: 100%;
-        height: 100%;
-        visibility: hidden;
-    }
-
-    /* titre */
-    .index-projet-description h1 {
-        margin: 5px 0 0 20px;
-        font-family: "Anton", sans-serif;
-        font-weight: 400;
-        font-size: 3em;
-        margin: 0;
-    }
-
-    /* tags */
-    .index-projet-description-tags {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
-
-    .index-projet-description-tags p {
-        margin: 10px 20px 10px 0;
-        padding: 3px 10px;
-        font-style: italic;
-        border: 2px solid;
-        border-radius: 15px;
-        white-space: nowrap;
-        font-family: 'Nunito Sans', sans-serif;
-        font-weight: 300;
-    }
-
-    /* textes */
-    .index-projet-description-text {
+    #projets {
         visibility: hidden;
         width: 0;
         height: 0;
-        margin: 0;
+        overflow: hidden;
     }
 }

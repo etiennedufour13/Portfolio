@@ -16,20 +16,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,600;1,6..12,200;1,6..12,300;1,6..12,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <title>Etienne Dufour - Nomades</title>
 </head>
 <body>
+    <!-- ---------------------------------------------------------------- SIDEBAR --- -->
     <div class="sidebar">
-        <a href="index.html#nomades"><img src="Autre/fleche-blanc.png"></a>
-        
-        <a href="index.html#presentation" class="nav nav-presentation">présentation</a>
-        <a href="index.html#nomades" class="nav nav-projets">projets</a>
-        <a href="index.html#contact" class="nav nav-contact">me contacter</a>
+        <a href="index.html#galerie"><img src="Autre/fleche-blanc.png"></a>
+
+        <a href="#presentation" class="nav nav-presentation">présentation</a>
+        <a href="#projets" class="nav nav-projets">projets</a>
+        <a href="#galerie" class="nav nav-galerie">galerie</a>
+        <a href="#contact" class="nav nav-contact">me contacter</a>
     </div>
 
+    <div class="sidebar-mobile intra-projet">
+        <a href="index.html"><img src="Autre/fleche-blanc.png"></a>
+    </div>
+
+    <!-- ---------------------------------------------------------------- CONTENU --- -->
     <div class="baniere-holder">
         <div class="baniere-text">
             <h1>Nomades</h1>
@@ -44,7 +51,7 @@
     <section>
         <div class="project-grid">
             <!-- intro -->
-            <p class="project-grid-item full text only-phone">
+            <p class="project-grid-item full text">
                 Nomades est un jeu hybride réalisé dans le cadre de mon mémoire de DNMADE qui traite de l’association du numérique au
                 tangible dans le contexte des expériences ludiques.<br><br>Dans ce jeu, vous incarnez une tribu nomade du paléolithique. Votre objectif est d’explorer les environnements
                 qui vous entourent, de développer votre groupe en fabricant des objets et de survivre aux différents défis que vous rencontrerez.
@@ -104,6 +111,7 @@
         </div>
     </section>
 
+
     <footer>
         <p><br><br><br><br></p>
     </footer>
@@ -117,13 +125,15 @@
             sidebar.style.left = '0';
             sidebar.style.top = '0';
 
-            // nav
+            // éléments
             var nav1 = document.querySelector('.nav-presentation');
-            nav1.style.margin = '50px 0 50px 0';
+            nav1.style.marginRight = '0';
             var nav2 = document.querySelector('.nav-projets');
-            nav2.style.margin = '50px 0 50px 0';
-            var nav3 = document.querySelector('.nav-contact');
-            nav3.style.margin = '50px 0 50px 0';
+            nav2.style.marginRight = '0';
+            var nav3 = document.querySelector('.nav-galerie');
+            nav3.style.marginRight = '0';
+            var nav4 = document.querySelector('.nav-contact');
+            nav4.style.marginRight = '0';
         });
     </script>
 

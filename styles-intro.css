@@ -36,7 +36,9 @@
 
 .moving-shape-intro {
     position: absolute;
-    width: 45em;
+    width: 50em;
+    height: 40em;
+    margin-bottom: 2.5em;
 }
 
 .bar-activator {
@@ -46,7 +48,6 @@
     width: 2%;
     z-index: 100;
 }
-
 
 /* LOGO DE SCROLL */
 .scroll-down {
@@ -61,11 +62,9 @@
     opacity: 0;
     transition: opacity 2.5s ease-in-out;
 }
-
     .scroll-down img {
         width: 100%;
     }
-
     .scroll-down p {
         white-space: nowrap;
         text-align: center;
@@ -73,5 +72,16 @@
         font-weight: 300;
         font-style: italic;
     }
+
+/* --------------------------------------------------------------------- MOBILE -- */
+@media (max-width: 767px){
+    #introduction {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+
+}
 
 

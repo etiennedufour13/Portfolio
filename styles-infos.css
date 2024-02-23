@@ -10,6 +10,7 @@
         flex-direction: column;
         background-color: white;
         background: linear-gradient(to bottom, white 80%, #F5F5F7 100%);
+
     }
         #presentation video {
             width: 50%;
@@ -63,6 +64,9 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        padding: 0 10px 0 10px;
+        box-sizing: border-box;
+        overflow: hidden;
     }
 
     #presentation video {
@@ -77,5 +81,17 @@
         font-weight: 700;
         font-size: 1.4rem;
         font-style: italic;
+    }
+
+    .infos-moving-image {
+        visibility:hidden;
+        width:0;
+        height:0;
+    }
+
+    .scroll-infos {
+        visibility: hidden;
+        width: 0;
+        height: 0;
     }
 }

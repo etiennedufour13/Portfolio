@@ -59,7 +59,20 @@ footer {
     padding: 0;
 }
 
-/* ---------------------------------------------------------- ordinateur ----- */
-@media (min-width: 768px) {
+/* ---------------------------------------------------------- mobile ----- */
+@media (max-width: 767px) {
+    .titre-de-section {
+        visibility:hidden;
+        height:0;
+        width:0;
+        margin:0;
+    }
 
+    html {
+        width: 100vw;
+    }
+
+    main {
+        
+    }
 }

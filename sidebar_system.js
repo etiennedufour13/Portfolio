@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }, {
-        threshold: 0.5 // La section est considérée comme visible si plus de 50% de celle-ci est visible dans la fenêtre
+        threshold: 0.5 // La section est considérée comme visible si plus de 40% de celle-ci est visible dans la fenêtre
     });
 
     sections.forEach(section => {

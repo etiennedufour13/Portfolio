@@ -4,8 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles -->
     <link rel="stylesheet" href="styles1.css">
     <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles-sidebar.css">
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
@@ -13,19 +16,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,600;1,6..12,200;1,6..12,300;1,6..12,600&display=swap" rel="stylesheet">
-    <title>Etienne Dufour</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>Etienne Dufour - Croquis</title>
 </head>
 <body>
+    <!-- ---------------------------------------------------------------- SIDEBAR --- -->
     <div class="sidebar">
-        <img src="Autre/logo1-white.png">
-        <a href="index.html #infos" class="nav">mes infos</a>
-        <a href="index.html #projets" class="nav">mes projets</a>
+        <a href="index.html#galerie"><img src="Autre/fleche-blanc.png"></a>
+
+        <a href="#presentation" class="nav nav-presentation">présentation</a>
+        <a href="#projets" class="nav nav-projets">projets</a>
+        <a href="#galerie" class="nav nav-galerie">galerie</a>
+        <a href="#contact" class="nav nav-contact">me contacter</a>
     </div>
 
+    <div class="sidebar-mobile intra-projet">
+        <a href="index.html"><img src="Autre/fleche-blanc.png"></a>
+    </div>
+
+    <!-- ---------------------------------------------------------------- CONTENU --- -->
     <div class="baniere-holder">
         <div class="baniere-text">
-            <h1>Carnet de croquis</h1>
+            <h1>Dessin d'observation</h1>
             <div class="baniere-tags">
                 <p class="colored">travail plastique</p>
             </div>
@@ -35,17 +49,16 @@
 
     <section>
         <div class="project-grid">
-
-            <h2 class="project-grid-item full titre"> > Présentation</h2>
+            <!-- croquis -->
+            <h2 class="project-grid-item full titre"> > Carnet de croquis</h2>
 
             <p class="project-grid-item full text">
-                Lors de ma 1ère année de DNMADE, nous avons eu pour devoir de tenir un carnet de croquis d’observation régulier dans le but de nous 
+                Lors de ma 1ère année de DNMADE, nous avons eu pour devoir de tenir un carnet de croquis d’observation régulier dans le but de nous
                 familiariser avec l’expression plastique et nous pousser à étudier les formes qui nous entourent.<br><br>
                 J’ai depuis continué cette pratique, dessinant régulièrement, généralement dans les transports en commun.
             </p>
 
             <div class="image-table project-grid-item full">
-                <!-- Insérez vos balises d'image ici -->
                 <img src="Croquis/image1.jpeg" alt="Image 1" style="height: auto;">
                 <img src="Croquis/image2.jpeg" alt="Image 2" style="height: auto;">
                 <img src="Croquis/image3.jpeg" alt="Image 1" style="height: auto;">
@@ -58,8 +71,38 @@
                 <img src="Croquis/image10.jpeg" alt="Image 1" style="height: auto;">
                 <img src="Croquis/image11.jpeg" alt="Image 1" style="height: auto;">
                 <img src="Croquis/image12.jpeg" alt="Image 1" style="height: auto;">
-                <!-- Ajoutez autant d'images que nécessaire -->
             </div>
+
+            <!-- modèles vivant -->
+            <h2 class="project-grid-item full titre"> > Modèles vivant</h2>
+
+            <p class="project-grid-item full text">
+                En cours de pratique plastique à l’ENSAAMA, j’ai eu l’occasion de pratiquer le dessin de modèle vivant. Cela m’a permis
+                de me familiariser à l’utilisation d’outils tels que le crayon, le bic ou le fusain mais également de mieux comprendre la structure d’un corps humain et comment
+                l’exprimer plastiquement.
+            </p>
+
+            <div class="image-table project-grid-item full">
+                <img src="Modeles/crayon1.jpeg" alt="Image 1" style="height: auto;">
+                <img src="Modeles/crayon2.jpeg" alt="Image 2" style="height: auto;">
+                <img src="Modeles/rouge1.jpeg" alt="Image 1" style="height: auto;">
+                <img src="Modeles/rouge2.jpeg" alt="Image 1" style="height: auto;">
+                <img src="Modeles/fusain1.jpeg" alt="Image 1" style="height: auto;">
+                <img src="Modeles/crayon3.jpeg" alt="Image 3" style="height: auto;">
+                <img src="Modeles/crayon4.jpeg" alt="Image 3" style="height: auto;">
+                <img src="Modeles/fusain2.jpeg" alt="Image 1" style="height: auto;">
+            </div>
+
+            <!-- natures mortes -->
+            <h2 class="project-grid-item full titre"> > Natures Mortes</h2>
+
+            <p class="project-grid-item full text">
+                Nous avons également réalisé plusieurs sessions de natures mortes, parfois l’outil plastique étant imposé parfois l’objectif
+                étant d’explorer différents outils sur un même sujet.
+            </p>
+
+            <div class="project-grid-item deux-tier"><img src="Modeles/coquillage.jpeg"></div>
+            <div class="project-grid-item tier"><img src="Modeles/crane.jpeg"></div>
 
         </div>
     </section>
@@ -77,6 +120,15 @@
             sidebar.style.left = '0';
             sidebar.style.top = '0';
 
+            // éléments
+            var nav1 = document.querySelector('.nav-presentation');
+            nav1.style.marginRight = '0';
+            var nav2 = document.querySelector('.nav-projets');
+            nav2.style.marginRight = '0';
+            var nav3 = document.querySelector('.nav-galerie');
+            nav3.style.marginRight = '0';
+            var nav4 = document.querySelector('.nav-contact');
+            nav4.style.marginRight = '0';
         });
     </script>
 
