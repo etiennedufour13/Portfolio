@@ -9,7 +9,7 @@
     justify-content: start;
     overflow: hidden;
     background-color: white;
-    background: linear-gradient(to bottom, white 80%, #F5F5F7 100%);
+    background: url(noise1.svg), linear-gradient(to bottom, white 80%, var(--gris-clair) 100%);
 }
 
 .grille-galerie {

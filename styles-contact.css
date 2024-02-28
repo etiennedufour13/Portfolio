@@ -7,7 +7,7 @@
     align-items: center;
     flex-direction: column;
     background-color: #F5F5F7;
-    background: linear-gradient(to bottom, var(--gris-tres-clair) 0%, #e2e9f2 100%);
+    background: url(noise1.svg), linear-gradient(to bottom, var(--gris-clair) 0%, #e2e9f2 100%);
 }
 
 .contact-text {
