@@ -2,14 +2,24 @@
 #galerie {
     width: 100%;
     min-height: 100vh;
-    padding-bottom: 20vh;
+    padding-bottom: 2vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
     overflow: hidden;
+    position: relative;
+}
+
+.galerie-background {
+    position: absolute;
+    z-index: -100;
+    width: 100%;
+    height: 100%;
+    background-blend-mode: multiply;
     background-color: white;
-    background: url(noise1.svg), linear-gradient(to bottom, white 80%, var(--gris-clair) 100%);
+    background: url(noise1.svg), linear-gradient(to bottom, white 80%, var(--gris-tres-clair) 100%);
+    filter: brightness(1.2);
 }
 
 .grille-galerie {
@@ -18,8 +28,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    background: linear-gradient(to bottom, #F5F5F7 0%, white 70%);
-    border-radius: 5px;
+    background: linear-gradient(to bottom, #F5F5F7 0%, rgb(0, 0, 0, 0) 70%);
     position: relative;
 }
 
@@ -46,20 +55,20 @@
         background-color: none;
         z-index: 2;
         margin: 10px;
-        font-family: "Anton", sans-serif;
+        font-family: "Bebas Neue", sans-serif;
         font-weight: 400;
         font-size: 2.2em;
         color: white;
     }
 
 .vide {
-    position:absolute;
-    width:0%;
-    height:0%;
+    position: absolute;
+    width: 0%;
+    height: 0%;
     grid-column: span 3;
     text-align: center;
     margin-top: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 1.4rem;
     color: var(--gris-clair);
@@ -87,7 +96,7 @@
 
 .filtres-text {
     font-style: italic;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 300;
     margin: 0;
 }
@@ -178,6 +187,10 @@
         padding: 0 10px 0 10px;
         box-sizing: border-box;
         overflow: hidden;
+    }
+
+    .galerie-background {
+        visibility: hidden;
     }
 
     .galerie-filtres {

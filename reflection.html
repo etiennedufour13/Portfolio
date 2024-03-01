@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <title>Etienne Dufour - Pious in the cages</title>
+    <title>Etienne Dufour - Reflection</title>
 </head>
 <body>
     <!-- ---------------------------------------------------------------- SIDEBAR --- -->
@@ -34,22 +34,21 @@
     <!-- ---------------------------------------------------------------- CONTENU --- -->
     <div class="baniere-holder">
         <div class="baniere-text">
-            <h1>Pious in the cages</h1>
+            <h1>Reflection game</h1>
             <div class="baniere-tags">
                 <a href="index.html#galerie"><p class="game-design-tag pas-filter">game design</p></a>
+                <a href="index.html#galerie"><p class="modelisation-tag pas-filter">modélisation</p></a>
                 <a href="index.html#galerie"><p class="unity-tag pas-filter">unity</p></a>
-                <a href="index.html#galerie"><p class="travail-audio-tag pas-filter">travail audio</p></a>
             </div>
         </div>
-        <img class="baniere" src="Pious/baniere.jpg">
+        <img src="Reflection/baniere.jpg">
     </div>
 
     <section>
         <div class="project-grid">
             <!-- intro -->
             <p class="project-grid-item full text">
-                À l'occasion de la "Mini Jame Gam #6"*, j'ai conçu et réalisé en équipe un platformer d'action en 48h: Pious in the Cages.
-                Le thème "Out of time" ainsi que l'objet "Key" étaient contraints.
+                Réalisé en équipe de 2 lors d’une game jam* de 48h, “the reflection game” est un petit puzzle game.
             </p>
 
             <p class="project-grid-item full text-alternatif">
@@ -57,49 +56,57 @@
                 pour défis de concevoir et réaliser un jeu, généralement avec un sujet ou des contraintes communes.
             </p>
 
-            <p class="project-grid-item full text">
-                Je me suis associé à <a href="https://fr.linkedin.com/in/claraboussard">Clara Boussard</a> qui
-                s’est occupé des graphismes. Je me suis occupé de penser le jeu, le développer sur Unity et de réaliser du son adaptatif.
-            </p>
+            <div class="project-grid-item video full"><video controls autoplay muted src="Reflection/video2.mp4"></video></div>
 
-            <div class="project-grid-item video full"><video controls autoplay muted src="Pious/video.mp4"></video></div>
+            <!-- partie1 -->
+            <div class="project-grid-item titre"><div class="line"></div><h2>La thématique: “Reflection”</h2></div>
+
+            <p class="project-grid-item full text">
+                Nous avons décider de mettre en avant la polyvalence du terme "reflection" en anglais, qui peut s'appliquer
+                à la fois à des concepts physiques et abstraits.
+                <br><br>
+                - Réflexion physique: la réflexion d'une onde, telle que la lumière ou le son, se produit lorsqu'elle rebondit
+                sur une surface sans pénétrer dans le matériau.<br>
+                - Réflexion mentale: la pensée profonde, la résolution de puzzles.<br>
+                - L’image miroir: deux visions parallèles, comparable de pars leur opposition.
+            </p>
 
             <!-- partie2 -->
-            <div class="project-grid-item titre"><div class="line"></div><h2>Le gameplay</h2></div>
+            <div class="project-grid-item titre"><div class="line"></div><h2>La création des assets</h2></div>
 
-            <div class="project-grid-item tier"><img src="Pious/cages.gif"></div>
-
-            <p class="project-grid-item deux-tier text">
-                Il y a dans chaque niveau trois clés permettant d'ouvrir trois cages, chacune représentée par une couleur. Le niveau est
-                composé avec des blocs d'un tileset. Il y a également des plateformes traversables par le joueur du bas vers le haut et des pics. Si le joueur en touche, celui-ci est
-                sonné et reste immobile un court instant, laissant le niveau de l'eau augmenter.
+            <p class="project-grid-item full text">
+                Me chargeant avant tout de la conception des mécaniques et du développement, mon coéquipier à réalisé la majorité
+                des assets 3D. Je l’ai assisté en produisant des concepts art, et modélisant des éléments de décors.<br>
+                Le joueur pouvant naviguer dans deux environnements parallèles, les assets on été adaptés ou modifiés pour le monde miroir.
             </p>
 
-            <p class="project-grid-item deux-tier text">
-                Après avoir récupéré les trois cages, il doit atteindre le drapeau d'arrivée.
-                Si certaines cages n'ont pas été ouvertes, le joueur échoue et doit recommencer.
-            </p>
-
-            <div class="project-grid-item tier"><img src="Pious/drapeau.gif"></div>
+            <div class="project-grid-item demi"><img src="Reflection/modelisation.gif"></div>
+            <div class="project-grid-item demi"><img src="Reflection/screen-objets.png"></div>
 
             <!-- partie3 -->
-            <div class="project-grid-item titre"><div class="line"></div><h2>Le sound design</h2></div>
+            <div class="project-grid-item titre"><div class="line"></div><h2>Les mécaniques de jeu</h2></div>
 
             <p class="project-grid-item full text">
-                J'ai apporté une attention particulière au son dans ce projet afin de mieux immerger le joueur dans l'ambiance et le rythme du jeu.<br><br>Dès
-                le menu principal, le thème musical se lance. Il est accordé avec les mouvements de l'image.
+                J’ai conçu et développé dans unity différentes mécaniques qui permettent d’alimenter des puzzles.
             </p>
-
-            <div class="project-grid-item demi"><img src="Pious/menu.jpg"></div>
-
-            <div class="project-grid-item demi"><img src="Pious/water.gif"></div>
 
             <p class="project-grid-item full text">
-                Dans le niveau, chaque interaction produit des bruitages (bruit de pas lors des
-                déplacements, récupération des clés, ouverture des cages...). À chaque début de niveau, un thème musical est joué suivi d'une musique plus ambiante. La musique est adaptative.
-                Pour amplifier l'impression de danger lorsque le niveau de l'eau se rapproche du joueur, des percussions plus énergiques sont ajoutées à la musique du niveau.
+                - Les deux univers sont légèrement différents :
             </p>
 
+            <div class="project-grid-item demi"><img src="Reflection/mecanique1.gif"></div>
+
+            <p class="project-grid-item full text">
+                - En tirant sur les balises, le joueur peut déclencher des ponts :
+            </p>
+
+            <div class="project-grid-item demi"><img src="Reflection/mecanique2.gif"></div>
+
+            <p class="project-grid-item full text">
+                - Les miroirs permettent de faire rebondir les flèches (uniquement dans le monde miroir) :
+            </p>
+
+            <div class="project-grid-item demi"><img src="Reflection/mecanique3.gif"></div>
         </div>
     </section>
 

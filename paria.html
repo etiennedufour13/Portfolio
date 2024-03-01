@@ -8,17 +8,12 @@
     <link rel="stylesheet" href="styles1.css">
     <link rel="stylesheet" href="styles2.css">
     <link rel="stylesheet" href="styles-sidebar.css">
+    <link rel="stylesheet" href="styles-galerie.css">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Etienne Dufour - Jeu du paria</title>
 </head>
 <body>
@@ -41,8 +36,8 @@
         <div class="baniere-text">
             <h1>Le jeu du Paria</h1>
             <div class="baniere-tags">
-                <p class="colored">game design</p>
-                <p class="colored">game art</p>
+                <a href="index.html#galerie"><p class="game-design-tag pas-filter">game design</p></a>
+                <a href="index.html#galerie"><p class="travail-plastique-tag pas-filter">travail plastique</p></a>
             </div>
         </div>
         <img class="baniere" src="Paria/baniere.png">
@@ -50,9 +45,7 @@
 
     <section>
         <div class="project-grid">
-            <!-- --- -->
-            <h2 class="project-grid-item full titre"> > Présentation du projet</h2>
-
+            <!-- intro -->
             <p class="project-grid-item trois-quart text">
                 Pour ma candidature au CNAM ENJMIN en 2022, j’ai eu à concevoir un jeu centré sur le principe de conformisme social.
                 J’ai donc entièrement conçu un “party game”, pensé pour être joué avec un smartphone, et j’ai rédigé son Game Design Document.
@@ -60,8 +53,8 @@
 
             <a class="project-grid-item quart" href="Paria/GDD-Jeu_du_paria.pdf" target="_blank" download><img src="Paria/pageDePDF.png"></a>
 
-            <!-- --- -->
-            <h2 class="project-grid-item full titre"> > La thématique: le conformisme social</h2>
+            <!-- partie1 -->
+            <div class="project-grid-item titre"><div class="line"></div><h2>La thématique: le conformisme social</h2></div>
 
             <p class="project-grid-item demi text">
                 La vidéo de référence met en scène l’expérience de Asch, mettant en évidence le concept psychosociologique du conformisme
@@ -72,8 +65,8 @@
 
             <div class="project-grid-item demi "><video controls autoplay muted src="Paria/video.mp4"></video></div>
 
-            <!-- --- -->
-            <h2 class="project-grid-item full titre"> > Concept du jeu</h2>
+            <!-- partie2 -->
+            <div class="project-grid-item titre"><div class="line"></div><h2>Concept du jeu</h2></div>
 
             <p class="project-grid-item full text">
                 Le “jeu du paria” est un jeu d’ambiance pour support mobile comparable aux applications. Cette expérience ludique met au défi
@@ -94,8 +87,8 @@
                 gameplay dans le GDD. N’hésitez pas à le consulter!
             </p>
 
-            <!-- --- -->
-            <h2 class="project-grid-item full titre"> > L’univers visuel</h2>
+            <!-- partie3 -->
+            <div class="project-grid-item titre"><div class="line"></div><h2>L'univers visuel</h2></div>
 
             <p class="project-grid-item full text">
                 Le jeu du paria met en évidence une mécanique sociale profonde avec humour et légèreté. L’univers du jeu se veut jovial, absurde,
@@ -112,9 +105,16 @@
         </div>
     </section>
 
+    <!-- ---------------------------------------------------------------- BG --- -->
+    <div class="into-projet-bg"></div>
+
     <footer>
         <p><br><br><br><br></p>
     </footer>
+
+
+    <!-- JS -->
+    <script src="galerie_system.js"></script>
 
 
     <!-- JS -->

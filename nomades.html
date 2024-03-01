@@ -8,17 +8,12 @@
     <link rel="stylesheet" href="styles1.css">
     <link rel="stylesheet" href="styles2.css">
     <link rel="stylesheet" href="styles-sidebar.css">
+    <link rel="stylesheet" href="styles-galerie.css">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Etienne Dufour - Nomades</title>
 </head>
 <body>
@@ -58,7 +53,7 @@
             </p>
 
             <!-- partie1 -->
-            <h2 class="project-grid-item titre"> > Un projet de mon mémoire</h2>
+            <div class="project-grid-item titre"><div class="line"></div><h2>Un projet de mon mémoire</h2></div>
 
             <p class="project-grid-item trois-quart text">
                 Nomades est un jeu hybride réalisé dans le cadre de mon mémoire de DNMADE qui traite de l’association du numérique au
@@ -68,10 +63,10 @@
 
             <a class="project-grid-item quart" href="Generation/Memoire_Jeux_Hybrides.pdf" target="_blank" download style="grid-column: span 3;"><img src="Generation/memoire.png"></a>
 
-            <div class="project-grid-item full"><video controls autoplay muted src="Nomades/video1.mp4"></video></div>
+            <div class="project-grid-item video full"><video controls autoplay muted src="Nomades/video1.mp4"></video></div>
 
             <!-- partie2 -->
-            <h2 class="project-grid-item full titre"> > Associer le numérique au tangible</h2>
+            <div class="project-grid-item titre"><div class="line"></div><h2>Associer le numérique au tangible</h2></div>
 
             <p class="project-grid-item full">
                 J’ai développé une application qui s’intègre dans le gameplay en faisant office de guide narratif. Les différentes étapes de jeu et
@@ -86,7 +81,7 @@
             </p>
 
             <!-- partie3 -->
-            <h2 class="project-grid-item full titre"> > La liberté du joueur</h2>
+            <div class="project-grid-item titre"><div class="line"></div><h2>La liberté du joueur</h2></div>
 
             <p class="project-grid-item full text">
                 Afin de renforcer le sentiment de liberté provoqué par le jeu et de pousser le joueur à s’approprier le matériel, j’ai pris le parti de ne pas
@@ -98,7 +93,7 @@
             <div class="project-grid-item tier"><img src="Nomades/jeu3.jpg"></div>
 
             <!-- partie4 -->
-            <h2 class="project-grid-item full titre"> > L’esthétique</h2>
+            <div class="project-grid-item titre"><div class="line"></div><h2>L’esthétique</h2></div>
 
             <p class="project-grid-item deux-tier text">
                 Le matériel tangible étant central dans mon expérience, j’ai conçu une esthétique mettant en avant des textures naturelles.<br><br>Pour limiter
@@ -111,11 +106,16 @@
         </div>
     </section>
 
+    <!-- ---------------------------------------------------------------- BG --- -->
+    <div class="into-projet-bg"></div>
 
     <footer>
         <p><br><br><br><br></p>
     </footer>
 
+
+    <!-- JS -->
+    <script src="galerie_system.js"></script>
 
     <!-- JS -->
     <script>

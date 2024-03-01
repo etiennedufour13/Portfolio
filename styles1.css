@@ -8,8 +8,10 @@ html {
 body {
     /* palette de couleur */
     --presque-noir: #242326;
-    --gris-tres-clair: #F5F5F7;
+    --presque-noir-clair: #777777;
+    --gris-tres-clair: #EAEAEA;
     --gris-clair: #E1DCE3;
+    --bleu-gris: #cddae0;
     --white: white;
     --red-1: #f35c48;
     --red-2: #cb697c;
@@ -39,7 +41,7 @@ a {
 .titre-de-section {
     padding: 0 0 3vh 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 2.5em;
     font-style: italic;

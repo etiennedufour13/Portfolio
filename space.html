@@ -8,17 +8,12 @@
     <link rel="stylesheet" href="styles1.css">
     <link rel="stylesheet" href="styles2.css">
     <link rel="stylesheet" href="styles-sidebar.css">
+    <link rel="stylesheet" href="styles-galerie.css">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Etienne Dufour - Makey makey</title>
 </head>
 <body>
@@ -52,19 +47,18 @@
         <div class="project-grid">
 
             <!-- --- -->
-            <h2 class="project-grid-item full titre"> > Une expérience utilisant des contrôleurs alternatifs</h2>
-
             <a class="project-grid-item quart" href="https://makeymakey.com/" target="_blank" download><img src="Space/makey.jpg"></a>
 
             <p class="project-grid-item trois-quart text">
-                Dans le cadre d’un workshop à l’ensaama, j’ai été amené à manipuler des cartes makey makey. En équipe, j’ai réalisé une expérience ludique multijoueur.
+                Dans le cadre d’un workshop à l’ensaama, j’ai été amené à manipuler des cartes makey makey, dans le but de créer des contrôles alternatifs.
+                En équipe, j’ai réalisé une expérience ludique multijoueur.
                 Je me suis chargé de concevoir les mécaniques de jeu et de le développer sur Unity. Iris, ma coéquipière, s’est chargée de l’esthétique.
             </p>
 
-            <div class="project-grid-item full"><video controls autoplay muted src="Space/video.mp4"></video></div>s
+            <div class="project-grid-item video full"><video controls autoplay muted src="Space/video.mp4"></video></div>
 
             <!-- --- -->
-            <h2 class="project-grid-item full titre"> > Le gameplay du jeu</h2>
+            <div class="project-grid-item titre"><div class="line"></div><h2>Le gameplay du jeu</h2></div>
 
             <p class="project-grid-item demi deux-tier">
                 Les participants doivent contrôler collectivement un vaisseau spatial et éviter des météors qui traversent l’écran.<br><br>Branché à l’ordinateur, la
@@ -83,9 +77,16 @@
         </div>
     </section>
 
+    <!-- ---------------------------------------------------------------- BG --- -->
+    <div class="into-projet-bg"></div>
+
     <footer>
         <p><br><br><br><br></p>
     </footer>
+
+
+    <!-- JS -->
+    <script src="galerie_system.js"></script>
 
     <!-- JS -->
     <script>

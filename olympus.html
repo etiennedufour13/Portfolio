@@ -8,17 +8,12 @@
     <link rel="stylesheet" href="styles1.css">
     <link rel="stylesheet" href="styles2.css">
     <link rel="stylesheet" href="styles-sidebar.css">
+    <link rel="stylesheet" href="styles-galerie.css">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Etienne Dufour - Olympus Race</title>
 </head>
 <body>
@@ -41,10 +36,10 @@
         <div class="baniere-text">
             <h1>Olympus Race</h1>
             <div class="baniere-tags">
-                <p class="colored">game design</p>
-                <p class="colored">développement</p>
-                <p class="colored">game art</p>
-                <p class="colored">son</p>
+                <a href="index.html#galerie"><p class="game-design-tag pas-filter">game design</p></a>
+                <a href="index.html#galerie"><p class="unity-tag pas-filter">unity</p></a>
+                <a href="index.html#galerie"><p class="modelisation-tag pas-filter">modelisation</p></a>
+                <a href="index.html#galerie"><p class="travail-audio-tag pas-filter">travail audio</p></a>
             </div>
         </div>
         <img class="baniere" src="Olympus/baniere2.jpg">
@@ -62,7 +57,7 @@
             <div class="project-grid-item full"><img src="Olympus/vrandco.jpg"></div>
 
             <!-- partie2 -->
-            <h2 class="project-grid-item full titre"> > L’organisation du travail</h2>
+            <div class="project-grid-item titre"><div class="line"></div><h2>L’organisation du travail</h2></div>
 
             <p class="project-grid-item demi deux-tier">
                 Nous étions 3 à travailler sur ce jeu:<br>
@@ -74,17 +69,17 @@
             <div class="project-grid-item tier image"><img src="Olympus/equipe1.jpg"></div>
 
             <!-- partie3 -->
-            <h2 class="project-grid-item full titre"> > Description du jeu</h2>
+            <div class="project-grid-item titre"><div class="line"></div><h2>Description du jeu</h2></div>
 
             <p class="project-grid-item full text">
                 Olympus Race est un jeu dans un univers mélangeant la Grèce antique et le cyberpunk. En solo ou en compétition, les joueurs doivent frapper des
                 cibles sur le rythme de la musique afin de faire avancer leur char de course. Plus leur timing est bon, plus ils iront vite.
             </p>
 
-            <div class="project-grid-item full "><video controls autoplay muted src="Olympus/video1.mp4"></video></div>
+            <div class="project-grid-item video full"><video controls autoplay muted src="Olympus/video1.mp4"></video></div>
 
             <!-- partie4 -->
-            <h2 class="project-grid-item full titre"> > La communauté</h2>
+            <div class="project-grid-item titre"><div class="line"></div><h2>La communauté</h2></div>
 
             <p class="project-grid-item full text">Je me suis chargé de partager nos avancées sur les réseaux sociaux. Nous avons ainsi fait participer notre communauté dans le choix des design de char.</p>
 
@@ -96,10 +91,16 @@
         </div>
     </section>
 
+    <!-- ---------------------------------------------------------------- BG --- -->
+    <div class="into-projet-bg"></div>
+
     <footer>
         <p><br><br><br><br></p>
     </footer>
 
+
+    <!-- JS -->
+    <script src="galerie_system.js"></script>
 
     <!-- JS -->
     <script>

@@ -8,10 +8,22 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        background-color: #F5F5F7;
-        padding-bottom: 10vh;
-        background: url(noise1.svg), linear-gradient(to bottom, var(--gris-clair) 80%, white 100%);
         position: relative;
+    }
+
+    .projets-background {
+        position: absolute;
+        z-index: -100;
+        width: 100%;
+        height: 100%;
+        background-blend-mode: multiply;
+        background-color: white;
+        background: url(noise1.svg), linear-gradient(to bottom, var(--gris-tres-clair) 80%, white 100%);
+        filter: brightness(1.2);
+    }
+
+    .projets-marge{
+        height:10vh;
     }
 
     .index-projet {
@@ -68,7 +80,7 @@
     .voir-plus {
         margin: 0 2% 0 2%;
         align-self: flex-end;
-        font-family: 'Poppins', sans-serif;
+        font-family: "Roboto", sans-serif;
         font-weight: 700;
         font-size: 1.4rem;
         font-style: italic;
@@ -81,13 +93,12 @@
 
     /* titre */
     .index-projet-description h1 {
-
         z-index: 10;
-        font-family: "Anton", sans-serif;
+        font-family: "Bebas Neue", sans-serif;
         font-weight: 400;
         font-size: 2.5em;
         font-style: normal;
-        margin: 0;
+        margin: 2% 0 0 0;
         padding: 0;
     }
 
@@ -99,21 +110,20 @@
         justify-content: flex-start;
         flex-wrap: wrap;
     }
-
-    .index-projet-description-tags p {
-        margin: 10px 20px 10px 0;
-        padding: 3px 10px;
-        font-style: italic;
-        border: 2px solid;
-        border-radius: 15px;
-        white-space: nowrap;
-        font-family: 'Nunito Sans', sans-serif;
-        font-weight: 400;
-    }
+        .index-projet-description-tags p {
+            margin: 10px 20px 10px 0;
+            padding: 3px 10px;
+            font-style: italic;
+            border: 2px solid;
+            border-radius: 15px;
+            white-space: nowrap;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+        }
 
     /* textes */
     .index-projet-description-text {
-        font-family: 'Nunito Sans', sans-serif;
+        font-family: "Roboto", sans-serif;
         font-weight: 400;
         text-align: justify;
         margin: 0;

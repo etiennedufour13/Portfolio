@@ -4,18 +4,17 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles -->
     <link rel="stylesheet" href="styles1.css">
     <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles-sidebar.css">
+    <link rel="stylesheet" href="styles-galerie.css">
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,600;1,6..12,200;1,6..12,300;1,6..12,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
-    <title>Etienne Dufour - Nomades</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Etienne Dufour - Concave</title>
 </head>
 <body>
     <div class="sidebar">
@@ -28,7 +27,8 @@
         <div class="baniere-text">
             <h1>Concave convexe</h1>
             <div class="baniere-tags">
-                <p class="colored">développement</p>
+                <a href="index.html#galerie"><p class="unity-tag pas-filter">unity</p></a>
+                <a href="index.html#galerie"><p class="modelisation-tag pas-filter">modélisation</p></a>
             </div>
         </div>
         <img class="baniere" src="Concave/baniere.png">
@@ -36,17 +36,15 @@
 
     <section>
         <div class="project-grid">
-            <!-- --- -->
-            <h2 class="project-grid-item titre"> > Présentation du projet</h2>
-
+            <!-- intro -->
             <p class="project-grid-item full text">
                 Dans le cadre d’un cours d’étude du numérique, nous avons étudié les enjeux de la VR. La demande à été de réaliser deux espaces, pouvant être
                 visionnés dans des casques de réalité virtuelle.<br><br>Les notions de concave et convexe, arrondis vers l’intérieur ou vers l’extérieur sont
                 des notions subtiles qui poussent analyser le ressenti des utilisateurs face à un environnement composé.
             </p>
 
-            <!-- --- -->
-            <h2 class="project-grid-item full titre"> > Espace convexe</h2>
+            <!-- partie2 -->
+            <div class="project-grid-item titre"><div class="line"></div><h2>Espace convexe</h2></div>
 
             <div class="project-grid-item demi"><img src="Concave/convexe.gif"></div>
 
@@ -56,8 +54,8 @@
 
             <div class="project-grid-item demi"><img src="Concave/convexe1.png"></div>
 
-            <!-- --- -->
-            <h2 class="project-grid-item full titre"> > Espace concave</h2>
+            <!-- partie3 -->
+            <div class="project-grid-item titre"><div class="line"></div><h2>Espace concave</h2></div>
 
             <div class="project-grid-item demi"><img src="Concave/concave.gif"></div>
 
@@ -70,9 +68,16 @@
         </div>
     </section>
 
+    <!-- ---------------------------------------------------------------- BG --- -->
+    <div class="into-projet-bg"></div>
+
     <footer>
         <p><br><br><br><br></p>
     </footer>
+
+
+    <!-- JS -->
+    <script src="galerie_system.js"></script>
 
 
     <!-- JS -->
