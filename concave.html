@@ -14,57 +14,62 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <title>Etienne Dufour - Concave</title>
+    <title>Etienne Dufour - Reflection</title>
 </head>
 <body>
+    <!-- ---------------------------------------------------------------- SIDEBAR --- -->
     <div class="sidebar">
-        <img src="Autre/logo1-white.png">
-        <a href="index.html #infos" class="nav">mes infos</a>
-        <a href="index.html #projets" class="nav">mes projets</a>
+        <a href="index.html#galerie"><img src="Autre/fleche-blanc.png"></a>
+
+        <a href="index.html#presentation" class="nav nav-presentation">présentation</a>
+        <a href="index.html#projets" class="nav nav-projets">projets</a>
+        <a href="index.html#galerie" class="nav nav-galerie">galerie</a>
+        <a href="index.html#contact" class="nav nav-contact">me contacter</a>
     </div>
 
+    <div class="sidebar-mobile intra-projet">
+        <a href="index.html#galerie"><img src="Autre/fleche-blanc.png"></a>
+    </div>
+
+    <!-- ---------------------------------------------------------------- CONTENU --- -->
     <div class="baniere-holder">
         <div class="baniere-text">
             <h1>Concave convexe</h1>
             <div class="baniere-tags">
                 <a href="index.html#galerie"><p class="unity-tag pas-filter">unity</p></a>
-                <a href="index.html#galerie"><p class="modelisation-tag pas-filter">modélisation</p></a>
             </div>
         </div>
-        <img class="baniere" src="Concave/baniere.png">
+        <img src="Concave/baniere.png">
     </div>
 
     <section>
         <div class="project-grid">
             <!-- intro -->
             <p class="project-grid-item full text">
-                Dans le cadre d’un cours d’étude du numérique, nous avons étudié les enjeux de la VR. La demande à été de réaliser deux espaces, pouvant être
-                visionnés dans des casques de réalité virtuelle.<br><br>Les notions de concave et convexe, arrondis vers l’intérieur ou vers l’extérieur sont
-                des notions subtiles qui poussent analyser le ressenti des utilisateurs face à un environnement composé.
+                Dans le cadre d’un cours d’étude du numérique, nous avons étudié les enjeux de la VR. La demande à été de réaliser
+                deux espaces, pouvant être visionnés dans des casques de réalité virtuelle.
+                <br><br>
+                Les notions de concave et convexe, arrondis vers l’intérieur ou vers l’extérieur sont des notions subtiles qui
+                poussent analyser le ressenti des utilisateurs face à un environnement composé.
             </p>
 
-            <!-- partie2 -->
+            <!-- partie1 -->
             <div class="project-grid-item titre"><div class="line"></div><h2>Espace convexe</h2></div>
 
-            <div class="project-grid-item demi"><img src="Concave/convexe.gif"></div>
+            <div class="project-grid-item full"><img src="Concave/convexe.gif"></div>
 
-            <div class="project-grid-item demi"><img src="Concave/convexe2.png"></div>
+            <div class="project-grid-item tier"><img src="Concave/convexe1.png"></div>
+            <div class="project-grid-item tier"><img src="Concave/convexe2.png"></div>
+            <div class="project-grid-item tier"><img src="Concave/convexe3.png"></div>
 
-            <div class="project-grid-item demi"><img src="Concave/convexe3.png"></div>
-
-            <div class="project-grid-item demi"><img src="Concave/convexe1.png"></div>
-
-            <!-- partie3 -->
+            <!-- partie2 -->
             <div class="project-grid-item titre"><div class="line"></div><h2>Espace concave</h2></div>
 
-            <div class="project-grid-item demi"><img src="Concave/concave.gif"></div>
+            <div class="project-grid-item full"><img src="Concave/concave.gif"></div>
 
-            <div class="project-grid-item demi"><img src="Concave/concave1.png"></div>
-
-            <div class="project-grid-item demi"><img src="Concave/concave2.png"></div>
-
-            <div class="project-grid-item demi"><img src="Concave/concave3.png"></div>
-
+            <div class="project-grid-item tier"><img src="Concave/concave1.png"></div>
+            <div class="project-grid-item tier"><img src="Concave/concave2.png"></div>
+            <div class="project-grid-item tier"><img src="Concave/concave3.png"></div>
         </div>
     </section>
 
@@ -79,7 +84,6 @@
     <!-- JS -->
     <script src="galerie_system.js"></script>
 
-
     <!-- JS -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -88,6 +92,15 @@
             sidebar.style.left = '0';
             sidebar.style.top = '0';
 
+            // éléments
+            var nav1 = document.querySelector('.nav-presentation');
+            nav1.style.marginRight = '0';
+            var nav2 = document.querySelector('.nav-projets');
+            nav2.style.marginRight = '0';
+            var nav3 = document.querySelector('.nav-galerie');
+            nav3.style.marginRight = '0';
+            var nav4 = document.querySelector('.nav-contact');
+            nav4.style.marginRight = '0';
         });
     </script>
 

@@ -16,7 +16,7 @@
     height: 100%;
     background-blend-mode: multiply;
     background-color: #F5F5F7;
-    background: url(noise1.svg), linear-gradient(to bottom, var(--gris-tres-clair) 0%, var(--bleu-gris) 100%);
+    background: url(noise1.svg), linear-gradient(to bottom, white 0%, var(--bleu-gris) 100%);
     filter: brightness(1.2);
 }
 
