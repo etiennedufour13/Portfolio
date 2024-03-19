@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles -->
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles-sidebar.css">
+    <link rel="stylesheet" href="styles-galerie.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Etienne Dufour - Secte des chapeaux</title>
+</head>
+<body>
+    <!-- ---------------------------------------------------------------- SIDEBAR --- -->
+    <div class="sidebar">
+        <a href="index.html#galerie"><img src="Autre/fleche-blanc.png"></a>
+
+        <a href="#presentation" class="nav nav-presentation">présentation</a>
+        <a href="#projets" class="nav nav-projets">projets</a>
+        <a href="#galerie" class="nav nav-galerie">galerie</a>
+        <a href="#contact" class="nav nav-contact">me contacter</a>
+    </div>
+
+    <div class="sidebar-mobile intra-projet">
+        <a href="index.html"><img src="Autre/fleche-blanc.png"></a>
+    </div>
+
+    <!-- ---------------------------------------------------------------- CONTENU --- -->
+    <div class="baniere-holder">
+        <div class="baniere-text">
+            <h1>Secte des chapeaux</h1>
+            <div class="baniere-tags">
+                <p class="colored">game design</p>
+                <p class="colored">unity</p>
+            </div>
+        </div>
+        <img class="baniere" src="Secte/baniere.png">
+    </div>
+
+    <section>
+        <div class="project-grid">
+            <!-- intro -->
+            <p class="project-grid-item full text">
+                La secte du chapeau est un point and click narratif (encore en cours de réalisation). Dans cet univers sarcastique,
+                vous incarnez un employé de bureau déprimé qui décide de rejoindre une secte pour redonner du piquant à sa vie.
+            </p>
+
+            <div class="project-grid-item video full"><video controls autoplay muted src="Secte/video.mp4"></video></div>
+
+            <!-- partie1 -->
+            <div class="project-grid-item titre"><div class="line"></div><h2>Le gameplay</h2></div>
+
+            <p class="project-grid-item full text">
+                Le cœur du gameplay consiste à interagir avec l’environnement et dialoguer avec les PNJ. Le joueur à pour objectif de
+                monter de grade dans la secte en réalisant ses missions tout en évitant se faire virer par son patron.
+            </p>
+
+            <div class="project-grid-item tier"><img src="Secte/porte.jpg"></div>
+            <div class="project-grid-item deux-tier"><img src="Secte/dialogue1.png"></div>
+
+            <!-- partie2 -->
+            <div class="project-grid-item titre"><div class="line"></div><h2>Les visuels</h2></div>
+
+            <p class="project-grid-item full">
+                Réalisés principalement par mes deux coéquipières, les visuels sont un mix de génération par IA et de dessin numérique.
+                Essentiel pour l’immersion, nous avons essayé de retranscrire une ambiance lugubre et intrigante.
+            </p>
+
+            <div class="project-grid-item demi"><img src="Secte/open-space.png"></div>
+            <div class="project-grid-item demi"><img src="Secte/entree.png"></div>
+
+            <!-- partie3 -->
+            <div class="project-grid-item titre"><div class="line"></div><h2>Dialoguer avec les PNJ</h2></div>
+
+            <p class="project-grid-item full text">
+                Un gros travail à été fait sur l’écriture et la cohérence des dialogues. En discutant avec un personnage, le joueur
+                obtient des indices, des objets et fait avancer la narration.
+            </p>
+
+            <div class="project-grid-item full"><img src="Secte/dialogue2.png"></div>
+
+        </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------- BG --- -->
+    <div class="into-projet-bg"></div>
+
+    <footer>
+        <p><br><br><br><br></p>
+    </footer>
+
+
+    <!-- JS -->
+    <script src="galerie_system.js"></script>
+
+    <!-- JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // barre
+            var sidebar = document.querySelector('.sidebar');
+            sidebar.style.left = '0';
+            sidebar.style.top = '0';
+
+            // éléments
+            var nav1 = document.querySelector('.nav-presentation');
+            nav1.style.marginRight = '0';
+            var nav2 = document.querySelector('.nav-projets');
+            nav2.style.marginRight = '0';
+            var nav3 = document.querySelector('.nav-galerie');
+            nav3.style.marginRight = '0';
+            var nav4 = document.querySelector('.nav-contact');
+            nav4.style.marginRight = '0';
+        });
+    </script>
+
+</body>
+</html>
