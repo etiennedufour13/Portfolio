@@ -1,13 +1,18 @@
 
+//bool de si un type de projet est affiché dans la galerie
 var gameDesign = false;
 var unity = false;
 var web = false;
 var travailPlastique = false;
 var travailAudio = false;
 var modelisation = false;
+
+//section de la galerie (pour y scroller dans la page automatiquement)
+var sectionGalerie = document.getElementById("galerie");
+
 document.addEventListener('DOMContentLoaded', function () {
 
-    //clic d'un tag (pas pareil que filtre, ca ne fait pas de on/off, juste on)
+    //tous les textes de tags
     var gameDesignTexts = document.querySelectorAll('.game-design-tag.pas-filter');
     var unityTexts = document.querySelectorAll('.unity-tag.pas-filter');
     var webTexts = document.querySelectorAll('.web-tag.pas-filter');
@@ -15,59 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var travailAudioTexts = document.querySelectorAll('.travail-audio-tag.pas-filter');
     var modelisationTexts = document.querySelectorAll('.modelisation-tag.pas-filter');
 
-    var sectionGalerie = document.getElementById("galerie");
-    
-
-    gameDesignTexts.forEach(function (gameDesignText) {
-        gameDesignText.addEventListener('click', function () {
-            gameDesign = true;
-            gameDesignFiltre.classList.add('color');
-            cacherGaleriesProjet();
-            sectionGalerie.scrollIntoView();
-        });
-    });
-    unityTexts.forEach(function (unityText) {
-        unityText.addEventListener('click', function () {
-            unity = true;
-            unityFiltre.classList.add('color');
-            cacherGaleriesProjet();
-            sectionGalerie.scrollIntoView();
-        });
-    })
-    webTexts.forEach(function (webText) {
-        webText.addEventListener('click', function () {
-            web = true;
-            webFiltre.classList.add('color');
-            cacherGaleriesProjet();
-            sectionGalerie.scrollIntoView();
-        });
-    });
-    travailPlastiqueTexts.forEach(function (travailPlastiqueText) {
-        travailPlastiqueText.addEventListener('click', function () {
-            travailPlastique = true;
-            travailPlastiqueFiltre.classList.add('color');
-            cacherGaleriesProjet();
-            sectionGalerie.scrollIntoView();
-        });
-    });
-    travailAudioTexts.forEach(function (travailAudioText) {
-        travailAudioText.addEventListener('click', function () {
-            travailAudio = true;
-            travailAudioFiltre.classList.add('color');
-            cacherGaleriesProjet();
-            sectionGalerie.scrollIntoView();
-        });
-    });
-    modelisationTexts.forEach(function (modelisationText) {
-        modelisationText.addEventListener('click', function () {
-            modelisation = true;
-            modelisationFiltre.classList.add('color');
-            cacherGaleriesProjet();
-            sectionGalerie.scrollIntoView();
-        });
-    });
-
-    //clic d'un filtre (pas pareil que tag, c'est au dessus de la galerie)
+    //les filtres qui sont en on/off
     var gameDesignFiltre = document.querySelector('.game-design-tag.filter');
     var unityFiltre = document.querySelector('.unity-tag.filter');
     var webFiltre = document.querySelector('.web-tag.filter');
@@ -75,38 +28,225 @@ document.addEventListener('DOMContentLoaded', function () {
     var travailAudioFiltre = document.querySelector('.travail-audio-tag.filter');
     var modelisationFiltre = document.querySelector('.modelisation-tag.filter');
 
+    //les tags de base (qui resent actifs même si on clic 2 fois sur le même)
+    gameDesignTexts.forEach(function (gameDesignText) {
+        gameDesignText.addEventListener('click', function () {
+            //enlever les bool puis réactiver la concernée (pour le filtrage des projet)
+            DesactiverLesFiltres();
+            gameDesign = true;
+
+            //aller vers la galerie
+            sectionGalerie.scrollIntoView();
+
+            //activer et desactiver visuelement les filtres
+            gameDesignFiltre.classList.add('color');
+            unityFiltre.classList.remove('color');
+            webFiltre.classList.remove('color');
+            travailPlastiqueFiltre.classList.remove('color');
+            travailAudioFiltre.classList.remove('color');
+            modelisationFiltre.classList.remove('color');
+
+            //faire le tri de galerie
+            cacherGaleriesProjet();
+        });
+    });
+    unityTexts.forEach(function (unityText) {
+        unityText.addEventListener('click', function () {
+            DesactiverLesFiltres();
+            unity = true;
+
+            sectionGalerie.scrollIntoView();
+
+            gameDesignFiltre.classList.remove('color');
+            unityFiltre.classList.add('color');
+            webFiltre.classList.remove('color');
+            travailPlastiqueFiltre.classList.remove('color');
+            travailAudioFiltre.classList.remove('color');
+            modelisationFiltre.classList.remove('color');
+
+            cacherGaleriesProjet();
+        });
+    })
+    webTexts.forEach(function (webText) {
+        webText.addEventListener('click', function () {
+            DesactiverLesFiltres();
+            web = true;
+
+            sectionGalerie.scrollIntoView();
+
+            gameDesignFiltre.classList.remove('color');
+            unityFiltre.classList.remove('color');
+            webFiltre.classList.add('color');
+            travailPlastiqueFiltre.classList.remove('color');
+            travailAudioFiltre.classList.remove('color');
+            modelisationFiltre.classList.remove('color');
+
+            cacherGaleriesProjet();
+        });
+    });
+    travailPlastiqueTexts.forEach(function (travailPlastiqueText) {
+        travailPlastiqueText.addEventListener('click', function () {
+            DesactiverLesFiltres();
+            travailPlastique = true;
+
+            sectionGalerie.scrollIntoView();
+
+            gameDesignFiltre.classList.remove('color');
+            unityFiltre.classList.remove('color');
+            webFiltre.classList.remove('color');
+            travailPlastiqueFiltre.classList.add('color');
+            travailAudioFiltre.classList.remove('color');
+            modelisationFiltre.classList.remove('color');
+
+            cacherGaleriesProjet();
+        });
+    });
+    travailAudioTexts.forEach(function (travailAudioText) {
+        travailAudioText.addEventListener('click', function () {
+            DesactiverLesFiltres();
+            travailAudio = true;
+
+            sectionGalerie.scrollIntoView();
+
+            gameDesignFiltre.classList.remove('color');
+            unityFiltre.classList.remove('color');
+            webFiltre.classList.remove('color');
+            travailPlastiqueFiltre.classList.remove('color');
+            travailAudioFiltre.classList.add('color');
+            modelisationFiltre.classList.remove('color');
+
+            cacherGaleriesProjet();
+        });
+    });
+    modelisationTexts.forEach(function (modelisationText) {
+        modelisationText.addEventListener('click', function () {
+            DesactiverLesFiltres();
+            modelisation = true;
+
+            sectionGalerie.scrollIntoView();
+
+            gameDesignFiltre.classList.remove('color');
+            unityFiltre.classList.remove('color');
+            webFiltre.classList.remove('color');
+            travailPlastiqueFiltre.classList.remove('color');
+            travailAudioFiltre.classList.remove('color');
+            modelisationFiltre.classList.add('color');
+
+            cacherGaleriesProjet();
+        });
+    });
+
+    //les filtres (qui se désactivent en toggle)
     gameDesignFiltre.addEventListener('click', function () {
-        gameDesignFiltre.classList.toggle('color');
+        //enlever les bool puis réactiver la concernée (pour le filtrage des projet)
+        DesactiverLesFiltres();
         gameDesign = !gameDesign;
+
+        //aller vers la galerie
+        sectionGalerie.scrollIntoView();
+
+        //activer et desactiver visuelement les filtres
+        gameDesignFiltre.classList.toggle('color');
+        unityFiltre.classList.remove('color');
+        webFiltre.classList.remove('color');
+        travailPlastiqueFiltre.classList.remove('color');
+        travailAudioFiltre.classList.remove('color');
+        modelisationFiltre.classList.remove('color');
+
+        //faire le tri de galerie
         cacherGaleriesProjet();
     });
     unityFiltre.addEventListener('click', function () {
-        unityFiltre.classList.toggle('color');
+        DesactiverLesFiltres();
         unity = !unity;
+
+        sectionGalerie.scrollIntoView();
+
+        gameDesignFiltre.classList.remove('color');
+        unityFiltre.classList.toggle('color');
+        webFiltre.classList.remove('color');
+        travailPlastiqueFiltre.classList.remove('color');
+        travailAudioFiltre.classList.remove('color');
+        modelisationFiltre.classList.remove('color');
+
         cacherGaleriesProjet();
     });
     webFiltre.addEventListener('click', function () {
-        webFiltre.classList.toggle('color');
+        DesactiverLesFiltres();
         web = !web;
+
+        sectionGalerie.scrollIntoView();
+
+        gameDesignFiltre.classList.remove('color');
+        unityFiltre.classList.remove('color');
+        webFiltre.classList.toggle('color');
+        travailPlastiqueFiltre.classList.remove('color');
+        travailAudioFiltre.classList.remove('color');
+        modelisationFiltre.classList.remove('color');
+
         cacherGaleriesProjet();
     });
     travailPlastiqueFiltre.addEventListener('click', function () {
-        travailPlastiqueFiltre.classList.toggle('color');
+        DesactiverLesFiltres();
         travailPlastique = !travailPlastique;
+
+        sectionGalerie.scrollIntoView();
+
+        gameDesignFiltre.classList.remove('color');
+        unityFiltre.classList.remove('color');
+        webFiltre.classList.remove('color');
+        travailPlastiqueFiltre.classList.toggle('color');
+        travailAudioFiltre.classList.remove('color');
+        modelisationFiltre.classList.remove('color');
+
         cacherGaleriesProjet();
     });
     travailAudioFiltre.addEventListener('click', function () {
-        travailAudioFiltre.classList.toggle('color');
+        DesactiverLesFiltres();
         travailAudio = !travailAudio;
+
+        sectionGalerie.scrollIntoView();
+
+        gameDesignFiltre.classList.remove('color');
+        unityFiltre.classList.remove('color');
+        webFiltre.classList.remove('color');
+        travailPlastiqueFiltre.classList.remove('color');
+        travailAudioFiltre.classList.toggle('color');
+        modelisationFiltre.classList.remove('color');
+
         cacherGaleriesProjet();
     });
     modelisationFiltre.addEventListener('click', function () {
-        modelisationFiltre.classList.toggle('color');
+        DesactiverLesFiltres();
         modelisation = !modelisation;
+
+        sectionGalerie.scrollIntoView();
+
+        gameDesignFiltre.classList.remove('color');
+        unityFiltre.classList.remove('color');
+        webFiltre.classList.remove('color');
+        travailPlastiqueFiltre.classList.remove('color');
+        travailAudioFiltre.classList.remove('color');
+        modelisationFiltre.classList.toggle('color');
+
         cacherGaleriesProjet();
     });
-
 });
+
+//désactive tous les filtres
+function DesactiverLesFiltres() {
+    gameDesign = false;
+    unity = false;
+    web = false;
+    travailPlastique = false;
+    travailAudio = false;
+    modelisation = false;
+}
+
+//appliquer le changement de filtre (pour le filtre)
+function ChangeDeFiltre(FiltreVisuel) {
+
+}
 
 //changer la galerie
 var messageVide = document.querySelector(".vide");

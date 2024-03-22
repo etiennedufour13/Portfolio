@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles -->
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles-sidebar.css">
+    <link rel="stylesheet" href="styles-galerie.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Etienne Dufour - Save Hector The Dinosaur</title>
+</head>
+<body>
+    <!-- ---------------------------------------------------------------- SIDEBAR --- -->
+    <div class="sidebar">
+        <a href="index.html#galerie"><img src="Autre/fleche-blanc.png"></a>
+
+        <a href="#presentation" class="nav nav-presentation">présentation</a>
+        <a href="#projets" class="nav nav-projets">projets</a>
+        <a href="#galerie" class="nav nav-galerie">galerie</a>
+        <a href="#contact" class="nav nav-contact">me contacter</a>
+    </div>
+
+    <div class="sidebar-mobile intra-projet">
+        <a href="index.html"><img src="Autre/fleche-blanc.png"></a>
+    </div>
+
+    <!-- ---------------------------------------------------------------- CONTENU --- -->
+    <div class="baniere-holder">
+        <div class="baniere-text">
+            <h1>Save Hector the dinosaur</h1>
+            <div class="baniere-tags">
+                <p class="colored">unity</p>
+                <p class="colored">travail plastique</p>
+                <p class="colored">mobile</p>
+            </div>
+        </div>
+        <img class="baniere" src="Hector/baniere.jpg">
+    </div>
+
+    <section>
+        <div class="project-grid">
+            <!-- intro -->
+            <p class="project-grid-item full text">
+                Réalisé en 2021, Save Hector the Dinosaur est un petit projet solo de jeu mobile. Dans ce jeu,
+                vous contrôlez Hector et avez pour objectif d’éviter les météorites.
+            </p>
+
+            <div class="project-grid-item demi"><img src="Hector/newmenu.jpg"></div>
+            <div class="project-grid-item demi"><img src="Hector/portable.gif"></div>
+
+            <!-- partie1 -->
+            <div class="project-grid-item titre"><div class="line"></div><h2>Une mécanique d'arcade</h2></div>
+
+            <p class="project-grid-item trois-quart text">
+                Plus le temps avance plus les météorites sont nombreuses. Pour battre son high score, le joueur
+                doit survivre le plus longtemps possible!
+            </p>
+
+            <div class="project-grid-item video full"><video controls autoplay muted src="Hector/video.mp4"></video></div>
+
+            <!-- partie2 -->
+            <div class="project-grid-item titre"><div class="line"></div><h2>Les skins et la rémunération</h2></div>
+
+            <p class="project-grid-item full">
+                En récoltant des pièces, vous pourrez acheter de nouveaux skins. J’ai également intégré la possibilité de
+                regarder une publicité afin de gagner légèrement plus de pièces lors de sa partie.
+            </p>
+
+            <div class="project-grid-item tier image"><img src="Hector/skin1.jpg"></div>
+            <div class="project-grid-item tier image"><img src="Hector/skin2.jpg"></div>
+            <div class="project-grid-item tier image"><img src="Hector/argent.jpg"></div>
+
+            <!-- partie3 -->
+            <div class="project-grid-item titre"><div class="line"></div><h2>La publication du jeu</h2></div>
+
+            <p class="project-grid-item full text">
+                Ce jeu était avant tout une excuse pour expérimenter la publication d’un produit sur les stores mobiles.
+                Il est très intéressant d’analyser les statistiques liés à la visibilité du jeu et à ses téléchargements.
+            </p>
+
+            <div class="project-grid-item full"><img src="Hector/stats.png"></div>
+        </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------- BG --- -->
+    <div class="into-projet-bg"></div>
+
+    <footer>
+        <p><br><br><br><br></p>
+    </footer>
+
+
+    <!-- JS -->
+    <script src="galerie_system.js"></script>
+
+    <!-- JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // barre
+            var sidebar = document.querySelector('.sidebar');
+            sidebar.style.left = '0';
+            sidebar.style.top = '0';
+
+            // éléments
+            var nav1 = document.querySelector('.nav-presentation');
+            nav1.style.marginRight = '0';
+            var nav2 = document.querySelector('.nav-projets');
+            nav2.style.marginRight = '0';
+            var nav3 = document.querySelector('.nav-galerie');
+            nav3.style.marginRight = '0';
+            var nav4 = document.querySelector('.nav-contact');
+            nav4.style.marginRight = '0';
+        });
+    </script>
+
+</body>
+</html>
