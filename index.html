@@ -27,393 +27,245 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Etienne Dufour</title>
 </head>
-    <body>
-        <!-- ---------------------------------------------------------------- SIDEBAR --- -->
-        <div class="sidebar">
-            <a href="#presentation" class="nav nav-presentation">présentation</a>
-            <a href="#projets" class="nav nav-projets">projets</a>
-            <a href="#galerie" class="nav nav-galerie">galerie</a>
-            <a href="#contact" class="nav nav-contact">me contacter</a>
+<body>
+    <!-- ---------------------------------------------------------------- GALERIE --- -->
+    <section id="galerie">
+        <h1 class="titre-de-section titre-galerie">Etienne Dufour - designer numérique</h1>
+
+        <div class="galerie-filtres">
+            <p class="filtres-text">filtres :</p>
+            <div class="index-projet-description-tags filter">
+                <p class="game-design-tag filter">game design</p>
+                <p class="unity-tag filter">unity</p>
+                <p class="web-tag filter">vidéo</p>
+                <p class="travail-plastique-tag filter">travail plastique</p>
+                <p class="travail-audio-tag filter">travail audio</p>
+                <p class="modelisation-tag filter">modélisation 3D</p>
+            </div>
         </div>
 
-        <div class="sidebar-mobile">
-            <a href="#presentation" class="nav nav-presentation">présentation</a>
-            <a href="#galerie" class="nav nav-galerie">projets</a>
-            <a href="#contact" class="nav nav-contact">me contacter</a>
+        <div class="grille-galerie">
+            <p class="vide">aucun projet ne correspond à cette combinaison</p>
+            <!-- nomades -->
+            <a class="galerie-projet game-design travail-plastique" href="nomades.html">
+                <h3>Nomades</h3>
+                <img class="galerie-gif" src="Nomades/vignette.gif">
+                <img class="galerie-img" src="Nomades/vignette.jpg">
+            </a>
+            <!-- generation -->
+            <a class="galerie-projet travail-plastique unity" href="generatif.html">
+                <h3>Plateau procédural</h3>
+                <img class="galerie-gif" src="Generation/vignette.gif">
+                <img class="galerie-img" src="Generation/vignette.jpg">
+            </a>
+            <!-- olympus -->
+            <a class="galerie-projet game-design unity travail-audio modelisation" href="olympus.html">
+                <h3>Olympus race</h3>
+                <img class="galerie-gif" src="Olympus/vignette.gif">
+                <img class="galerie-img" src="Olympus/vignette.jpg">
+            </a>
+            <!-- baluchon -->
+            <a class="galerie-projet web" href="baluchon.html">
+                <h3>Baluchonnage</h3>
+                <img class="galerie-gif" src="Baluchon/vignette.gif">
+                <img class="galerie-img" src="Baluchon/baniere.jpg">
+            </a>
+            <!-- kiplin -->
+            <a class="galerie-projet game-design" href="kiplin.html">
+                <h3>Le Kwizzz !</h3>
+                <img class="galerie-gif" src="Kiplin/vignette.jpg">
+                <img class="galerie-img" src="Kiplin/vignette.jpg">
+            </a>
+            <!-- reflection -->
+            <a class="galerie-projet game-design modelisation unity" href="reflection.html">
+                <h3>Reflection game</h3>
+                <img class="galerie-gif" src="Reflection/vignette.gif">
+                <img class="galerie-img" src="Reflection/vignette.jpg">
+            </a>
+            <!-- dessin d'observation' -->
+            <a class="galerie-projet travail-plastique" href="croquis.html">
+                <h3>Dessin d'observation</h3>
+                <img class="galerie-gif" src="Dessin/vignette.jpg">
+                <img class="galerie-img" src="Dessin/vignette.jpg">
+            </a>
+            <!-- concave convexe -->
+            <a class="galerie-projet unity" href="concave.html">
+                <h3>Concave convexe</h3>
+                <img class="galerie-gif" src="Concave/convexe.gif">
+                <img class="galerie-img" src="Concave/vignette.png">
+            </a>
+            <!-- pious -->
+            <a class="galerie-projet game-design unity travail-audio" href="pious.html">
+                <h3>Pious in the cages</h3>
+                <img class="galerie-gif" src="Pious/cages.gif">
+                <img class="galerie-img" src="Pious/baniere.jpg">
+            </a>
+            <!-- space -->
+            <a class="galerie-projet game-design unity" href="space.html">
+                <h3>Makey makey</h3>
+                <img class="galerie-gif" src="Space/hurt.gif">
+                <img class="galerie-img" src="Space/baniere.jpg">
+            </a>
+            <!-- growing -->
+            <a class="galerie-projet game-design travail-plastique" href="growing.html">
+                <h3>Growing</h3>
+                <img class="galerie-gif" src="Growing/baniere.jpg">
+                <img class="galerie-img" src="Growing/baniere.jpg">
+            </a>
+            <!-- paria -->
+            <a class="galerie-projet game-design travail-plastique" href="paria.html">
+                <h3>Jeu du paria</h3>
+                <img class="galerie-gif" src="Paria/vignette.gif">
+                <img class="galerie-img" src="Paria/vignette.png">
+            </a>
+            <!-- pious -->
+            <a class="galerie-projet unity travail-plastique" href="hector.html">
+                <h3>Save Hector the dinosaur</h3>
+                <img class="galerie-gif" src="Hector/portable.gif">
+                <img class="galerie-img" src="Hector/vignette.jpg">
+            </a>
+            <!-- secte -->
+            <a class="galerie-projet unity game-design" href="secte.html">
+                <h3>Secte du chapeau</h3>
+                <img class="galerie-gif" src="Secte/vignette.gif">
+                <img class="galerie-img" src="Secte/vignette.png">
+            </a>
         </div>
 
-        <main>
-            <!-- ---------------------------------------------------------------- INTRO --- -->
-            <section id="introduction" class="introduction">
-                <div class="bar-activator"></div>
+        <div class="galerie-background"></div>
 
-                <div class="introduction-text">
-                    <h1>Mon Portfolio</h1>
-                    <h2>Etienne Dufour</h2>
-                    <div class="noise"></div>
-                    <img src="Autre/intro-shape-v2-compo_1.gif" class="moving-shape-intro">
-                </div>
+    </section>
+    </main>
 
-                <div class="intro-background"></div>
+    <footer>
+        <p><br><br><br><br></p>
+    </footer>
 
-                <div class="scroll-down"><p>scrollez pour naviguer</p><img src="Autre/scroll1.gif"></div>
-            </section>
+    <!-- JS -->
+    <script src="galerie_system.js"></script>
+    <script src="sidebar_system.js"></script>
 
-            <!-- ---------------------------------------------------------------- INFOS --- -->
-            <section id="presentation">
-                <div class="fleches-infos-activator"></div>
-
-                <div class="presentation-elements">
-                    <video controls poster="Autre/poster1.png">
-                        <source src="Autre/video_de_presentation_v3-1.mp4" type="video/mp4">
-                        <source src="Autre/video_de_presentation_v3-2.webm" type="video/webm">
-                        Votre navigateur ne parvient pas à charger la vidéo :(
-                    </video>
-                    <a href="Autre/Etienne_Dufour_CV.pdf" target="_blank" download>CV</a>
-                </div>
-
-                <div class="infos-background"></div>
-
-                <div class="scroll-infos"><img src="Autre/scroll-fleches.gif"></div>
-            </section>
-
-            <!-- ---------------------------------------------------------------- PROJETS --- -->
-            <section id="projets">
-                <h1 class="titre-de-section">Voici quelques projets...</h1>
-
-                <!-- nomades -->
-                <div class="index-projet" id="nomades">
-                    <a class="index-projet-image" href="nomades.html">
-                        <img src="Nomades/vignette.jpg" class="image-top">
-                        <img src="Nomades/vignette.gif">
-                    </a>
-                    <div class="index-projet-description">
-                        <div class="index-projet-description-contenu">
-                            <h1>Nomades</h1>
-                            <div class="index-projet-description-tags">
-                                <p class="game-design-tag pas-filter">game design</p>
-                                <p class="travail-plastique-tag pas-filter">travail plastique</p>
-                                <p class="unity-tag pas-filter">unity</p>
-                            </div>
-                            <p class="index-projet-description-text">
-                                Nomades est un jeu solo, narratif, de gestion dans lequel vous incarnez une tribu du paléolithique.
-                                Cette expérience à pour particularité d’associer du matériel tangible à un support numérique.
-                            </p>
-                        </div>
-                        <div class="voir-plus">
-                            <a href="nomades.html"><p>voir plus -></p></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- olympus race -->
-                <div class="index-projet" id="olympus">
-                    <a class="index-projet-image" href="olympus.html">
-                        <img src="Olympus/menu.png" class="image-top">
-                        <img src="Olympus/vignette.gif">
-                    </a>
-                    <div class="index-projet-description">
-                        <div class="index-projet-description-contenu">
-                            <h1>Olympus race</h1>
-                            <div class="index-projet-description-tags">
-                                <p class="game-design-tag pas-filter">game design</p>
-                                <p class="unity-tag pas-filter">unity</p>
-                                <p class="travail-audio-tag pas-filter">travail audio</p>
-                                <p class="modelisation-tag pas-filter">modelisation 3D</p>
-                            </div>
-                            <p class="index-projet-description-text">
-                                Pendant ma 2e année d’étude à l’ENSAAMA, j’ai effectué un stage de plusieurs mois à VR&Co, une salle d’arcade parisienne. L’objectif
-                                a été de réaliser un jeu de rythme en réalité virtuelle afin de le proposer au public de la salle d’arcade.
-                            </p>
-                        </div>
-                        <div class="voir-plus">
-                            <a href="olympus.html"><p>voir plus -></p></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- baluchon -->
-                <div class="index-projet" id="baluchon">
-                    <a class="index-projet-image" href="baluchon.html">
-                        <img src="Baluchon/baniere.jpg" class="image-top">
-                        <img src="Baluchon/vignette.gif">
-                    </a>
-                    <div class="index-projet-description">
-                        <div class="index-projet-description-contenu">
-                            <h1>Le baluchonnage</h1>
-                            <div class="index-projet-description-tags">
-                                <p class="web-tag pas-filter">vidéo</p>
-                            </div>
-                            <p class="index-projet-description-text">
-                                Projet vidéo réalisé pour Baluchon France visant à expliquer au grand public le fonctionnement du
-                                baluchonnage, un système d’aide à domicile longue durée.
-                            </p>
-                        </div>
-                        <div class="voir-plus">
-                            <a href="baluchon.html"><p>voir plus -></p></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="fleches-projets-activator"></div>
-                <div class="scroll-projets"><img src="Autre/scroll-fleches.gif"></div>
-
-                <div class="projets-background"></div>
-                <div class="projets-marge"></div>
-
-            </section>
-
-
-            <!-- ---------------------------------------------------------------- GALERIE --- -->
-            <section id="galerie">
-                <h1 class="titre-de-section titre-galerie">Voici plus de projets !</h1>
-
-                <div class="galerie-filtres">
-                    <p class="filtres-text">filtres :</p>
-                    <div class="index-projet-description-tags filter">
-                        <p class="game-design-tag filter">game design</p>
-                        <p class="unity-tag filter">unity</p>
-                        <p class="web-tag filter">vidéo</p>
-                        <p class="travail-plastique-tag filter">travail plastique</p>
-                        <p class="travail-audio-tag filter">travail audio</p>
-                        <p class="modelisation-tag filter">modélisation 3D</p>
-                    </div>
-                </div>
-
-                <div class="grille-galerie">
-                    <p class="vide">aucun projet ne correspond à cette combinaison</p>
-                    <!-- nomades -->
-                    <a class="galerie-projet game-design travail-plastique" href="nomades.html">
-                        <h3>Nomades</h3>
-                        <img class="galerie-gif" src="Nomades/vignette.gif">
-                        <img class="galerie-img" src="Nomades/vignette.jpg">
-                    </a>
-                    <!-- generation -->
-                    <a class="galerie-projet travail-plastique unity" href="generatif.html">
-                        <h3>Plateau procédural</h3>
-                        <img class="galerie-gif" src="Generation/vignette.gif">
-                        <img class="galerie-img" src="Generation/vignette.jpg">
-                    </a>
-                    <!-- olympus -->
-                    <a class="galerie-projet game-design unity travail-audio modelisation" href="olympus.html">
-                        <h3>Olympus race</h3>
-                        <img class="galerie-gif" src="Olympus/vignette.gif">
-                        <img class="galerie-img" src="Olympus/vignette.jpg">
-                    </a>
-                    <!-- baluchon -->
-                    <a class="galerie-projet web" href="baluchon.html">
-                        <h3>Baluchonnage</h3>
-                        <img class="galerie-gif" src="Baluchon/vignette.gif">
-                        <img class="galerie-img" src="Baluchon/baniere.jpg">
-                    </a>
-                    <!-- baluchon -->
-                    <a class="galerie-projet unity game-design" href="secte.html">
-                        <h3>Secte du chapeau</h3>
-                        <img class="galerie-gif" src="Secte/vignette.gif">
-                        <img class="galerie-img" src="Secte/vignette.png">
-                    </a>
-                    <!-- reflection -->
-                    <a class="galerie-projet game-design modelisation unity" href="reflection.html">
-                        <h3>Reflection game</h3>
-                        <img class="galerie-gif" src="Reflection/vignette.gif">
-                        <img class="galerie-img" src="Reflection/vignette.jpg">
-                    </a>
-                    <!-- dessin d'observation' -->
-                    <a class="galerie-projet travail-plastique" href="croquis.html">
-                        <h3>Dessin d'observation</h3>
-                        <img class="galerie-gif" src="Dessin/vignette.jpg">
-                        <img class="galerie-img" src="Dessin/vignette.jpg">
-                    </a>
-                    <!-- concave convexe -->
-                    <a class="galerie-projet unity" href="croquis.html">
-                        <h3>Concave convexe</h3>
-                        <img class="galerie-gif" src="Concave/convexe.gif">
-                        <img class="galerie-img" src="Concave/vignette.png">
-                    </a>
-                    <!-- pious -->
-                    <a class="galerie-projet game-design unity travail-audio" href="pious.html">
-                        <h3>Pious in the cages</h3>
-                        <img class="galerie-gif" src="Pious/cages.gif">
-                        <img class="galerie-img" src="Pious/baniere.jpg">
-                    </a>
-                    <!-- space -->
-                    <a class="galerie-projet game-design unity" href="space.html">
-                        <h3>Makey makey</h3>
-                        <img class="galerie-gif" src="Space/hurt.gif">
-                        <img class="galerie-img" src="Space/baniere.jpg">
-                    </a>
-                    <!-- growing -->
-                    <a class="galerie-projet game-design travail-plastique" href="growing.html">
-                        <h3>Growing</h3>
-                        <img class="galerie-gif" src="Growing/baniere.jpg">
-                        <img class="galerie-img" src="Growing/baniere.jpg">
-                    </a>
-                    <!-- paria -->
-                    <a class="galerie-projet game-design travail-plastique" href="paria.html">
-                        <h3>Jeu du paria</h3>
-                        <img class="galerie-gif" src="Paria/vignette.gif">
-                        <img class="galerie-img" src="Paria/vignette.png">
-                    </a>
-                    <!-- pious -->
-                    <a class="galerie-projet unity travail-plastique" href="hector.html">
-                        <h3>Save Hector the dinosaur</h3>
-                        <img class="galerie-gif" src="Hector/portable.gif">
-                        <img class="galerie-img" src="Hector/vignette.jpg">
-                    </a>
-                </div>
-
-                <div class="galerie-background"></div>
-
-            </section>
+    <!-- ---------------------------------------------------------------- JS --- -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // start
+            var scrollDown = document.querySelector('.scroll-down');
+            scrollDown.style.opacity = '1';
 
 
 
+            // voir plus
+            const voirElements = document.querySelectorAll('.voir-plus');
 
-            <!-- ---------------------------------------------------------------- CONTACT --- -->
-            <section id="contact">
-                <h1 class="contactez-moi ">Contactez moi !</h1>
+            const observerVoirPlus = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.marginRight = '2%';
 
-                <div class="contact-text">
-                    <h2>Ma période de stage:</h2>
-                    <p>conventionné par mon école</p>
-                    <p>durée de 3 à 4 mois</p>
-                    <p>à partir du 6 mai<br><br></p>
-                    <h2>Me contacter:</h2>
-                    <p>06 42 59 01 16</p>
-                    <p>etiennedufour13@gmail.com</p>
-
-                    <img src="Autre/intro-shape-v2-compo_1.gif" class="moving-shape-contact">
-                </div>
-
-                <div class="contact-background"></div>
-            </section>
-
-        </main>
-
-
-        <!-- JS -->
-        <script src="galerie_system.js"></script>
-        <script src="sidebar_system.js"></script>
-
-        <!-- ---------------------------------------------------------------- JS --- -->
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                // start
-                var scrollDown = document.querySelector('.scroll-down');
-                scrollDown.style.opacity = '1';
-
-
-
-                // voir plus
-                const voirElements = document.querySelectorAll('.voir-plus');
-
-                const observerVoirPlus = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.style.marginRight = '2%';
-
-                        }
-                        if (!entry.isIntersecting) {
-                            entry.target.style.marginRight = '-75px';
-                        }
-                    });
+                    }
+                    if (!entry.isIntersecting) {
+                        entry.target.style.marginRight = '-75px';
+                    }
                 });
-
-                voirElements.forEach(voirElement => {
-                    observerVoirPlus.observe(voirElement);
-                });
-
-                // bar-activator (petit objet en haut de page)
-                const barActivator = document.querySelector('.bar-activator');
-
-                const observerIntro = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            // barre
-                            var sidebar = document.querySelector('.sidebar');
-                            sidebar.style.left = '-70px';
-
-                            // éléments
-                            var nav1 = document.querySelector('.nav-presentation');
-                            nav1.style.marginRight = '75px';
-                            var nav2 = document.querySelector('.nav-projets');
-                            nav2.style.marginRight = '75px';
-                            var nav3 = document.querySelector('.nav-galerie');
-                            nav3.style.marginRight = '75px';
-                            var nav4 = document.querySelector('.nav-contact');
-                            nav4.style.marginRight = '75px';
-
-                            //scroll
-                            var scrollDown = document.querySelector('.scroll-down');
-                            scrollDown.style.opacity = '1';
-                        } else {
-                            // barre
-                            var sidebar = document.querySelector('.sidebar');
-                            sidebar.style.left = '0';
-                            sidebar.style.top = '0';
-
-                            // éléments
-                            var nav1 = document.querySelector('.nav-presentation');
-                            nav1.style.marginRight = '0';
-                            var nav2 = document.querySelector('.nav-projets');
-                            nav2.style.marginRight = '0';
-                            var nav3 = document.querySelector('.nav-galerie');
-                            nav3.style.marginRight = '0';
-                            var nav4 = document.querySelector('.nav-contact');
-                            nav4.style.marginRight = '0';
-
-                            //scroll
-                            var scrollDown = document.querySelector('.scroll-down');
-                            scrollDown.style.transition = 'opacity 0.5s ease-in-out';
-                            scrollDown.style.opacity = '0';
-                        }
-                    });
-                });
-
-                observerIntro.observe(barActivator);
-
-                // fleches dans la page info (qui disparait)
-                const flechesActivator = document.querySelector('.fleches-infos-activator');
-
-                const observerInfos = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            //scroll
-                            var scrollInfos = document.querySelector('.scroll-infos');
-                            scrollInfos.style.transition = 'opacity 4s ease-in-out';
-                            scrollInfos.style.opacity = '1';
-                        } else {
-                            //scroll
-                            var scrollInfos = document.querySelector('.scroll-infos');
-                            scrollInfos.style.transition = 'opacity 0.5s ease-in-out';
-                            scrollInfos.style.opacity = '0';
-                        }
-                    });
-                });
-
-                observerInfos.observe(flechesActivator);
-
-                // fleches dans la page projets (qui disparait)
-                const flechesActivatorProjet = document.querySelector('.fleches-projets-activator');
-
-                const observerProjets = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            //scroll
-                            var scrollProjets = document.querySelector('.scroll-projets');
-                            scrollProjets.style.transition = 'opacity 4s ease-in-out';
-                            scrollProjets.style.opacity = '1';
-                        } else {
-                            //scroll
-                            var scrollProjets = document.querySelector('.scroll-projets');
-                            scrollProjets.style.transition = 'opacity 0.5s ease-in-out';
-                            scrollProjets.style.opacity = '0';
-                        }
-                    });
-                });
-
-                observerProjets.observe(flechesActivatorProjet);
             });
 
-        </script>
+            voirElements.forEach(voirElement => {
+                observerVoirPlus.observe(voirElement);
+            });
 
-    </body>
+            // bar-activator (petit objet en haut de page)
+            const barActivator = document.querySelector('.bar-activator');
+
+            const observerIntro = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // barre
+                        var sidebar = document.querySelector('.sidebar');
+                        sidebar.style.left = '-70px';
+
+                        // éléments
+                        var nav1 = document.querySelector('.nav-presentation');
+                        nav1.style.marginRight = '75px';
+                        var nav2 = document.querySelector('.nav-projets');
+                        nav2.style.marginRight = '75px';
+                        var nav3 = document.querySelector('.nav-galerie');
+                        nav3.style.marginRight = '75px';
+                        var nav4 = document.querySelector('.nav-contact');
+                        nav4.style.marginRight = '75px';
+
+                        //scroll
+                        var scrollDown = document.querySelector('.scroll-down');
+                        scrollDown.style.opacity = '1';
+                    } else {
+                        // barre
+                        var sidebar = document.querySelector('.sidebar');
+                        sidebar.style.left = '0';
+                        sidebar.style.top = '0';
+
+                        // éléments
+                        var nav1 = document.querySelector('.nav-presentation');
+                        nav1.style.marginRight = '0';
+                        var nav2 = document.querySelector('.nav-projets');
+                        nav2.style.marginRight = '0';
+                        var nav3 = document.querySelector('.nav-galerie');
+                        nav3.style.marginRight = '0';
+                        var nav4 = document.querySelector('.nav-contact');
+                        nav4.style.marginRight = '0';
+
+                        //scroll
+                        var scrollDown = document.querySelector('.scroll-down');
+                        scrollDown.style.transition = 'opacity 0.5s ease-in-out';
+                        scrollDown.style.opacity = '0';
+                    }
+                });
+            });
+
+            observerIntro.observe(barActivator);
+
+            // fleches dans la page info (qui disparait)
+            const flechesActivator = document.querySelector('.fleches-infos-activator');
+
+            const observerInfos = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        //scroll
+                        var scrollInfos = document.querySelector('.scroll-infos');
+                        scrollInfos.style.transition = 'opacity 4s ease-in-out';
+                        scrollInfos.style.opacity = '1';
+                    } else {
+                        //scroll
+                        var scrollInfos = document.querySelector('.scroll-infos');
+                        scrollInfos.style.transition = 'opacity 0.5s ease-in-out';
+                        scrollInfos.style.opacity = '0';
+                    }
+                });
+            });
+
+            observerInfos.observe(flechesActivator);
+
+            // fleches dans la page projets (qui disparait)
+            const flechesActivatorProjet = document.querySelector('.fleches-projets-activator');
+
+            const observerProjets = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        //scroll
+                        var scrollProjets = document.querySelector('.scroll-projets');
+                        scrollProjets.style.transition = 'opacity 4s ease-in-out';
+                        scrollProjets.style.opacity = '1';
+                    } else {
+                        //scroll
+                        var scrollProjets = document.querySelector('.scroll-projets');
+                        scrollProjets.style.transition = 'opacity 0.5s ease-in-out';
+                        scrollProjets.style.opacity = '0';
+                    }
+                });
+            });
+
+            observerProjets.observe(flechesActivatorProjet);
+        });
+
+    </script>
+
+</body>
 </html>
