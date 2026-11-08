@@ -1,118 +1,287 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
+<html lang="fr">
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- styles -->
-    <link rel="stylesheet" href="styles1.css">
-    <link rel="stylesheet" href="styles2.css">
-    <link rel="stylesheet" href="styles-sidebar.css">
-    <link rel="stylesheet" href="styles-galerie.css">
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <title>Etienne Dufour - Nomades</title>
+
+    <title>Étienne Dufour — Nomades</title>
+
+    <!-- Typographies -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/dirtyline-36daysoftype-2022" rel="stylesheet">
+
+    <!-- Styles de la page projet -->
+    <link rel="stylesheet" href="./css/project-detail.css">
 </head>
+
 <body>
-    <!-- ---------------------------------------------------------------- CONTENU --- -->
-    <div class="baniere-holder">
-        <div class="baniere-text">
-            <h1>Nomades</h1>
-            <div class="baniere-tags">
-                <p class="colored">game design</p>
-                <p class="colored">game art</p>
+
+    <!-- =========================================
+         NAVIGATION
+    ========================================== -->
+
+    <header class="project-header">
+
+        <a href="index.html#gallery" class="nav-back" aria-label="Retour à la galerie">
+            <span aria-hidden="true">←</span>
+        </a>
+
+        <nav class="main-navigation">
+            <a href="index.html#home">Accueil</a>
+            <a href="index.html#gallery">Galerie</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================================
+             BANNIÈRE
+        ========================================== -->
+
+        <section class="project-hero">
+
+            <img class="project-hero-image"
+                 src="./assets/nomades/baniere.png"
+                 alt="Bannière du jeu Nomades">
+
+            <div class="project-hero-content">
+
+                <h1>Nomades</h1>
+
+                <div class="project-tags">
+                    <span>Game design</span>
+                    <span>Game art</span>
+                </div>
+
             </div>
+
+        </section>
+
+
+        <!-- =========================================
+             CONTENU
+        ========================================== -->
+
+        <div class="project-content">
+
+
+            <!-- -------------------------------------
+                 INTRODUCTION
+            -------------------------------------- -->
+
+            <section class="project-section">
+
+                <div class="content-row">
+
+                    <div class="content-block text-block">
+
+                        <p>
+                            Nomades est un jeu hybride réalisé dans le cadre
+                            de mon mémoire de DNMADE, qui traite de l’association
+                            du numérique au tangible dans le contexte des
+                            expériences ludiques.
+                        </p>
+
+                        <p>
+                            Dans ce jeu, vous incarnez une tribu nomade du
+                            Paléolithique. Votre objectif est d’explorer les
+                            environnements qui vous entourent, de développer
+                            votre groupe en fabriquant des objets et de
+                            survivre aux différents défis rencontrés.
+                        </p>
+
+                    </div>
+
+                    <!-- Accès au mémoire -->
+                    <figure class="content-block media-block">
+
+                        <a href="./assets/generation/Memoire_Jeux_Hybrides.pdf" target="_blank" rel="noopener">
+                            <img src="./assets/generation/memoire.png"
+                                 alt="Couverture du mémoire sur les jeux hybrides"
+                                 loading="lazy">
+                        </a>
+
+                    </figure>
+
+                </div>
+
+                <div class="content-row">
+
+                    <figure class="content-block media-block media-wide">
+                        <video controls muted playsinline preload="metadata">
+                            <source src="./assets/nomades/video1.mp4" type="video/mp4">
+                            Votre navigateur ne prend pas en charge la lecture vidéo.
+                        </video>
+                    </figure>
+
+                </div>
+
+            </section>
+
+
+            <!-- -------------------------------------
+                 NUMÉRIQUE ET TANGIBLE
+            -------------------------------------- -->
+
+            <section class="project-section">
+
+                <h2 class="section-title">Associer le numérique au tangible</h2>
+
+                <div class="content-row">
+
+                    <div class="content-block text-block">
+
+                        <p>
+                            J’ai développé une application qui s’intègre
+                            au gameplay en faisant office de guide narratif.
+                            Les différentes étapes de jeu et les défis
+                            survenant en cours de partie sont présentés
+                            au joueur sur son support mobile.
+                        </p>
+
+                        <p>
+                            Ayant pour volonté première d’ancrer mon
+                            expérience dans le tangible, j’ai restreint
+                            la présence de l’application en limitant
+                            les interactions du joueur à une simple
+                            pression sur l’écran pour avancer à l’étape
+                            suivante.
+                        </p>
+
+                        <p>
+                            Le numérique fait également office
+                            d’enveloppe immersive en ajoutant de la
+                            musique et des bruitages en rapport avec
+                            les événements du jeu.
+                        </p>
+
+                    </div>
+
+                    <figure class="content-block media-block">
+                        <img src="./assets/nomades/numerique.gif"
+                             alt="Interface numérique accompagnant le jeu"
+                             loading="lazy">
+                    </figure>
+
+                </div>
+
+            </section>
+
+
+            <!-- -------------------------------------
+                 LIBERTÉ DU JOUEUR
+            -------------------------------------- -->
+
+            <section class="project-section">
+
+                <h2 class="section-title">La liberté du joueur</h2>
+
+                <div class="content-row">
+
+                    <div class="content-block text-block">
+
+                        <p>
+                            Afin de renforcer le sentiment de liberté
+                            provoqué par le jeu et d’encourager le joueur
+                            à s’approprier le matériel, j’ai choisi de
+                            ne pas définir de placement prédéfini pour
+                            les différentes cartes.
+                        </p>
+
+                        <p>
+                            Le joueur est donc libre d’organiser son
+                            matériel de jeu comme il le souhaite.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Galerie de photographies -->
+                <div class="content-row media-gallery">
+
+                    <figure class="content-block media-block">
+                        <img src="./assets/nomades/jeu1.jpg" alt="Matériel de jeu Nomades 1" loading="lazy">
+                    </figure>
+
+                    <figure class="content-block media-block">
+                        <img src="./assets/nomades/jeu2.jpg" alt="Matériel de jeu Nomades 2" loading="lazy">
+                    </figure>
+
+                    <figure class="content-block media-block">
+                        <img src="./assets/nomades/jeu3.jpg" alt="Matériel de jeu Nomades 3" loading="lazy">
+                    </figure>
+
+                </div>
+
+            </section>
+
+
+            <!-- -------------------------------------
+                 ESTHÉTIQUE
+            -------------------------------------- -->
+
+            <section class="project-section">
+
+                <h2 class="section-title">L’esthétique</h2>
+
+                <div class="content-row">
+
+                    <div class="content-block text-block">
+
+                        <p>
+                            Le matériel tangible étant central dans mon
+                            expérience, j’ai conçu une esthétique mettant
+                            en avant des textures naturelles.
+                        </p>
+
+                        <p>
+                            Pour limiter la complexité, les quatre ressources
+                            du jeu sont chacune associées à une couleur :
+                            la pierre en bleu, les fibres en jaune, le bois
+                            en marron et la nourriture en orange.
+                        </p>
+
+                        <p>
+                            Les graphismes des cartes sont réalisés en
+                            dessin numérique à partir d’un principe de
+                            superposition de calques texturés. Le matériel
+                            a ensuite été imprimé sur du papier kraft.
+                        </p>
+
+                    </div>
+
+                    <figure class="content-block media-block">
+                        <img src="./assets/nomades/esthetique.gif"
+                             alt="Présentation de l'esthétique des cartes"
+                             loading="lazy">
+                    </figure>
+
+                </div>
+
+            </section>
+
         </div>
-        <img class="baniere" src="Nomades/baniere.png">
-    </div>
 
-    <section>
-        <div class="project-grid">
-            <!-- intro -->
-            <p class="project-grid-item trois-quart text">
-                Nomades est un jeu hybride réalisé dans le cadre de mon mémoire de DNMADE qui traite de l’association du numérique au
-                tangible dans le contexte des expériences ludiques.<br><br>Dans ce jeu, vous incarnez une tribu nomade du paléolithique. Votre objectif est d’explorer les environnements
-                qui vous entourent, de développer votre groupe en fabricant des objets et de survivre aux différents défis que vous rencontrerez.
-            </p>
+    </main>
 
-            <a class="project-grid-item quart" href="Generation/Memoire_Jeux_Hybrides.pdf" target="_blank" download style="grid-column: span 3;"><img src="Generation/memoire.png"></a>
 
-            <div class="project-grid-item video full"><video controls autoplay muted src="Nomades/video1.mp4"></video></div>
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
 
-            <!-- partie2 -->
-            <div class="project-grid-item titre"><div class="line"></div><h2>Associer le numérique au tangible</h2></div>
-
-            <p class="project-grid-item full">
-                J’ai développé une application qui s’intègre dans le gameplay en faisant office de guide narratif. Les différentes étapes de jeu et
-                les défis arrivant en cours de partie sont présentés au joueur sur son support mobile.
-            </p>
-
-            <div class="project-grid-item tier image"><img src="Nomades/numerique.gif"></div>
-
-            <p class="project-grid-item deux-tier">
-                Ayant pour volonté première d’ancrer mon expérience dans le tangible, j’ai restreint la présence de l’application en limitant, pour le joueur, les interactions avec cette dernière à une simple pression sur l’écran pour avancer à l’étape suivante.<br><br>
-                Le numérique fait aussi office d’enveloppe immersive en ajoutant de la musique et des bruitages en rapport avec les évènements du jeu.
-            </p>
-
-            <!-- partie3 -->
-            <div class="project-grid-item titre"><div class="line"></div><h2>La liberté du joueur</h2></div>
-
-            <p class="project-grid-item full text">
-                Afin de renforcer le sentiment de liberté provoqué par le jeu et de pousser le joueur à s’approprier le matériel, j’ai pris le parti de ne pas
-                définir de placement prédéfinis pour les différentes cartes. Le joueur est donc libre d’organiser son matériel de jeu comme il le souhaite.
-            </p>
-
-            <div class="project-grid-item tier"><img src="Nomades/jeu1.jpg"></div>
-            <div class="project-grid-item tier"><img src="Nomades/jeu2.jpg"></div>
-            <div class="project-grid-item tier"><img src="Nomades/jeu3.jpg"></div>
-
-            <!-- partie4 -->
-            <div class="project-grid-item titre"><div class="line"></div><h2>L’esthétique</h2></div>
-
-            <p class="project-grid-item deux-tier text">
-                Le matériel tangible étant central dans mon expérience, j’ai conçu une esthétique mettant en avant des textures naturelles.<br><br>Pour limiter
-                la complexité, les 4 ressources du jeu sont chacunes attribués à une couleur: la pierre en bleu, les fibres en jaune, le bois en marron et la nourriture en orange.<br><br>Les graphismes
-                des cartes sont réalisés en dessin numérique à partir d’un principe de superposition de calques texturés. Le matériel a ensuite été imprimé sur du papier kraft.
-            </p>
-
-            <div class="project-grid-item tier"><img src="Nomades/esthetique.gif"></div>
-
-        </div>
-    </section>
-
-    <!-- ---------------------------------------------------------------- BG --- -->
-    <div class="into-projet-bg"></div>
-
-    <footer>
-        <p><br><br><br><br></p>
+    <footer class="project-footer">
+        <a href="index.html#gallery">← Retour à la galerie</a>
     </footer>
 
 
-    <!-- JS -->
-    <script src="galerie_system.js"></script>
-
-    <!-- JS -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // barre
-            var sidebar = document.querySelector('.sidebar');
-            sidebar.style.left = '0';
-            sidebar.style.top = '0';
-
-            // éléments
-            var nav1 = document.querySelector('.nav-presentation');
-            nav1.style.marginRight = '0';
-            var nav2 = document.querySelector('.nav-projets');
-            nav2.style.marginRight = '0';
-            var nav3 = document.querySelector('.nav-galerie');
-            nav3.style.marginRight = '0';
-            var nav4 = document.querySelector('.nav-contact');
-            nav4.style.marginRight = '0';
-        });
-    </script>
+    <!-- Ajustement automatique des blocs -->
+    <script src="./js/project-layout.js" defer></script>
 
 </body>
 </html>

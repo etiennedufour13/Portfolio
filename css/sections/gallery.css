@@ -1,0 +1,379 @@
+﻿
+/* =========================================
+   GALERIE : STRUCTURE GÉNÉRALE
+========================================= */
+
+.gallery-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f1f1;
+    color: #111;
+    padding: 0 7vw;
+    /* Les éléments du carrousel restent contenus */
+    overflow: hidden;
+}
+
+
+/* =========================================
+   FENÊTRE DU CARROUSEL
+========================================= */
+
+.gallery-viewport {
+    width: 100%;
+    max-width: 1500px;
+    overflow: hidden;
+}
+
+
+/* =========================================
+   PISTE DES PROJETS
+========================================= */
+
+.gallery-track {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    /* Le déplacement est géré par JavaScript */
+    transform: translateX(0);
+    transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+    /* Évite que les cartes soient compressées */
+    will-change: transform;
+    padding : 10px;
+}
+
+
+/* =========================================
+   BLOCS DE PROJETS
+========================================= */
+
+.project-card {
+    /* Trois projets occupent la largeur visible */
+    flex: 0 0 calc((100% - 40px) / 3);
+    position: relative;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    display: block;
+    color: white;
+    text-decoration: none;
+    background: #222;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, .7);
+    border-radius: 5px;
+}
+
+
+/* Images du projet */
+
+.project-image,
+.project-image-hover {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease, transform 0.8s ease;
+}
+
+
+/* Image alternative initialement invisible */
+
+.project-image-hover {
+    opacity: 0;
+}
+
+
+/* Changement d'image au survol */
+
+.project-card:hover .project-image-hover {
+    opacity: 1;
+}
+
+.project-card:hover .project-image {
+    opacity: 0;
+}
+
+
+/* Léger agrandissement au survol */
+
+.project-card:hover img {
+    transform: scale(1.04);
+}
+
+
+/* =========================================
+   TITRE CENTRAL
+========================================= */
+
+.project-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    font-weight: 500;
+    z-index: 2;
+    /* Le titre disparaît au survol */
+    opacity: 1;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+
+/* Disparition du titre */
+
+.project-card:hover .project-title {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+}
+
+
+/* =========================================
+   DESCRIPTION ET GRADIENT
+========================================= */
+
+.project-description {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* Organisation verticale des informations */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 70px 22px 22px;
+    /* Gradient sombre progressif */
+    background: linear-gradient( to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.65) 65%, rgba(0, 0, 0, 0) 100% );
+    z-index: 3;
+    /* État initial : description cachée */
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+
+/* Apparition de la description au survol */
+
+.project-card:hover .project-description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   PRÉ-DESCRIPTION
+========================================= */
+
+.project-meta {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   DESCRIPTION PRINCIPALE
+========================================= */
+
+.project-description p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.55;
+    color: white;
+    margin: 0;
+}
+
+
+/* =========================================
+   MOTS-CLÉS
+========================================= */
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 3px;
+}
+
+
+    /* Apparence individuelle des mots-clés */
+
+    .project-tags span {
+        display: inline-block;
+        padding: 5px 11px;
+        border: 1px solid rgba(255, 255, 255, 0.85);
+        border-radius: 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.65rem;
+        font-style: italic;
+        color: white;
+        white-space: nowrap;
+    }
+
+/* =========================================
+   FLÈCHES DE NAVIGATION
+========================================= */
+
+.gallery-arrow {
+    position: relative;
+    z-index: 5;
+    flex-shrink: 0;
+    /* Dimensions sensiblement augmentées */
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    /* Taille du symbole */
+    color: #111;
+    font-size: 3rem;
+    font-weight: 200;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+    /* Changement de couleur au survol */
+
+    .gallery-arrow:hover {
+        color: #ff6b24;
+    }
+
+/* Déplacement directionnel au survol */
+
+.gallery-arrow-left:hover {
+    transform: translateX(-6px);
+}
+
+.gallery-arrow-right:hover {
+    transform: translateX(6px);
+}
+
+
+/* Adaptation mobile */
+
+@media (max-width: 768px) {
+
+    .gallery-arrow {
+        width: 40px;
+        height: 60px;
+        font-size: 2rem;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .gallery-section {
+        padding: 0 15px;
+        gap: 5px;
+    }
+
+    .gallery-track {
+        gap: 10px;
+    }
+
+    /* Deux projets visibles sur tablette */
+    .project-card {
+        flex-basis: calc((100% - 10px) / 2);
+    }
+
+    .gallery-arrow {
+        width: 30px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+
+    /* Un projet visible sur petit écran */
+    .project-card {
+        flex-basis: 100%;
+    }
+}
+
+
+/* La fenêtre prend uniquement l'espace restant
+   entre les deux flèches de navigation. */
+
+.gallery - viewport {
+    flex: 1;
+    min - width: 0;
+}
+
+/* Empêche les flèches de perdre leur dimension
+   lorsque la fenêtre devient plus étroite. */
+
+.gallery - arrow {
+    flex - shrink: 0;
+}
+
+/* Désactive les animations pour les utilisateurs
+       ayant demandé une réduction des mouvements. */
+
+@media(prefers - reduced - motion: reduce) {
+
+    .gallery - track,
+    .project - card img,
+    .project - description,
+    .project - title {
+        transition - duration: 0.01ms;
+    }
+}
+
+/* =========================================
+   FONDS VIDÉO DES SECTIONS
+========================================= */
+
+.section-background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+    .section-background video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+/* Conserve une légère teinte claire sur la galerie */
+.gallery-section .section-background::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+}
+
+/* Conserve une légère teinte sombre sur le contact */
+.contact-section .section-background::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+}
+
+/* Les éléments de contenu restent au-dessus des vidéos */
+.gallery-section > :not(.section-background),
+.contact-section > .contact-layout {
+    position: relative;
+    z-index: 1;
+}
+
+/* Les sections doivent laisser apparaître leur fond vidéo */
+.gallery-section,
+.contact-section {
+    background: transparent;
+}

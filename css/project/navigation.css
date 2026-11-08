@@ -1,0 +1,59 @@
+﻿
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.project-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 80px;
+    padding: 20px 5vw;
+    background-color: var(--color-white);
+}
+
+/* Flèche de retour */
+.nav-back {
+    position: absolute;
+    left: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-family: var(--font-body);
+    font-size: 2rem;
+    font-weight: 400;
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+    .nav-back:hover {
+        color: var(--color-accent);
+        transform: translateX(-4px);
+    }
+
+/* Liens de navigation */
+.main-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+}
+
+    .main-navigation a {
+        color: var(--color-dark);
+        font-family: var(--font-body);
+        font-size: 0.9rem;
+        font-style: italic;
+        font-weight: 500;
+        transition: color 0.25s ease;
+    }
+
+        .main-navigation a:hover {
+            color: var(--color-accent);
+        }

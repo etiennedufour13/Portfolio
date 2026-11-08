@@ -1,0 +1,72 @@
+﻿
+/* =========================================
+   BASE ET TYPOGRAPHIES
+========================================= */
+
+/* Variables globales */
+:root {
+    --color-dark: #242326;
+    --color-grey: #777777;
+    --color-light: #EAEAEA;
+    --color-white: #FFFFFF;
+    --color-accent: #ff6b24;
+    --font-body: "Montserrat", sans-serif;
+    --font-title: "Dirtyline", sans-serif;
+    --page-width: 1250px;
+    --page-padding: clamp(20px, 7vw, 100px);
+}
+
+/* Réinitialisation des espacements et dimensions */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Défilement naturel de la page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Configuration générale */
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+/* Images et vidéos adaptatives */
+img,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+/* Liens */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Titres de section */
+.section-title {
+    width: 100%;
+    margin-bottom: 30px;
+    font-family: var(--font-title);
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+/* Paragraphes */
+p {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.8;
+}

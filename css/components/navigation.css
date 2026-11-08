@@ -1,0 +1,48 @@
+﻿/* =========================================
+   BARRE DE NAV
+========================================= */
+
+/* Importation de typos pour l'aléatoire*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Bodoni+Moda:ital,wght@0,400;1,400&family=Space+Grotesk:wght@400;500&display=swap');
+
+
+/* Positionnement de la barre */
+.main-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    padding: 30px 5vw;
+    /* Alignement liens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    /* Pour la garder au dessus de tout visuellement */
+    z-index: 100;
+    /* Pas arrière plan */
+    background: transparent;
+}
+
+    /* Apparence liens */
+    .main-navigation a {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        font-style: italic;
+        font-weight: 400;
+        color: white;
+        text-decoration: none;
+        /* Ombre portée */
+        text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6);
+        /* transition pour l'hover */
+        transition: color 0.3s ease;
+    }
+        .main-navigation a:hover {
+            color: #ff6b24;
+        }
+        /* dans la zone de la galerie seulement : */
+        .main-navigation.gallery-active a {
+            color: #111;
+            text-shadow: none;
+        }

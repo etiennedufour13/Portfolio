@@ -1,0 +1,116 @@
+﻿
+/* =========================================
+   ORGANISATION DU CONTENU
+========================================= */
+
+.project-content {
+    width: min(var(--page-width), 100%);
+    margin: 0 auto;
+    padding: 20px var(--page-padding) 100px;
+}
+
+.project-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 100px;
+}
+
+.section-title {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* Rangées de contenus */
+.content-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 100%;
+}
+
+/* Blocs génériques */
+.content-block {
+    min-width: 0;
+}
+
+/* -----------------------------------------
+   TEXTES
+------------------------------------------ */
+
+.text-block {
+    flex: 1 1 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+    max-width: 70ch;
+    padding: 10px 0;
+}
+
+/* -----------------------------------------
+   IMAGES
+------------------------------------------ */
+
+.media-block {
+    /* La largeur est ajustée par le script JS */
+    flex: 0 1 var(--media-width, 280px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    max-width: 45%;
+    margin: 0;
+    overflow: hidden;
+}
+
+    /* L'image conserve son ratio */
+    .media-block img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+/* Images sans texte adjacent */
+.media-gallery .media-block {
+    flex: 1 1 180px;
+    max-width: none;
+}
+
+/* Vidéos */
+.media-block video {
+    display: block;
+    width: 100%;
+    max-height: 65vh;
+    object-fit: contain;
+    background-color: var(--color-dark);
+}
+
+/* Médias occupant toute la rangée */
+.media-wide {
+    flex: 1 1 100%;
+    max-width: 100%;
+}
+
+/* -----------------------------------------
+   PIED DE PAGE
+------------------------------------------ */
+
+.project-footer {
+    display: flex;
+    justify-content: center;
+    padding: 35px 20px;
+    background-color: var(--color-light);
+}
+
+    .project-footer a {
+        font-size: 0.85rem;
+        font-style: italic;
+        transition: color 0.25s ease;
+    }
+
+        .project-footer a:hover {
+            color: var(--color-accent);
+        }

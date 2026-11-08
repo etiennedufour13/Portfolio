@@ -1,0 +1,35 @@
+﻿/* =========================================
+   FONDS VIDÉO DES SECTIONS
+========================================= */
+
+/* Conteneur couvrant toute la section. */
+.section-background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+    /* La vidéo couvre toute la surface sans déformation. */
+    .section-background video {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+/* Filtre clair pour conserver la lisibilité de la galerie. */
+.section-background-gallery::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+/* Filtre sombre pour conserver la lisibilité de Contact. */
+.section-background-contact::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}

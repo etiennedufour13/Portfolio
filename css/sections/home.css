@@ -1,0 +1,188 @@
+﻿/* =========================================
+   3. SECTION ACCUEIL
+========================================= */
+
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Arrière-plan animé */
+
+.background-container {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: #111;
+}
+
+/*
+Les GIF occupent tout l'écran.
+object-fit: cover permet de conserver leur
+ratio tout en remplissant la fenêtre.
+
+Les parties dépassant de l'écran sont coupées.
+*/
+
+.background-gif {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+    .background-gif.active {
+        opacity: 1;
+    }
+
+
+/* Contenu central */
+
+.home-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+    .home-content h1 {
+        font-family: 'Dirtyline 36Daysoftype 2022', sans-serif;
+        font-size: clamp(3rem, 10vw, 9rem);
+        font-weight: 500;
+        line-height: 0.9;
+        text-shadow: 0px 5px 8px rgba(0, 0, 0, 1);
+    }
+
+.home-etienne_text {
+    font-family: 'designer', sans-serif;
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    margin-bottom: 25px;
+    font-size: clamp(3rem, 2vw, 1.5rem);
+    font-weight: 400;
+    text-shadow: 0px 5px 8px rgba(0, 0, 0, 1);
+}
+
+.home-polyvalent_text {
+    font-family: 'Dirtyline 36Daysoftype 2022', sans-serif;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    margin-top: 5px;
+    font-size: clamp(3rem, 2vw, 1.5rem);
+    font-weight: 400;
+    text-shadow: 0px 5px 8px rgba(0, 0, 0, 1);
+}
+
+
+/* =========================================
+   ILLUSTRATION EN ARRIÈRE-PLAN
+========================================= */
+
+.home-illustration {
+    position: absolute;
+    z-index: 1;
+    /* Position et dimensions de l'illustration */
+    width: min(75vw, 1100px);
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+    .home-illustration img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+
+/* =========================================
+   CONTENU PRINCIPAL
+========================================= */
+
+.home-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================
+   ÉLÉMENTS FLOTTANTS
+========================================= */
+
+.home-network {
+    position: absolute;
+    z-index: 3;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+/* SVG qui contient les lignes */
+.home-network-lines {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+    /* Apparence des lignes */
+    .home-network-lines line {
+        stroke: white;
+        stroke-width: 1;
+        opacity: 0.55;
+    }
+
+/* Conteneur texts tags */
+.home-network-elements {
+    position: absolute;
+    inset: 0;
+}
+/* Chaque élément textuel */
+.home-network-item {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(6px, 0.8vw, 12px) clamp(12px, 1.5vw, 22px);
+    border: 1px solid white;
+    border-radius: 100px;
+    background-color: var(--item-color, rgba(255, 255, 255, 0.15));
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(0.55rem, 0.85vw, 0.9rem);
+    font-weight: 500;
+    white-space: nowrap;
+    /* pos piloté par le JS : */
+    will-change: transform;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .home-illustration {
+        width: 95vw;
+        height: 65%;
+    }
+
+    .home-network-item {
+        font-size: clamp(0.5rem, 2vw, 0.7rem);
+        padding: 5px 9px;
+    }
+}
+
