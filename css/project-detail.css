@@ -14,6 +14,7 @@
 
 /* Organisation du contenu */
 @import url("./project/layout.css");
+@import url("./project/layout2.css");
 
 /* Adaptation aux différentes tailles d'écran */
 @import url("./project/responsive.css");

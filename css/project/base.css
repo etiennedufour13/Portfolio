@@ -11,9 +11,9 @@
     --color-white: #FFFFFF;
     --color-accent: #ff6b24;
     --font-body: "Montserrat", sans-serif;
-    --font-title: "Dirtyline", sans-serif;
+    --font-title: 'Dirtyline 36Daysoftype 2022', sans-serif;
     --page-width: 1250px;
-    --page-padding: clamp(20px, 7vw, 100px);
+    --page-padding: clamp(20px, 5vw, 100px);
 }
 
 /* Réinitialisation des espacements et dimensions */

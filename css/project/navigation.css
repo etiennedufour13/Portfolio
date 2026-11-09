@@ -2,7 +2,6 @@
 /* =========================================
    NAVIGATION
 ========================================= */
-
 .project-header {
     position: fixed;
     top: 0;
@@ -12,10 +11,17 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 80px;
-    padding: 20px 5vw;
+    height: 60px;
+    min-height: 60px;
+    padding: 10px 5vw;
     background-color: var(--color-white);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .1);
+    transition: background-color 0.35s ease;
 }
+    /* État après la bannière */
+    .project-header.is-scrolled {
+        background-color: var(--nav-scrolled-bg, var(--color-white));
+    }
 
 /* Flèche de retour */
 .nav-back {
@@ -24,14 +30,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     font-family: var(--font-body);
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 400;
     transition: color 0.25s ease, transform 0.25s ease;
 }
-
     .nav-back:hover {
         color: var(--color-accent);
         transform: translateX(-4px);
@@ -44,16 +49,14 @@
     justify-content: center;
     gap: 45px;
 }
-
     .main-navigation a {
         color: var(--color-dark);
         font-family: var(--font-body);
-        font-size: 0.9rem;
+        font-size: 1rem;
         font-style: italic;
-        font-weight: 500;
+        font-weight: 300;
         transition: color 0.25s ease;
     }
-
         .main-navigation a:hover {
             color: var(--color-accent);
         }
