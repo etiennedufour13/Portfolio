@@ -1,0 +1,21 @@
+﻿
+/* =========================================
+   POINT D'ENTRÉE DU CSS
+========================================= */
+
+/* Styles fondamentaux */
+@import url('./base/reset.css');
+@import url('./base/typography.css');
+@import url('./base/responsive.css');
+
+/* Organisation générale */
+@import url('./layout/sections.css');
+
+/* Composants communs */
+@import url('./components/navigation.css');
+
+/* Styles propres aux sections */
+@import url('./sections/home.css');
+@import url('./sections/gallery.css');
+@import url('./sections/contact.css');
+

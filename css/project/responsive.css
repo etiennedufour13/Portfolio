@@ -1,0 +1,109 @@
+﻿/* =========================================
+   ADAPTATION AUX ÉCRANS
+========================================= */
+
+
+/* =========================================
+   TABLETTES
+========================================= */
+
+@media (max-width: 900px) {
+
+    :root {
+        --page-padding: 5vw;
+    }
+
+    .project-section {
+        gap: 25px;
+        margin-bottom: 75px;
+    }
+
+    .content-row {
+        gap: 20px;
+    }
+
+    /* Galeries */
+
+    .content-row--gallery,
+    .content-row--gallery-four {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* =========================================
+   MOBILES
+========================================= */
+
+@media (max-width: 600px) {
+
+    /* Contenu */
+
+    .project-content {
+        padding: 10px 20px 60px;
+    }
+
+    .project-section {
+        gap: 20px;
+        margin-bottom: 65px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-top: 15px;
+    }
+
+    /* Toutes les compositions passent en une colonne */
+
+    .content-row,
+    .content-row--text-wide,
+    .content-row--media-wide,
+    .content-row--balanced,
+    .content-row--text-stack,
+    .content-row--stack-text {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    /* Texte */
+
+    .text-block {
+        gap: 12px;
+        padding: 0;
+    }
+
+    /* Médias */
+
+    .media-block img,
+    .media-block video {
+        height: auto;
+        max-height: none;
+    }
+
+    .media-block--natural img,
+    .media-block--natural video {
+        height: auto;
+    }
+
+    /* Les images superposées restent superposées */
+
+    .media-stack {
+        grid-template-rows: auto auto;
+    }
+
+    .media-stack .media-block img {
+        height: auto;
+    }
+
+    /* Galeries */
+
+    .content-row--gallery,
+    .content-row--gallery-two,
+    .content-row--gallery-four {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .content-row--gallery .media-block img {
+        aspect-ratio: auto;
+    }
+}

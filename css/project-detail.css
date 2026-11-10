@@ -1,0 +1,20 @@
+﻿
+/* =========================================
+   POINT D'ENTRÉE DES STYLES DES PAGES PROJET
+========================================= */
+
+/* Fondations et styles généraux */
+@import url("./project/base.css");
+
+/* Barre de navigation */
+@import url("./project/navigation.css");
+
+/* Bannière de présentation */
+@import url("./project/hero.css");
+
+/* Organisation du contenu */
+@import url("./project/layout.css");
+@import url("./project/layout2.css");
+
+/* Adaptation aux différentes tailles d'écran */
+@import url("./project/responsive.css");

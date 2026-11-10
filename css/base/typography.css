@@ -1,0 +1,49 @@
+﻿/* =========================================
+   9. ALTERNANCE TYPOGRAPHIQUE
+========================================= */
+
+/* Animation de transition entre les typographies */
+
+.home-polyvalent_text span {
+    animation: fontAlternation 2s infinite;
+}
+
+
+/* Alternance entre trois typographies */
+
+@keyframes fontAlternation {
+    /* Typographie 1 : Dirtyline */
+
+    0%, 30% {
+        font-family: 'Dirtyline 36Daysoftype 2022', sans-serif;
+    }
+    /* Typographie 2 : Bodoni Moda */
+
+    33%, 63% {
+        font-family: 'Bodoni Moda', serif;
+    }
+    /* Typographie 3 : Space Grotesk */
+
+    66%, 96% {
+        font-family: 'Space Grotesk', sans-serif;
+    }
+    /* Retour à la première typographie */
+
+    100% {
+        font-family: 'Dirtyline 36Daysoftype 2022', sans-serif;
+    }
+}
+
+/* =========================================
+   10. POLICE PERSONNALISÉE DESIGNER
+========================================= */
+
+/* Déclaration de la police locale.
+   Remplace le nom du fichier si nécessaire. */
+@font-face {
+    font-family: 'designer';
+    src: url('../assets/fonts/Designer.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Permet d'afficher le texte pendant le chargement */
+}

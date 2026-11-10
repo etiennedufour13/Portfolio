@@ -1,271 +1,372 @@
-﻿<!DOCTYPE html>
-    <!-- test -->
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+﻿
+<!DOCTYPE html>
+<html lang="fr">
+
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- styles -->
-    <link rel="stylesheet" href="styles1.css">
-    <link rel="stylesheet" href="styles-sidebar.css">
-    <link rel="stylesheet" href="styles-infos.css">
-    <link rel="stylesheet" href="styles-projets.css">
-    <link rel="stylesheet" href="styles-contact.css">
-    <link rel="stylesheet" href="styles-scroll.css">
-    <link rel="stylesheet" href="styles-galerie.css">
-    <link rel="stylesheet" href="styles-intro.css">
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <title>Etienne Dufour</title>
+
+    <!-- Typos -->
+    <link href="https://fonts.cdnfonts.com/css/dirtyline-36daysoftype-2022" rel="stylesheet">
+
+
+    <title>Portfolio — UX Designer</title>
+
+    <!-- Chargement de all les css via main-->
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    <!-- ---------------------------------------------------------------- GALERIE --- -->
-    <section id="galerie">
-        <h1 class="titre-de-section titre-galerie">Etienne Dufour - designer numérique</h1>
 
-        <div class="galerie-filtres">
-            <p class="filtres-text">filtres :</p>
-            <div class="index-projet-description-tags filter">
-                <p class="game-design-tag filter">game design</p>
-                <p class="unity-tag filter">unity</p>
-                <p class="web-tag filter">vidéo</p>
-                <p class="travail-plastique-tag filter">travail plastique</p>
-                <p class="travail-audio-tag filter">travail audio</p>
-                <p class="modelisation-tag filter">modélisation 3D</p>
+    <!-- =================================
+         NAVIGATION FIXE
+    ================================== -->
+
+    <nav class="main-navigation">
+
+        <!-- Chaque lien pointe vers l'identifiant d'une section.
+             Le navigateur permet ainsi de cibler directement
+             la section correspondante. -->
+
+        <a href="#home">Accueil</a>
+        <a href="#gallery">Galerie</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+    <!-- =================================
+         SECTION 1 : ACCUEIL
+    ================================== -->
+
+    <section id="home" class="section home-section">
+
+        <!-- Arrière-plan video -->
+        <div class="background-container">
+
+            <video class="background-gif active" muted playsinline preload="auto">
+                <source src="assets/home_gifs/timeWeaver.mp4" type="video/mp4">
+            </video>
+
+            <video class="background-gif" muted playsinline preload="auto">
+                <source src="assets/home_gifs/cityBuilder.mp4" type="video/mp4">
+            </video>
+
+            <video class="background-gif" muted playsinline preload="auto">
+                <source src="assets/home_gifs/nomades.mp4" type="video/mp4">
+            </video>
+
+        </div>
+
+
+        <!-- =========================================
+             ILLUSTRATION EN ARRIÈRE-PLAN
+        ========================================= -->
+
+        <div class="home-illustration">
+            <img src="./assets/icons/home_illu_1.png" alt="">
+        </div>
+
+
+        <!-- =========================================
+             ÉLÉMENTS FLOTTANTS ET CONNEXIONS
+        ========================================= -->
+
+        <div class="home-network" aria-hidden="true">
+
+            <!-- Les lignes reliant les différents éléments -->
+            <svg class="home-network-lines"></svg>
+
+            <!-- Les éléments textuels seront générés en JavaScript -->
+            <div class="home-network-elements"></div>
+
+        </div>
+
+
+        <!-- =========================================
+             CONTENU PRINCIPAL
+        ========================================= -->
+
+        <div class="home-content">
+
+            <div class="home-etienne_text">
+                <span>Etienne Dufour</span>
             </div>
+
+            <h1>UX designer</h1>
+
+            <div class="home-polyvalent_text">
+                <span>PolyvAlEnt</span>
+            </div>
+
         </div>
 
-        <div class="grille-galerie">
-            <p class="vide">aucun projet ne correspond à cette combinaison</p>
-            <!-- nomades -->
-            <a class="galerie-projet game-design travail-plastique" href="nomades.html">
-                <h3>Nomades</h3>
-                <img class="galerie-gif" src="Nomades/vignette.gif">
-                <img class="galerie-img" src="Nomades/vignette.jpg">
-            </a>
-            <!-- generation -->
-            <a class="galerie-projet travail-plastique unity" href="generatif.html">
-                <h3>Plateau procédural</h3>
-                <img class="galerie-gif" src="Generation/vignette.gif">
-                <img class="galerie-img" src="Generation/vignette.jpg">
-            </a>
-            <!-- olympus -->
-            <a class="galerie-projet game-design unity travail-audio modelisation" href="olympus.html">
-                <h3>Olympus race</h3>
-                <img class="galerie-gif" src="Olympus/vignette.gif">
-                <img class="galerie-img" src="Olympus/vignette.jpg">
-            </a>
-            <!-- baluchon -->
-            <a class="galerie-projet web" href="baluchon.html">
-                <h3>Baluchonnage</h3>
-                <img class="galerie-gif" src="Baluchon/vignette.gif">
-                <img class="galerie-img" src="Baluchon/baniere.jpg">
-            </a>
-            <!-- kiplin -->
-            <a class="galerie-projet game-design" href="kiplin.html">
-                <h3>Le Kwizzz !</h3>
-                <img class="galerie-gif" src="Kiplin/vignette.jpg">
-                <img class="galerie-img" src="Kiplin/vignette.jpg">
-            </a>
-            <!-- reflection -->
-            <a class="galerie-projet game-design modelisation unity" href="reflection.html">
-                <h3>Reflection game</h3>
-                <img class="galerie-gif" src="Reflection/vignette.gif">
-                <img class="galerie-img" src="Reflection/vignette.jpg">
-            </a>
-            <!-- dessin d'observation' -->
-            <a class="galerie-projet travail-plastique" href="croquis.html">
-                <h3>Dessin d'observation</h3>
-                <img class="galerie-gif" src="Dessin/vignette.jpg">
-                <img class="galerie-img" src="Dessin/vignette.jpg">
-            </a>
-            <!-- concave convexe -->
-            <a class="galerie-projet unity" href="concave.html">
-                <h3>Concave convexe</h3>
-                <img class="galerie-gif" src="Concave/convexe.gif">
-                <img class="galerie-img" src="Concave/vignette.png">
-            </a>
-            <!-- pious -->
-            <a class="galerie-projet game-design unity travail-audio" href="pious.html">
-                <h3>Pious in the cages</h3>
-                <img class="galerie-gif" src="Pious/cages.gif">
-                <img class="galerie-img" src="Pious/baniere.jpg">
-            </a>
-            <!-- space -->
-            <a class="galerie-projet game-design unity" href="space.html">
-                <h3>Makey makey</h3>
-                <img class="galerie-gif" src="Space/hurt.gif">
-                <img class="galerie-img" src="Space/baniere.jpg">
-            </a>
-            <!-- growing -->
-            <a class="galerie-projet game-design travail-plastique" href="growing.html">
-                <h3>Growing</h3>
-                <img class="galerie-gif" src="Growing/baniere.jpg">
-                <img class="galerie-img" src="Growing/baniere.jpg">
-            </a>
-            <!-- paria -->
-            <a class="galerie-projet game-design travail-plastique" href="paria.html">
-                <h3>Jeu du paria</h3>
-                <img class="galerie-gif" src="Paria/vignette.gif">
-                <img class="galerie-img" src="Paria/vignette.png">
-            </a>
-            <!-- pious -->
-            <a class="galerie-projet unity travail-plastique" href="hector.html">
-                <h3>Save Hector the dinosaur</h3>
-                <img class="galerie-gif" src="Hector/portable.gif">
-                <img class="galerie-img" src="Hector/vignette.jpg">
-            </a>
-            <!-- secte -->
-            <a class="galerie-projet unity game-design" href="secte.html">
-                <h3>Secte du chapeau</h3>
-                <img class="galerie-gif" src="Secte/vignette.gif">
-                <img class="galerie-img" src="Secte/vignette.png">
-            </a>
-        </div>
-
-        <div class="galerie-background"></div>
 
     </section>
-    </main>
-
-    <footer>
-        <p><br><br><br><br></p>
-    </footer>
-
-    <!-- JS -->
-    <script src="galerie_system.js"></script>
-    <script src="sidebar_system.js"></script>
-
-    <!-- ---------------------------------------------------------------- JS --- -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // start
-            var scrollDown = document.querySelector('.scroll-down');
-            scrollDown.style.opacity = '1';
 
 
 
-            // voir plus
-            const voirElements = document.querySelectorAll('.voir-plus');
+    <!-- =================================
+         SECTION 2 : GALERIE CARROUSEL
+    ================================== -->
 
-            const observerVoirPlus = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.marginRight = '2%';
+    <section id="gallery" class="section gallery-section">
 
-                    }
-                    if (!entry.isIntersecting) {
-                        entry.target.style.marginRight = '-75px';
-                    }
-                });
-            });
+        <!-- Fond vidéo -->
+        <div class="section-background" aria-hidden="true" style="background-color:white;">
+<!--
+            <video autoplay muted loop playsinline preload="none">
+                <source src="" type="video/mp4">
+            </video>
+-->
+        </div>
 
-            voirElements.forEach(voirElement => {
-                observerVoirPlus.observe(voirElement);
-            });
+        <!-- Flèche de navigation gauche -->
+        <button class="gallery-arrow gallery-arrow-left"
+                aria-label="Projet précédent">
+            &#10094;
+        </button>
 
-            // bar-activator (petit objet en haut de page)
-            const barActivator = document.querySelector('.bar-activator');
+        <!-- Fenêtre visible du carrousel -->
+        <div class="gallery-viewport">
 
-            const observerIntro = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        // barre
-                        var sidebar = document.querySelector('.sidebar');
-                        sidebar.style.left = '-70px';
+            <!-- Piste contenant tous les projets -->
+            <div class="gallery-track">
 
-                        // éléments
-                        var nav1 = document.querySelector('.nav-presentation');
-                        nav1.style.marginRight = '75px';
-                        var nav2 = document.querySelector('.nav-projets');
-                        nav2.style.marginRight = '75px';
-                        var nav3 = document.querySelector('.nav-galerie');
-                        nav3.style.marginRight = '75px';
-                        var nav4 = document.querySelector('.nav-contact');
-                        nav4.style.marginRight = '75px';
+                <!-- Nomades -->
+                <a href="nomades.html" class="project-card">
 
-                        //scroll
-                        var scrollDown = document.querySelector('.scroll-down');
-                        scrollDown.style.opacity = '1';
-                    } else {
-                        // barre
-                        var sidebar = document.querySelector('.sidebar');
-                        sidebar.style.left = '0';
-                        sidebar.style.top = '0';
+                    <!-- Image principale -->
+                    <img src="./assets/nomades/vignette.jpg" class="project-image" alt="Projet 02">
 
-                        // éléments
-                        var nav1 = document.querySelector('.nav-presentation');
-                        nav1.style.marginRight = '0';
-                        var nav2 = document.querySelector('.nav-projets');
-                        nav2.style.marginRight = '0';
-                        var nav3 = document.querySelector('.nav-galerie');
-                        nav3.style.marginRight = '0';
-                        var nav4 = document.querySelector('.nav-contact');
-                        nav4.style.marginRight = '0';
+                    <!-- Image alternative au survol -->
+                    <img src="./assets/nomades/vignette.gif" class="project-image-hover" alt="">
 
-                        //scroll
-                        var scrollDown = document.querySelector('.scroll-down');
-                        scrollDown.style.transition = 'opacity 0.5s ease-in-out';
-                        scrollDown.style.opacity = '0';
-                    }
-                });
-            });
+                    <!-- Titre toujours visible -->
+                    <h2 class="project-title">Nomades</h2>
 
-            observerIntro.observe(barActivator);
+                    <!-- Description visible au survol -->
+                    <div class="project-description">
 
-            // fleches dans la page info (qui disparait)
-            const flechesActivator = document.querySelector('.fleches-infos-activator');
+                        <!-- Durée et contexte du projet -->
+                        <span class="project-meta"> 3 mois · Projet scolaire </span>
 
-            const observerInfos = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        //scroll
-                        var scrollInfos = document.querySelector('.scroll-infos');
-                        scrollInfos.style.transition = 'opacity 4s ease-in-out';
-                        scrollInfos.style.opacity = '1';
-                    } else {
-                        //scroll
-                        var scrollInfos = document.querySelector('.scroll-infos');
-                        scrollInfos.style.transition = 'opacity 0.5s ease-in-out';
-                        scrollInfos.style.opacity = '0';
-                    }
-                });
-            });
+                        <!-- Description principale -->
+                        <p>
+                            Jeu solo alternatif réalisé dans le cadre d'un travail de recherche sur les expériences ludiques hybrides.<br>
+                            Vous incarnez une tribu nomade du Paléolithique et avez pour objectif d’explorer les environnements qui vous entourent,
+                            de développer votre groupe en fabriquant des objets et de survivre aux différents défis rencontrés.
+                        </p>
 
-            observerInfos.observe(flechesActivator);
+                        <!-- Mots-clés associés au projet -->
+                        <div class="project-tags"><span>programmation</span><span>travail plastique</span><span>game design</span></div>
 
-            // fleches dans la page projets (qui disparait)
-            const flechesActivatorProjet = document.querySelector('.fleches-projets-activator');
+                    </div>
+                </a>
 
-            const observerProjets = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        //scroll
-                        var scrollProjets = document.querySelector('.scroll-projets');
-                        scrollProjets.style.transition = 'opacity 4s ease-in-out';
-                        scrollProjets.style.opacity = '1';
-                    } else {
-                        //scroll
-                        var scrollProjets = document.querySelector('.scroll-projets');
-                        scrollProjets.style.transition = 'opacity 0.5s ease-in-out';
-                        scrollProjets.style.opacity = '0';
-                    }
-                });
-            });
+                <!-- Baluchon -->
+                <a href="baluchon.html" class="project-card">
 
-            observerProjets.observe(flechesActivatorProjet);
-        });
+                    <!-- Image principale -->
+                    <img src="./assets/baluchon/vignette.jpg" class="project-image" alt="Baluchonnage">
 
-    </script>
+                    <!-- Image alternative au survol -->
+                    <img src="./assets/baluchon/vignette.gif" class="project-image-hover" alt="">
+
+                    <!-- Titre toujours visible -->
+                    <h2 class="project-title">Baluchonnage</h2>
+
+                    <!-- Description visible au survol -->
+                    <div class="project-description">
+
+                        <!-- Durée et contexte du projet -->
+                        <span class="project-meta"> 2 semaines · Freelance </span>
+
+                        <!-- Description principale -->
+                        <p>
+                            Description
+                        </p>
+
+                        <!-- Mots-clés associés au projet -->
+                        <div class="project-tags"><span>réalisation vidéo</span></div>
+
+                    </div>
+                </a>
+
+                <!-- Concave convexe -->
+                <a href="concave.html" class="project-card">
+
+                    <!-- Image principale -->
+                    <img src="./assets/concave/vignette.png" class="project-image" alt="Baluchonnage">
+
+                    <!-- Image alternative au survol -->
+                    <img src="./assets/concave/convexe.gif" class="project-image-hover" alt="">
+
+                    <!-- Titre toujours visible -->
+                    <h2 class="project-title">Concave Convexe</h2>
+
+                    <!-- Description visible au survol -->
+                    <div class="project-description">
+
+                        <!-- Durée et contexte du projet -->
+                        <span class="project-meta"> 1 semaine · Scolaire </span>
+
+                        <!-- Description principale -->
+                        <p>
+                            Description
+                        </p>
+
+                        <!-- Mots-clés associés au projet -->
+                        <div class="project-tags"><span>programmation</span><span>VR</span><span>travail plastique</span></div>
+
+                    </div>
+                </a>
+
+                <!-- Olympus Race -->
+                <a href="olympus.html" class="project-card">
+
+                    <!-- Image principale -->
+                    <img src="./assets/olympus/baniere.jpg" class="project-image" alt="Projet 03">
+
+                    <!-- Image alternative au survol -->
+                    <img src="./assets/olympus/vignette.gif" class="project-image-hover" alt="">
+
+                    <!-- Titre toujours visible -->
+                    <h2 class="project-title">Olympus Race</h2>
+
+                    <!-- Description visible au survol -->
+                    <div class="project-description">
+
+                        <!-- Durée et contexte du projet -->
+                        <span class="project-meta"> 4 mois · Projet académique </span>
+
+                        <!-- Description principale -->
+                        <p>Jeu de rythme en VR conçu et réalisé dans le cadre d'un stage en salle d'arcade.</p>
+
+                        <!-- Mots-clés associés au projet -->
+                        <div class="project-tags"><span>UX Design</span><span>Game Design</span><span>Recherche</span></div>
+
+                    </div>
+                </a>
+
+                <!-- Jeu du paria -->
+                <a href="paria.html" class="project-card">
+
+                    <!-- Image principale -->
+                    <img src="./assets/paria/vignette.png" class="project-image" alt="Artisan Meurtrier">
+
+                    <!-- Image alternative au survol -->
+                    <img src="./assets/paria/vignette.gif" class="project-image-hover" alt="">
+
+                    <!-- Titre toujours visible -->
+                    <h2 class="project-title">Jeu du Paria</h2>
+
+                    <!-- Description visible au survol -->
+                    <div class="project-description">
+
+                        <!-- Durée et contexte du projet -->
+                        <span class="project-meta"> 2023 · projet personnel </span>
+
+                        <!-- Description principale -->
+                        <p></p>
+
+                        <!-- Mots-clés associés au projet -->
+                        <div class="project-tags"><span>game design</span><span>travail plastique</span></div>
+
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Flèche de navigation droite -->
+        <button class="gallery-arrow gallery-arrow-right"
+                aria-label="Projet suivant">
+            &#10095;
+        </button>
+
+    </section>
+
+
+
+    <!-- =================================
+         SECTION 3 : CONTACT
+    ================================== -->
+
+    <section id="contact" class="section contact-section">
+
+        <!-- Fond vidéo -->
+         <!-- 
+        <div class="section-background" aria-hidden="true">
+            <video autoplay muted loop playsinline preload="none">
+                <source src="assets/backgrounds/Fond_black_1.mp4" type="video/mp4">
+            </video>
+        </div>
+        -->
+
+        <div class="section-background" aria-hidden="true">
+            
+        </div>
+
+        <div class="contact-layout">
+
+            <!-- Photographie avec description au survol -->
+            <div class="contact-photo">
+                <div class="contact-photo-frame">
+                    <img src="./assets/contact/photo_moi.jpg" alt="Photo Etienne">
+
+                    <div class="contact-photo-overlay">
+                        <p>
+                            Hi there, I’m Etienne !<br>
+                            Coming from both a scientific and design background, I'm a quite curious and versatile designer now trying to focus on UX in the field of indie games.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Informations de contact -->
+            <div class="contact-infos">
+
+                <h2>Etienne Dufour</h2>
+
+                <div class="contact-details">
+
+                    <a href="tel:+33642590116" class="copy-link" data-copy="+33 6 42 59 01 16">+33 6 42 59 01 16</a>
+
+                    <a href="mailto:etiennedufour13@gmail.com" class="copy-link" data-copy="etiennedufour13@gmail.com">etiennedufour13@gmail.com</a>
+
+                    <a href="#" class="copy-link" data-copy="@etiennedufour13">Discord/Insta : @etiennedufour13</a>
+
+                </div>
+
+                <!-- CV cliquable -->
+                <div class="contact-cv">
+                    <span>CV :</span>
+
+                    <a href="./assets/contact/Etienne_Dufour_CV.pdf"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="contact-cv-image">
+
+                        <img src="./assets/contact/CV_preview.png" alt="mon CV">
+
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Point d'entrée unique du JavaScript -->
+    <script src="js/scroll.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/home-network.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/navigation-color.js"></script>
 
 </body>
 </html>

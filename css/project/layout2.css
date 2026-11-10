@@ -1,0 +1,611 @@
+﻿/* =========================================
+   EDITORIAL LAYOUT
+========================================= */
+
+.editorial-layout {
+    --editorial-columns: 12;
+    --editorial-gap: clamp(10px, 1vw, 24px);
+    --editorial-margin: clamp(20px, 2vw, 90px);
+    --editorial-black: #171717;
+    --editorial-grey: #777777;
+    --editorial-light: #e8e8e8;
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: clamp(20px, 4vw, 100px) var(--editorial-margin) var(--editorial-margin) clamp(50px, 8vw, 120px);
+    box-sizing: border-box;
+    color: var(--editorial-black);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+.editorial-section {
+    margin-bottom: clamp(15px, 6vw, 150px);
+}
+    .editorial-section:last-child {
+        margin-bottom: 0;
+    }
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.editorial-heading {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: clamp(20px, 1vw, 60px);
+}
+
+.editorial-index {
+    flex-shrink: 0;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.editorial-line {
+    flex: 1;
+    height: 1px;
+    background: var(--editorial-light);
+}
+
+
+/* =========================================
+   COMPOSITION GRID
+========================================= */
+
+.composition {
+    display: grid;
+    grid-template-columns: repeat(var(--editorial-columns), minmax(0, 1fr));
+    column-gap: var(--editorial-gap);
+    row-gap: clamp(30px, 5vw, 70px);
+    align-items: stretch;
+    margin-bottom: clamp(10px, 1vw, 100px);
+}
+    .composition:last-child {
+        margin-bottom: 0;
+    }
+
+
+/* =========================================
+   COLUMN SPANS
+========================================= */
+
+.col-3 {
+    grid-column: span 3;
+}
+
+.col-4 {
+    grid-column: span 4;
+}
+
+.col-5 {
+    grid-column: span 5;
+}
+
+.col-6 {
+    grid-column: span 6;
+}
+
+.col-7 {
+    grid-column: span 7;
+}
+
+.col-8 {
+    grid-column: span 8;
+}
+
+.col-9 {
+    grid-column: span 9;
+}
+
+.col-10 {
+    grid-column: span 10;
+}
+
+.col-11 {
+    grid-column: span 11;
+}
+
+.col-12 {
+    grid-column: span 12;
+}
+
+
+/* =========================================
+   TEXT BLOCKS
+========================================= */
+
+.editorial-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-width: 0;
+}
+
+.block-label {
+    display: block;
+    margin-bottom: clamp(20px, 1vw, 60px);
+    color: var(--editorial-grey);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+.editorial-text h2 {
+    max-width: 650px;
+    margin: 0 0 20px;
+    font-size: clamp(25px, 3vw, 40px);
+    font-weight: 500;
+    line-height: 1.05;
+    font-family: 'Dirtyline 36Daysoftype 2022', sans-serif;
+}
+.editorial-text h3 {
+    max-width: 500px;
+    margin: 0 0 20px;
+    font-size: clamp(22px, 2.5vw, 34px);
+    font-weight: 500;
+    line-height: 1.15;
+    font-family: 'Dirtyline 36Daysoftype 2022', sans-serif;
+}
+.editorial-text p, editorial-text ul, editorial-text li {
+    max-width: 500px;
+    margin: 0;
+    font-size: clamp(12px, 0.9vw, 14px);
+    font-weight: 400;
+    line-height: 1.9;
+    color: #555555;
+}
+
+.text-large {
+    justify-content: flex-end;
+}
+
+/* =========================================
+   FULL WIDTH TEXT
+========================================= */
+
+.editorial-text.col-12 h2,
+.editorial-text.col-12 h3,
+.editorial-text.col-12 p {
+    max-width: 100%;
+}
+
+/* =========================================
+   MEDIA BLOCKS
+========================================= */
+
+.editorial-media {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+    /* =========================================
+   MEDIA CONTENT
+========================================= */
+
+    .editorial-media img,
+    .editorial-media video {
+        display: block;
+        width: 100%;
+        height: 100%;
+        min-height: 0;
+        object-fit: cover;
+    }
+
+
+    /* =========================================
+   HOVER CAPTION
+========================================= */
+
+    .editorial-media .media-caption {
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        gap: 12px;
+        padding: 70px 25px 22px;
+        margin: 0;
+        color: white;
+        font-size: 10px;
+        line-height: 1.5;
+        text-align: right;
+        background: linear-gradient( to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.55) 40%, rgba(0, 0, 0, 0) 100% );
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.45s ease, transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+        pointer-events: none;
+    }
+
+        .editorial-media .media-caption span {
+            flex-shrink: 0;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            color: white;
+        }
+
+
+    /* =========================================
+   HOVER / FOCUS ANIMATION
+========================================= */
+
+    .editorial-media:hover .media-caption,
+    .editorial-media:focus-within .media-caption {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+/* =========================================
+   TOUCH DEVICES
+========================================= */
+
+@media (hover: none) {
+
+    .editorial-media .media-caption {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .editorial-media .media-caption {
+        transition: none;
+    }
+}
+
+    /* =========================================
+   MEDIA PROPORTIONS
+========================================= */
+
+    /* Images classiques */
+
+    .editorial-media:not(.media-feature) img {
+        aspect-ratio: 16 / 9;
+    }
+
+/* Images accompagnant un texte */
+
+.composition .editorial-media {
+    align-self: stretch;
+}
+
+    .composition .editorial-media img,
+    .composition .editorial-media video {
+        flex: 1;
+        aspect-ratio: auto;
+    }
+
+/* Image verticale */
+
+.media-tall img {
+    aspect-ratio: 4 / 5;
+}
+
+/* Image principale */
+
+.media-feature img {
+    width: 100%;
+    aspect-ratio: 21 / 9;
+    object-fit: cover;
+}
+
+/* Vidéo */
+
+.media-video video {
+    aspect-ratio: 16 / 9;
+    background: #111111;
+}
+
+
+/* =========================================
+   SPECIFIC COMPOSITIONS
+========================================= */
+
+/* Introduction */
+
+.composition-intro {
+    align-items: stretch;
+}
+
+/* Composition inversée */
+
+.composition-reverse {
+    align-items: stretch;
+}
+
+/* Galerie de trois éléments */
+
+.composition-gallery {
+    align-items: stretch;
+}
+
+/* Grande image */
+
+.editorial-feature-section {
+    margin-left: calc(var(--editorial-margin) * -0.35);
+    margin-right: calc(var(--editorial-margin) * -0.35);
+}
+
+    .editorial-feature-section .editorial-heading {
+        margin-left: calc(var(--editorial-margin) * 0.35);
+        margin-right: calc(var(--editorial-margin) * 0.35);
+    }
+
+.media-feature img {
+    max-height: 850px;
+}
+
+/* Composition vidéo */
+
+.composition-video {
+    align-items: stretch;
+}
+
+
+/* =========================================
+   SIDE NOTE
+========================================= */
+
+.editorial-side-note {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+    padding-left: 20px;
+    border-left: 1px solid var(--editorial-light);
+}
+
+    .editorial-side-note span {
+        margin-bottom: 20px;
+        font-size: 9px;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+    }
+
+    .editorial-side-note p {
+        margin: 0 0 10px;
+        color: var(--editorial-grey);
+        font-size: 10px;
+        line-height: 1.5;
+    }
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .editorial-layout {
+        --editorial-margin: 35px;
+        --editorial-gap: 16px;
+    }
+
+    .editorial-text h2 {
+        font-size: clamp(28px, 5vw, 44px);
+    }
+
+    .editorial-text h3 {
+        font-size: clamp(22px, 3.5vw, 30px);
+    }
+
+    .editorial-text p {
+        font-size: 12px;
+    }
+
+    .media-feature img {
+        aspect-ratio: 16 / 9;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .editorial-layout {
+        --editorial-columns: 4;
+        --editorial-gap: 14px;
+        --editorial-margin: 20px;
+        padding-top: 55px;
+        padding-bottom: 70px;
+    }
+
+
+    /* Sections */
+
+    .editorial-section {
+        margin-bottom: 85px;
+    }
+
+    .editorial-heading {
+        margin-bottom: 30px;
+    }
+
+
+    /* Toutes les compositions */
+
+    .composition {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        row-gap: 25px;
+        margin-bottom: 65px;
+    }
+
+
+    /* Réinitialisation des colonnes */
+
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-10,
+    .col-11,
+    .col-12 {
+        grid-column: span 4;
+    }
+
+
+    /* Textes */
+
+    .editorial-text {
+        padding: 10px 0;
+    }
+
+        .editorial-text h2 {
+            font-size: clamp(30px, 9vw, 44px);
+            margin-bottom: 18px;
+        }
+
+        .editorial-text h3 {
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+
+        .editorial-text p {
+            max-width: 100%;
+            font-size: 12px;
+            line-height: 1.8;
+        }
+
+    .block-label {
+        margin-bottom: 16px;
+    }
+
+
+    /* Médias */
+
+    .editorial-media {
+        width: 100%;
+    }
+
+        .editorial-media img,
+        .editorial-media video {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+        }
+
+        .editorial-media figcaption {
+            font-size: 9px;
+        }
+
+
+    /* Introduction */
+
+    .composition-intro .editorial-text {
+        grid-row: 1;
+    }
+
+    .composition-intro .editorial-media {
+        grid-row: 2;
+    }
+
+
+    /* Image principale */
+
+    .editorial-feature-section {
+        margin-left: calc(var(--editorial-margin) * -1);
+        margin-right: calc(var(--editorial-margin) * -1);
+    }
+
+        .editorial-feature-section .editorial-heading {
+            margin-left: var(--editorial-margin);
+            margin-right: var(--editorial-margin);
+        }
+
+    .media-feature img {
+        aspect-ratio: 4 / 3;
+    }
+
+
+    /* Informations */
+
+    .editorial-side-note {
+        padding: 20px 0 0;
+        border-left: none;
+        border-top: 1px solid var(--editorial-light);
+    }
+}
+/* =========================================
+   EDITORIAL LINKS
+========================================= */
+
+.editorial-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+/* =========================================
+   LINK BUTTON
+========================================= */
+
+.editorial-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 5px 15px;
+    border: 1px solid var(--editorial-light);
+    border-radius: 15px;
+    color: var(--editorial-black);
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+    /* Flèche */
+    .editorial-link .link-arrow {
+        font-size: 14px;
+        font-style: normal;
+        transition: transform 0.25s ease;
+    }
+
+    /* Survol */
+    .editorial-link:hover {
+        background-color: var(--editorial-black);
+        border-color: var(--editorial-black);
+        color: white;
+    }
+        .editorial-link:hover .link-arrow {
+            transform: translate(3px, -3px);
+        }
+
+
+    /* Focus clavier */
+    .editorial-link:focus-visible {
+        outline: 2px solid var(--editorial-black);
+        outline-offset: 4px;
+    }
