@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -7,21 +8,21 @@
 
     <title>Étienne Dufour — Baluchonnage</title>
 
-    <!-- Typographies -->
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/dirtyline-36daysoftype-2022" rel="stylesheet">
 
-    <!-- Styles de la page projet -->
+    <!-- Styles projet -->
     <link rel="stylesheet" href="./css/project-detail.css">
 </head>
 
 <body>
 
     <!-- =========================================
-         NAVIGATION
+         BARRE DE NAV
     ========================================== -->
 
-    <header class="project-header">
+    <header class="project-header" style="--nav-scrolled-bg: #a8e6ab; ">
 
         <a href="index.html#gallery" class="nav-back" aria-label="Retour à la galerie">
             <span aria-hidden="true">←</span>
@@ -37,86 +38,136 @@
 
 
     <main>
-
         <!-- =========================================
-             BANNIÈRE
+             BANNIERE
         ========================================== -->
-
         <section class="project-hero">
 
-            <img class="project-hero-image"
-                 src="Baluchon/baniere.jpg"
-                 alt="Bannière du projet Baluchonnage">
+            <img class="project-hero-image" src="./assets/baluchon/baniere.jpg">
 
             <div class="project-hero-content">
-
-                <h1>Le baluchonnage</h1>
-
+                <h1>Baluchonnage</h1>
                 <div class="project-tags">
-                    <span>Réalisation vidéo</span>
+                    <span>réalisation vidéo</span>
                 </div>
-
             </div>
 
         </section>
 
-
         <!-- =========================================
              CONTENU
         ========================================== -->
-
         <div class="project-content">
+            <div class="editorial-layout">
 
-            <section class="project-section">
+                <!-- ----- -->
+                <section class="editorial-section">
+                    <div class="composition composition-intro">
 
-                <div class="content-row">
+                        <div class="editorial-text text-large col-7">
+                            <span class="block-label">Le projet</span>
 
-                    <div class="content-block text-block">
+                            <h2>Une commande <br>de baluchon france</h2>
 
+                            <p>En tant que freelance, j’ai travaillé avec l’association Baluchon France dans l’objectif 
+                            de concevoir et réaliser une vidéo décrivant leurs activités. Le baluchonnage est un service 
+                            d’aide à domicile longue qui vise à soulager les aidants de personnes âgées ou en situation 
+                            de handicape pour qui d'autres formes d’aides ne seraient pas adaptées.</p>
+                            <div class="editorial-links">
+                                <a href="https://baluchonfrance.com/" class="editorial-link" target="_blank" rel="noopener noreferrer">
+                                    <span>Baluchon France</span>
+                                    <span class="link-arrow">↗</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <figure class="editorial-media col-5">
+                            <img src="./assets/baluchon/baluchon.jpg"
+                                 alt="interactions avec le support numérique">
+                            <figcaption class="media-caption">
+                                <span>Fig.</span>
+                                Baluchon France
+                            </figcaption>
+                        </figure>
+
+                    </div>
+                </section>
+
+                <!-- ----- -->
+                <section class="editorial-section">
+                    <div class="editorial-heading">
+                        <span class="editorial-index">01 — Intentions</span>
+                        <span class="editorial-line"></span>
+                    </div>
+
+                    <div class="editorial-text col-12">
+                        <span class="block-label">L'équipe</span>
+                        <h3>Un duo graphiste-réalisateur</h3>
                         <p>
-                            En tant que freelance, j’ai travaillé avec l’association
-                            <a href="https://baluchonfrance.com/">Baluchon France</a> dans l’objectif
-                            de concevoir et réaliser une vidéo décrivant leur activitées. Le baluchonnage
-                            est un service d’aide à domicile longue qui vise à soulager les aidants de
-                            personnes âgées ou en situation de handicape pour qui d'autres formes d’aides
-                            ne seraient pas adaptées.
+                            Je me suis associé à Clara Boussard qui s’est occupée du montage et des illustrations. 
+                            De mon côté, en échange constant avec la direction de Baluchon France, j’ai pensé le 
+                            script et la structure de la vidéo dans l’objectif de présenter ce sujet complexe au public. 
                         </p>
+                        <div class="editorial-links">
+                            <a href="https://www.linkedin.com/in/claraboussard/" class="editorial-link" target="_blank" rel="noopener noreferrer">
+                                <span>Clara Boussard</span>
+                                <span class="link-arrow">↗</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
 
-                        <p>
-                            Je me suis associé à
-                            <a href="https://fr.linkedin.com/in/claraboussard">Clara Boussard</a>
-                            qui s’est occupée du montage et des illustrations. De mon côté, en échange
-                            constant avec la direction de Baluchon France, j’ai pensé le script et la
-                            structure de la vidéo dans l’objectif de présenter ce sujet complexe au public.
-                        </p>
+                <!-- ----- -->
+                <section class="editorial-section editorial-feature-section">
+                    <figure class="editorial-media media-feature">
+                        <video autoplay muted loop playsinline controls>
+                            <source src="./assets/baluchon/video1.mp4" type="video/mp4">
+                        </video>
+                        <figcaption class="media-caption">
+                            <span>Vidéo.</span>
+                            Le baluchonnage : c'est quoi ?
+                        </figcaption>
+
+                    </figure>
+
+                </section>
+
+                <!-- ----- -->
+
+                <section class="editorial-section editorial-conclusion">
+
+                    <div class="editorial-heading">
+                        <span class="editorial-index">02 — Conclusion</span>
+                        <span class="editorial-line"></span>
+                    </div>
+
+                    <div class="composition">
+
+                        <div class="editorial-text col-7">
+                            <span class="block-label">Qu'en retenir ?</span>
+
+                            <h3>Premère expérience pro de réalisation</h3>
+                            <p>
+                                Ce projet de réalisation vidéo fut l’une des mes premières commandes en tant 
+                                que Freelance avec un organisme aussi structuré et sérieux que Baluchon France. 
+                                Le contact avec les gérants de cette organisation fut très plaisant et enrichissant.
+                            </p>
+                        </div>
+
+                        <div class="editorial-side-note col-3">
+                            <span>Informations</span>
+                            <p>Année • 2022</p>
+                            <p>Durée • 2 semaines<br><br></p>
+                            <p>Contexte • freelance</p>
+                            <p>Groupe • 2 personnes<br><br></p>
+                            <p>Outils • Première pro, Reaper</p>
+                        </div>
 
                     </div>
 
-                    <figure class="content-block media-block">
+                </section>
 
-                        <img src="Baluchon/baluchon.png"
-                             alt="Identité visuelle de Baluchon France"
-                             loading="lazy">
-
-                    </figure>
-
-                </div>
-
-                <div class="content-row">
-
-                    <figure class="content-block media-block media-wide">
-
-                        <video controls muted playsinline preload="metadata">
-                            <source src="Baluchon/video1.mp4" type="video/mp4">
-                            Votre navigateur ne prend pas en charge la lecture vidéo.
-                        </video>
-
-                    </figure>
-
-                </div>
-
-            </section>
-
+            </div>
         </div>
 
     </main>
@@ -133,6 +184,7 @@
 
     <!-- Ajustement automatique des blocs -->
     <script src="./js/project-layout.js" defer></script>
+    <script src="./js/project-nav-color.js" defer></script>
 
 </body>
 </html>

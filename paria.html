@@ -1,127 +1,294 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
+<html lang="fr">
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- styles -->
-    <link rel="stylesheet" href="styles1.css">
-    <link rel="stylesheet" href="styles2.css">
-    <link rel="stylesheet" href="styles-sidebar.css">
-    <link rel="stylesheet" href="styles-galerie.css">
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <title>Etienne Dufour - Jeu du paria</title>
+
+    <title>Étienne Dufour — Jeu du Paria</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/dirtyline-36daysoftype-2022" rel="stylesheet">
+
+    <!-- Styles projet -->
+    <link rel="stylesheet" href="./css/project-detail.css">
 </head>
+
 <body>
-    <!-- ---------------------------------------------------------------- CONTENU --- -->
-    <div class="baniere-holder">
-        <div class="baniere-text">
-            <h1>Le jeu du Paria</h1>
-            <div class="baniere-tags">
-                <a href="index.html#galerie"><p class="game-design-tag pas-filter">game design</p></a>
-                <a href="index.html#galerie"><p class="travail-plastique-tag pas-filter">travail plastique</p></a>
+
+    <!-- =========================================
+         BARRE DE NAV
+    ========================================== -->
+
+    <header class="project-header" style="--nav-scrolled-bg: #f889bd; ">
+
+        <a href="index.html#gallery" class="nav-back" aria-label="Retour à la galerie">
+            <span aria-hidden="true">←</span>
+        </a>
+
+        <nav class="main-navigation">
+            <a href="index.html#home">Accueil</a>
+            <a href="index.html#gallery">Galerie</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+        <!-- =========================================
+             BANNIERE
+        ========================================== -->
+        <section class="project-hero">
+
+            <img class="project-hero-image" src="./assets/paria/baniere.png">
+
+            <div class="project-hero-content">
+                <h1>Jeu du paria</h1>
+                <div class="project-tags">
+                    <span>game design</span>
+                    <span>travail plastique</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- =========================================
+             CONTENU
+        ========================================== -->
+        <div class="project-content">
+            <div class="editorial-layout">
+
+                <!-- ----- -->
+                <section class="editorial-section">
+                    <div class="composition composition-intro">
+
+                        <div class="editorial-text text-large col-8">
+                            <span class="block-label">Le projet</span>
+
+                            <h2>Un party game hybride</h2>
+
+                            <p>Pour ma candidature au CNAM ENJMIN, j’ai eu à concevoir un jeu centré sur le principe de conformisme social. 
+                                J’ai donc entièrement conçu un “party game”, pensé pour être joué avec un smartphone, et j’ai rédigé son Game Design Document. </p>
+                            <div class="editorial-links">
+                                <a href="./assets/paria/GDD-Jeu_du_paria.pdf" class="editorial-link" target="_blank" rel="noopener noreferrer">
+                                    <span>Voir le GDD</span>
+                                    <span class="link-arrow">↗</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <figure class="editorial-media col-4">
+                            <img src="./assets/paria/pageDePDF2.png">
+                            <figcaption class="media-caption">
+                                <span>Fig.</span>
+                                GDD
+                            </figcaption>
+                        </figure>
+
+                    </div>
+                </section>
+
+                <!-- ----- -->
+                <section class="editorial-section">
+                    <div class="editorial-heading">
+                        <span class="editorial-index">01 — La thématique</span>
+                        <span class="editorial-line"></span>
+                    </div>
+
+                    <div class="composition composition-reverse">
+                        <figure class="editorial-media col-6">
+                            <video autoplay muted loop playsinline controls>
+                                <source src="./assets/paria/video.mp4" type="video/mp4">
+                            </video>
+                            <figcaption class="media-caption">
+                                <span>Vidéo.</span>
+                                présentation de l’expérience de Asch
+                            </figcaption>
+                        </figure>
+
+                        <div class="editorial-text col-6">
+                            <span class="block-label">L’expérience de Asch</span>
+                            <h3>Le conformisme social</h3>
+                            <p>La vidéo de référence met en scène l’expérience de Asch, mettant en évidence le concept psychosociologique du conformisme social. 
+                                Il s’agit du processus poussant naturellement les individus à imiter un groupe afin de s’y intégrer.<br>
+                                Ce processus engendre plusieurs effets. C’est un puissant mécanisme de cohésion sociale, 
+                                mais qui a cependant également pour effet de faire perdre à chacun son individualité. 
+                                Deux notions s’opposent clairement: la singularité et le regard du groupe. 
+
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ----- -->
+                <section class="editorial-section">
+                    <div class="editorial-heading">
+                        <span class="editorial-index">02 — Le concept</span>
+                        <span class="editorial-line"></span>
+                    </div>
+
+                    <div class="composition composition-reverse">
+                        <div class="editorial-text col-6">
+                            <span class="block-label">Coeur du jeu</span>
+                            <h3>Ressentir la pression du groupe</h3>
+                            <p>
+                                Le “jeu du paria” est un jeu d’ambiance pour support mobile comparable aux applications. 
+                                Cette expérience ludique met au défi les joueurs de défendre leur objectif individuel tout 
+                                en prenant en compte le regard des autres, tout ça dans une ambiance fun et décalée. 
+                            </p>
+                        </div>
+
+                        <figure class="editorial-media col-6">
+                            <img src="./assets/paria/mockup.png">
+                            <figcaption class="media-caption">
+                                <span>Fig.</span>
+                                mockup du jeu
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="editorial-text col-12">
+                        <p>
+                            Un thème est attribué à chaque joueur. Lors de la première phase du jeu, des mots vont leur être proposés. 
+                            Il devront sélectionner ceux de leurs choix, avec pour objectif, en fin de partie, de justifier en quoi 
+                            ces mots s’incluent dans leurs thèmes. Cependant les mots choisis doivent également être sélectionnés 
+                            en fonction d’une autre variable: le choix du groupe. Lorsqu’un joueur est seul à choisir un mot, 
+                            sa “jauge de paria” augmente et il perd des points. Il est donc intéressant d’analyser les actions 
+                            des autres participants, afin d’anticiper leurs réponses et ainsi éviter de devenir le paria!<br>
+                            J’ai théorisé l'expérience utilisateur et décrit plus en détail le gameplay dans le GDD. N’hésitez pas à le consulter! 
+                        </p>
+                    </div>
+                </section>
+
+                <!-- ----- -->
+                <section class="editorial-section">
+                    <div class="editorial-heading">
+                        <span class="editorial-index">03 — L’univers visuel</span>
+                        <span class="editorial-line"></span>
+                    </div>
+
+                    <div class="composition composition-reverse">
+                        <div class="editorial-text col-6">
+                            <span class="block-label">Direction artistique</span>
+                            <h3>Jovial, absurde, mesquin</h3>
+                            <p>
+                                Le jeu du paria met en évidence une mécanique sociale profonde avec humour et légèreté. 
+                                L’univers du jeu se veut jovial, absurde, mesquin, jouant de ce décalage entre le sujet et l’ambiance.
+                            </p>
+                        </div>
+                        <div class="editorial-text col-6">
+                            <p>
+                                J’ai fait des recherches pour proposer une esthétique basée sur ces trois enjeux: diversité, 
+                                dynamisme et synthétisme. Les formes géométriques et l’association de nombreuses couleurs 
+                                vives me permettent d’exprimer visuellement le fond de mon expérience. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="composition composition-reverse">
+                        <figure class="editorial-media col-6">
+                            <img src="./assets/paria/interface1.png"
+                                 alt="interactions avec le support numérique">
+                            <figcaption class="media-caption">
+                                <span>Fig.</span>
+                                mockup in-game
+                            </figcaption>
+                        </figure>
+                        <figure class="editorial-media col-6">
+                            <img src="./assets/paria/interface2.png"
+                                 alt="interactions avec le support numérique">
+                            <figcaption class="media-caption">
+                                <span>Fig.</span>
+                                mockup in-game
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="composition composition-reverse">
+                        <figure class="editorial-media col-6">
+                            <img src="./assets/paria/interface3.png"
+                                 alt="interactions avec le support numérique">
+                            <figcaption class="media-caption">
+                                <span>Fig.</span>
+                                mockup in-game
+                            </figcaption>
+                        </figure>
+                        <figure class="editorial-media col-6">
+                            <img src="./assets/paria/interface4.png"
+                                 alt="interactions avec le support numérique">
+                            <figcaption class="media-caption">
+                                <span>Fig.</span>
+                                mockup in-game
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <figure class="editorial-media media-feature">
+
+                        <img src="./assets/paria/personnages.png"
+                             alt="Vue détaillée du dispositif final">
+
+                        <figcaption class="media-caption">
+                            <span>Fig.</span>
+                            character design
+                        </figcaption>
+
+                    </figure>
+                </section>
+
+                <!-- ----- -->
+
+                <section class="editorial-section editorial-conclusion">
+
+                    <div class="editorial-heading">
+                        <span class="editorial-index">04 — Conclusion</span>
+                        <span class="editorial-line"></span>
+                    </div>
+
+                    <div class="composition">
+
+                        <div class="editorial-text col-7">
+                            <span class="block-label">Qu'en retenir ?</span>
+
+                            <h3>Documentation, idéation, <br>sciences humaines</h3>
+                            <p>
+                                Techniquement, ce projet est un très bon entraînement à l’idéation 
+                                rapide et la création de documents riches sur un temps court.
+                                Celui-ci m’a également fait entrevoir le potentiel de se référer à des sujets 
+                                spécifiques aux sciences humaines pour alimenter des concepts de jeux.
+                            </p>
+                        </div>
+
+                        <div class="editorial-side-note col-3">
+                            <span>Informations</span>
+                            <p>Année • 2024</p>
+                            <p>Durée • 1 semaine<br><br></p>
+                            <p>Contexte • personnel</p>
+                            <p>Groupe • solo<br><br></p>
+                            <p>Outils • Photoshop</p>
+                        </div>
+
+                    </div>
+
+                </section>
+
             </div>
         </div>
-        <img class="baniere" src="Paria/baniere.png">
-    </div>
 
-    <section>
-        <div class="project-grid">
-            <!-- intro -->
-            <p class="project-grid-item trois-quart text">
-                Pour ma candidature au CNAM ENJMIN en 2022, j’ai eu à concevoir un jeu centré sur le principe de conformisme social.
-                J’ai donc entièrement conçu un “party game”, pensé pour être joué avec un smartphone, et j’ai rédigé son Game Design Document.
-            </p>
+    </main>
 
-            <a class="project-grid-item quart" href="Paria/GDD-Jeu_du_paria.pdf" target="_blank" download><img src="Paria/pageDePDF.png"></a>
 
-            <!-- partie1 -->
-            <div class="project-grid-item titre"><div class="line"></div><h2>La thématique: le conformisme social</h2></div>
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
 
-            <p class="project-grid-item demi text">
-                La vidéo de référence met en scène l’expérience de Asch, mettant en évidence le concept psychosociologique du conformisme
-                social. Il s’agit du processus poussant naturellement les individus à imiter un groupe afin de s’y intégrer. <br><br>Ce processus engendre plusieurs effets.
-                C’est un puissant mécanisme de cohésion sociale, mais qui a cependant également pour effet de faire perdre à chacun son individualité. Deux notions s’opposent
-                clairement: la singularité et le regard du groupe.
-            </p>
-
-            <div class="project-grid-item demi "><video controls autoplay muted src="Paria/video.mp4"></video></div>
-
-            <!-- partie2 -->
-            <div class="project-grid-item titre"><div class="line"></div><h2>Concept du jeu</h2></div>
-
-            <p class="project-grid-item full text">
-                Le “jeu du paria” est un jeu d’ambiance pour support mobile comparable aux applications. Cette expérience ludique met au défi
-                les joueurs de défendre leur objectif individuel tout en prenant en compte le regard des autres, tout ça dans une ambiance fun et décalée.
-            </p>
-
-            <div class="project-grid-item tier"><img src="Paria/mockup.png"></div>
-
-            <p class="project-grid-item deux-tier text">
-                Un thème est attribué à chaque joueur. Lors de la première phase du jeu, des mots vont leur être proposés. Il devront sélectionner ceux de leurs choix, avec pour objectif, en fin de partie,
-                de justifier en quoi ces mots s’incluent dans leurs thèmes. Cependant les mots choisis doivent également être sélectionnés en fonction d’une autre variable:
-                le choix du groupe. Lorsqu’un joueur est seul à choisir un mot, sa “jauge de paria” augmente et il perd des points. Il est donc intéressant d’analyser les actions
-                des autres participants, afin d’anticiper leurs réponses et ainsi éviter de devenir le paria!
-            </p>
-
-            <p class="project-grid-item full text">
-                J’ai théorisé l'expérience utilisateur et décrit plus en détail le
-                gameplay dans le GDD. N’hésitez pas à le consulter!
-            </p>
-
-            <!-- partie3 -->
-            <div class="project-grid-item titre"><div class="line"></div><h2>L'univers visuel</h2></div>
-
-            <p class="project-grid-item full text">
-                Le jeu du paria met en évidence une mécanique sociale profonde avec humour et légèreté. L’univers du jeu se veut jovial, absurde,
-                mesquin, jouant de ce décalage entre le sujet et l’ambiance.<br><br>J’ai fait des recherches pour proposer une esthétique basée sur ces trois enjeux: diversité, dynamisme
-                et synthétisme. Les formes géométriques et l’association de nombreuses couleurs vives me permettent d’exprimer visuellement le fond de mon expérience.
-            </p>
-
-            <div class="project-grid-item demi"><img src="Paria/interface1.png"></div>
-            <div class="project-grid-item demi"><img src="Paria/interface2.png"></div>
-            <div class="project-grid-item demi"><img src="Paria/interface3.png"></div>
-            <div class="project-grid-item demi"><img src="Paria/interface4.png"></div>
-            <div class="project-grid-item full"><img src="Paria/personnages.png"></div>
-
-        </div>
-    </section>
-
-    <!-- ---------------------------------------------------------------- BG --- -->
-    <div class="into-projet-bg"></div>
-
-    <footer>
-        <p><br><br><br><br></p>
+    <footer class="project-footer">
+        <a href="index.html#gallery">← Retour à la galerie</a>
     </footer>
 
 
-    <!-- JS -->
-    <script src="galerie_system.js"></script>
-
-
-    <!-- JS -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // barre
-            var sidebar = document.querySelector('.sidebar');
-            sidebar.style.left = '0';
-            sidebar.style.top = '0';
-
-            // éléments
-            var nav1 = document.querySelector('.nav-presentation');
-            nav1.style.marginRight = '0';
-            var nav2 = document.querySelector('.nav-projets');
-            nav2.style.marginRight = '0';
-            var nav3 = document.querySelector('.nav-galerie');
-            nav3.style.marginRight = '0';
-            var nav4 = document.querySelector('.nav-contact');
-            nav4.style.marginRight = '0';
-        });
-    </script>
+    <!-- Ajustement automatique des blocs -->
+    <script src="./js/project-layout.js" defer></script>
+    <script src="./js/project-nav-color.js" defer></script>
 
 </body>
 </html>

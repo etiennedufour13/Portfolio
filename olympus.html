@@ -8,21 +8,21 @@
 
     <title>Étienne Dufour — Olympus Race</title>
 
-    <!-- Typographies -->
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/dirtyline-36daysoftype-2022" rel="stylesheet">
 
-    <!-- Styles de la page projet -->
+    <!-- Styles projet -->
     <link rel="stylesheet" href="./css/project-detail.css">
 </head>
 
 <body>
 
     <!-- =========================================
-         NAVIGATION
+         BARRE DE NAV
     ========================================== -->
 
-    <header class="project-header">
+    <header class="project-header" style="--nav-scrolled-bg: #79f7ec; ">
 
         <a href="index.html#gallery" class="nav-back" aria-label="Retour à la galerie">
             <span aria-hidden="true">←</span>
@@ -38,204 +38,191 @@
 
 
     <main>
-
         <!-- =========================================
-             BANNIÈRE
+             BANNIERE
         ========================================== -->
-
         <section class="project-hero">
 
-            <img class="project-hero-image"
-                 src="./assets/olympus/baniere2.jpg"
-                 alt="Bannière du jeu Olympus Race">
+            <img class="project-hero-image" src="./assets/olympus/baniere.jpg">
 
             <div class="project-hero-content">
-
-                <h1>Olympus Race</h1>
-
+                <h1>Olympus race</h1>
                 <div class="project-tags">
-                    <span>Game design</span>
-                    <span>Unity</span>
-                    <span>Modélisation</span>
-                    <span>Travail audio</span>
+                    <span>programmation</span>
+                    <span>VR</span>
+                    <span>sound design</span>
+                    <span>game design</span>
                 </div>
-
             </div>
 
         </section>
 
-
         <!-- =========================================
              CONTENU
         ========================================== -->
-
         <div class="project-content">
+            <div class="editorial-layout">
+
+                <!-- ----- -->
+                <section class="editorial-section">
+                    <div class="composition composition-intro">
+
+                        <div class="editorial-text text-large col-6">
+                            <span class="block-label">Le projet</span>
+
+                            <h2>Jeu de rythme vr pour arcade</h2>
+
+                            <p>Pendant ma 2e année d’étude à l’ENSAAMA, j’ai effectué un stage de plusieurs mois à VR&Co, une salle d’arcade parisienne. 
+                                L’objectif a été de réaliser un jeu de rythme en réalité virtuelle afin de le proposer au public de la salle d’arcade. </p>
+                        </div>
+
+                        <figure class="editorial-media col-6">
+                            <img src="./assets/olympus/vrandco.jpg"
+                                 alt="interactions avec le support numérique">
+                            <figcaption class="media-caption">
+                                <span>Fig.</span>
+                                VR & Co
+                            </figcaption>
+                        </figure>
+
+                    </div>
+                </section>
+
+                <!-- ----- -->
+                <section class="editorial-section">
+                    <div class="editorial-heading">
+                        <span class="editorial-index">01 — L’organisation du travail</span>
+                        <span class="editorial-line"></span>
+                    </div>
+
+                    <div class="composition composition-reverse">
+                        <figure class="editorial-media col-6">
+                            <img src="./assets/olympus/equipe1.jpg"
+                                 alt="interactions avec le support numérique">
+                            <figcaption class="media-caption">
+                                <span>Fig.</span>
+                                photo de moi-même testant une build
+                            </figcaption>
+                        </figure>
+
+                        <div class="editorial-text col-6">
+                            <span class="block-label">L’équipe</span>
+                            <h3>Un petit groupe polyvalent</h3>
+                            <p>
+                                Nous étions 3 à travailler sur ce jeu:<br>
+                                • Axel, notre maître de stage, PDG de VR&Co a guidé notre production en fonction des 
+                                contraintes marketing et technique de la salle d’arcade.<br>
+                                • Iris, ma partenaire de stage, a produit les concepts art et les modèles 3D du jeu.<br>
+                                • Je me suis chargé du game design, du développement et de l'intégration des assets sur Unity. 
+                                Je me suis également chargé du sound design et de produire quelques assets. 
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ----- -->
+                <section class="editorial-section">
+                    <div class="editorial-heading">
+                        <span class="editorial-index">02 — Le jeu</span>
+                        <span class="editorial-line"></span>
+                    </div>
+
+                    <div class="composition composition-reverse">
+                        <div class="editorial-text col-4">
+                            <span class="block-label">Description</span>
+                            <h3>musique, char de course et épées</h3>
+                            <p>
+                                Olympus Race est un jeu dans un univers mélangeant la Grèce antique et le cyberpunk.
+                                En solo ou en compétition, les joueurs doivent frapper des cibles sur le rythme de 
+                                la musique afin de faire avancer leur char de course. Plus leur timing est bon, plus ils iront vite.
+                            </p>
+                        </div>
+
+                        <figure class="editorial-media media-video col-8">
+                            <video autoplay muted loop playsinline controls>
+                                <source src="./assets/olympus/video1.mp4" type="video/mp4">
+                            </video>
+                            <figcaption class="media-caption">
+                                <span>Vidéo.</span>
+                                gameplay du jeu Olympus Race
+                            </figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <!-- ----- -->
+                <section class="editorial-section">
+                    <div class="composition composition-gallery">
+                        <figure class="editorial-media col-3">
+                            <img src="./assets/olympus/reseaux1.jpg">
+                            <figcaption class="media-caption">
+                                <span>Fig.</span>
+                                extrait sur les réseaux
+                            </figcaption>
+                        </figure>
 
 
-            <!-- -------------------------------------
-                 INTRODUCTION
-            -------------------------------------- -->
+                        <figure class="editorial-media col-3">
+                            <img src="./assets/olympus/reseaux2.jpg">
+                            <figcaption class="media-caption">
+                                <span>Fig.</span>
+                                extrait sur les réseaux
+                            </figcaption>
+                        </figure>
 
-            <section class="project-section">
+                        <figure class="editorial-media col-3">
+                            <img src="./assets/olympus/reseaux3.jpg">
+                            <figcaption class="media-caption">
+                                <span>Fig.</span>
+                                extrait sur les réseaux
+                            </figcaption>
+                        </figure>
 
-                <div class="content-row">
+                        <div class="editorial-text col-3">
+                            <p>
+                                Je me suis chargé de partager nos avancées sur les réseaux sociaux. 
+                                Nous avons ainsi fait participer notre communauté dans le choix des design de char. 
+                            </p>
+                        </div>
+                    </div>
 
-                    <div class="content-block text-block">
+                </section>
 
-                        <p>
-                            Pendant ma deuxième année d’étude à l’ENSAAMA,
-                            j’ai effectué un stage de plusieurs mois à VR&Co,
-                            une salle d’arcade parisienne. L’objectif était
-                            de réaliser un jeu de rythme en réalité virtuelle
-                            destiné au public de la salle.
-                        </p>
+                <!-- ----- -->
+                <section class="editorial-section editorial-conclusion">
+
+                    <div class="editorial-heading">
+                        <span class="editorial-index">03 — Conclusion</span>
+                        <span class="editorial-line"></span>
+                    </div>
+
+                    <div class="composition">
+
+                        <div class="editorial-text col-7">
+                            <span class="block-label">Qu'en retenir ?</span>
+
+                            <h3>Développement rapide & familiarisation avec la vr</h3>
+                            <p>
+                                Le projet était très ambitieux. En seulement quelques mois, nous devions concevoir le jeu, 
+                                son gameplay et univers, puis réaliser une démo jouable. La technologie complexe qu’est la VR 
+                                n’a pas rendu le travail facile mais ce projet à eu pour avantage d'approfondir ma familiarité avec cette dernière.
+                            </p>
+                        </div>
+
+                        <div class="editorial-side-note col-3">
+                            <span>Informations</span>
+                            <p>Année • 2024</p>
+                            <p>Durée • 3 mois<br><br></p>
+                            <p>Contexte • stage de DNMADe</p>
+                            <p>Groupe • 3 personnes<br><br></p>
+                            <p>Outils • Unity, Oculus quest & rift, Blender</p>
+                        </div>
 
                     </div>
 
-                    <figure class="content-block media-block">
-                        <img src="./assets/olympus/vrandco.jpg"
-                             alt="Salle d'arcade VR&Co"
-                             loading="lazy">
-                    </figure>
+                </section>
 
-                </div>
-
-            </section>
-
-
-            <!-- -------------------------------------
-                 ORGANISATION DU TRAVAIL
-            -------------------------------------- -->
-
-            <section class="project-section">
-
-                <h2 class="section-title">L’organisation du travail</h2>
-
-                <div class="content-row">
-
-                    <div class="content-block text-block">
-
-                        <p>
-                            Nous étions trois à travailler sur ce jeu.
-                            Axel, notre maître de stage et PDG de VR&Co,
-                            a guidé la production en fonction des contraintes
-                            marketing et techniques de la salle d’arcade.
-                        </p>
-
-                        <p>
-                            Iris, ma partenaire de stage, a produit les
-                            concepts art et les modèles 3D du jeu.
-                        </p>
-
-                        <p>
-                            Je me suis chargé du game design, du développement
-                            et de l’intégration des assets sur Unity. J’ai
-                            également réalisé le sound design et produit
-                            quelques assets.
-                        </p>
-
-                    </div>
-
-                    <figure class="content-block media-block">
-                        <img src="./assets/olympus/equipe1.jpg"
-                             alt="Équipe travaillant sur Olympus Race"
-                             loading="lazy">
-                    </figure>
-
-                </div>
-
-            </section>
-
-
-            <!-- -------------------------------------
-                 DESCRIPTION DU JEU
-            -------------------------------------- -->
-
-            <section class="project-section">
-
-                <h2 class="section-title">Description du jeu</h2>
-
-                <div class="content-row">
-
-                    <div class="content-block text-block">
-
-                        <p>
-                            Olympus Race est un jeu qui mêle les univers
-                            de la Grèce antique et du cyberpunk. En solo
-                            ou en compétition, les joueurs doivent frapper
-                            des cibles en rythme avec la musique afin de
-                            faire avancer leur char de course.
-                        </p>
-
-                        <p>
-                            Plus leur timing est précis, plus leur char
-                            progresse rapidement.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="content-row">
-
-                    <figure class="content-block media-block media-wide">
-                        <video controls muted playsinline preload="metadata">
-                            <source src="./assets/olympus/video1.mp4" type="video/mp4">
-                            Votre navigateur ne prend pas en charge la lecture vidéo.
-                        </video>
-                    </figure>
-
-                </div>
-
-            </section>
-
-
-            <!-- -------------------------------------
-                 COMMUNAUTÉ
-            -------------------------------------- -->
-
-            <section class="project-section">
-
-                <h2 class="section-title">La communauté</h2>
-
-                <div class="content-row">
-
-                    <div class="content-block text-block">
-
-                        <p>
-                            Je me suis chargé de partager nos avancées
-                            sur les réseaux sociaux. Nous avons ainsi
-                            fait participer notre communauté au choix
-                            des designs de chars.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <!-- Galerie de visuels -->
-                <div class="content-row media-gallery">
-
-                    <figure class="content-block media-block">
-                        <img src="./assets/olympus/reseaux1.jpg" alt="Publication communautaire 1" loading="lazy">
-                    </figure>
-
-                    <figure class="content-block media-block">
-                        <img src="./assets/olympus/reseaux2.jpg" alt="Publication communautaire 2" loading="lazy">
-                    </figure>
-
-                    <figure class="content-block media-block">
-                        <img src="./assets/olympus/reseaux3.jpg" alt="Publication communautaire 3" loading="lazy">
-                    </figure>
-
-                    <figure class="content-block media-block">
-                        <img src="./assets/olympus/reseaux4.jpg" alt="Publication communautaire 4" loading="lazy">
-                    </figure>
-
-                </div>
-
-            </section>
-
+            </div>
         </div>
 
     </main>
@@ -252,6 +239,7 @@
 
     <!-- Ajustement automatique des blocs -->
     <script src="./js/project-layout.js" defer></script>
+    <script src="./js/project-nav-color.js" defer></script>
 
 </body>
 </html>

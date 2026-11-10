@@ -1,27 +1,28 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Étienne Dufour — Concave Convexe</title>
+    <title>Étienne Dufour — Concave convexe</title>
 
-    <!-- Typographies -->
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/dirtyline-36daysoftype-2022" rel="stylesheet">
 
-    <!-- Styles de la page projet -->
+    <!-- Styles projet -->
     <link rel="stylesheet" href="./css/project-detail.css">
 </head>
 
 <body>
 
     <!-- =========================================
-         NAVIGATION
+         BARRE DE NAV
     ========================================== -->
 
-    <header class="project-header">
+    <header class="project-header" style="--nav-scrolled-bg: #dac4c6; ">
 
         <a href="index.html#gallery" class="nav-back" aria-label="Retour à la galerie">
             <span aria-hidden="true">←</span>
@@ -37,130 +38,186 @@
 
 
     <main>
-
         <!-- =========================================
-             BANNIÈRE
+             BANNIERE
         ========================================== -->
-
         <section class="project-hero">
 
-            <img class="project-hero-image"
-                 src="Concave/baniere.png"
-                 alt="Bannière du projet Concave Convexe">
+            <img class="project-hero-image" src="./assets/concave/baniere.png">
 
             <div class="project-hero-content">
-
-                <h1>Concave convexe</h1>
-
+                <h1>Concave Convexe</h1>
                 <div class="project-tags">
-                    <span>Unity</span>
+                    <span>programmation</span>
+                    <span>VR</span>
+                    <span>travail plastique</span>
                 </div>
-
             </div>
 
         </section>
 
-
         <!-- =========================================
              CONTENU
         ========================================== -->
-
         <div class="project-content">
+            <div class="editorial-layout">
 
-            <section class="project-section">
+                <!-- ----- -->
+                <section class="editorial-section">
+                    <div class="composition composition-intro">
 
-                <div class="content-row">
+                        <div class="editorial-text text-large col-6">
+                            <span class="block-label">Le projet</span>
 
-                    <div class="content-block text-block">
+                            <h2>Design d’espace <br>virtuel en VR</h2>
 
-                        <p>
-                            Dans le cadre d’un cours d’étude du numérique, nous avons étudié les enjeux
-                            de la VR. La demande à été de réaliser deux espaces, pouvant être visionnés
-                            dans des casques de réalité virtuelle.
-                        </p>
+                            <p>Dans le cadre d’un cours d’étude du numérique, nous avons étudié les enjeux de la VR. 
+                                La demande à été de réaliser deux espaces, pouvant être visionnés dans des casques de réalité virtuelle.</p>
+                        </div>
 
-                        <p>
-                            Les notions de concave et convexe, arrondis vers l’intérieur ou vers
-                            l’extérieur sont des notions subtiles qui poussent analyser le ressenti
-                            des utilisateurs face à un environnement composé.
-                        </p>
+                        <div class="editorial-text text-large col-6">
+                            <p>Les notions de concave et convexe, arrondis vers l’intérieur ou vers l’extérieur sont des notions subtiles 
+                                qui poussent analyser le ressenti des utilisateurs face à un environnement composé. </p>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- ----- -->
+                <section class="editorial-section editorial-feature-section">
+                    <div class="editorial-heading">
+                        <span class="editorial-index">01 — Convexe</span>
+                        <span class="editorial-line"></span>
+                    </div>
+
+                    <figure class="editorial-media media-feature">
+                        <img src="./assets/concave/convexe.gif" alt="convexe">
+                        <figcaption class="media-caption">
+                            <span>Fig.</span>
+                            capture vidéo de l’espace convexe
+                        </figcaption>
+                    </figure>
+                </section>
+
+                <section class="editorial-section">
+                    <div class="composition composition-gallery">
+
+                        <figure class="editorial-media col-4">
+                            <img src="./assets/concave/convexe1.png" alt="Capture du projet">
+
+                            <figcaption class="media-caption">
+                                <span>Fig.</span>
+                                capture de l’espace convexe
+                            </figcaption>
+                        </figure>
+
+
+                        <figure class="editorial-media col-4">
+                            <img src="./assets/concave/convexe2.png" alt="Capture du projet">
+
+                            <figcaption class="media-caption">
+                                <span>Fig.</span>
+                                capture de l’espace convexe
+                            </figcaption>
+                        </figure>
+
+                        <figure class="editorial-media col-4">
+                            <img src="./assets/concave/convexe3.png" alt="Capture du projet">
+
+                            <figcaption class="media-caption">
+                                <span>Fig.</span>
+                                capture de l’espace convexe
+                            </figcaption>
+                        </figure>
+
+                    </div>
+                </section>
+
+                <!-- ----- -->
+                <section class="editorial-section editorial-feature-section">
+                    <div class="editorial-heading">
+                        <span class="editorial-index">02 — Concave</span>
+                        <span class="editorial-line"></span>
+                    </div>
+
+                    <figure class="editorial-media media-feature">
+                        <img src="./assets/concave/concave.gif" alt="convexe">
+                        <figcaption class="media-caption">
+                            <span>Fig.</span>
+                            capture vidéo de l’espace concave
+                        </figcaption>
+                    </figure>
+                </section>
+
+                <section class="editorial-section">
+                    <div class="composition composition-gallery">
+
+                        <figure class="editorial-media col-4">
+                            <img src="./assets/concave/concave1.png" alt="Capture du projet">
+
+                            <figcaption class="media-caption">
+                                <span>Fig.</span>
+                                capture de l’espace concave
+                            </figcaption>
+                        </figure>
+
+
+                        <figure class="editorial-media col-4">
+                            <img src="./assets/concave/concave2.png" alt="Capture du projet">
+
+                            <figcaption class="media-caption">
+                                <span>Fig.</span>
+                                capture de l’espace concave
+                            </figcaption>
+                        </figure>
+
+                        <figure class="editorial-media col-4">
+                            <img src="./assets/concave/concave3.png" alt="Capture du projet">
+
+                            <figcaption class="media-caption">
+                                <span>Fig.</span>
+                                capture de l’espace concave
+                            </figcaption>
+                        </figure>
+
+                    </div>
+                </section>
+
+                <!-- ----- -->
+
+                <section class="editorial-section editorial-conclusion">
+
+                    <div class="editorial-heading">
+                        <span class="editorial-index">03 — Conclusion</span>
+                        <span class="editorial-line"></span>
+                    </div>
+
+                    <div class="composition">
+
+                        <div class="editorial-text col-7">
+                            <span class="block-label">Qu'en retenir ?</span>
+
+                            <h3>Design d'espace et vr</h3>
+                            <p>
+                                Ce projet fut surtout une manière de découvrir et d’explorer différentes 
+                                notions de design d’espace tout en se familiarisant avec unity et particulièrement la VR.
+                            </p>
+                        </div>
+
+                        <div class="editorial-side-note col-3">
+                            <span>Informations</span>
+                            <p>Année • 2022</p>
+                            <p>Durée • 1 semaine<br><br></p>
+                            <p>Contexte • scolaire</p>
+                            <p>Groupe • solo<br><br></p>
+                            <p>Outils • Unity, Oculus Quest 2, Photoshop</p>
+                        </div>
 
                     </div>
 
-                </div>
+                </section>
 
-
-                <!-- -------------------------------------
-                     ESPACE CONVEXE
-                -------------------------------------- -->
-
-                <h2 class="section-title">Espace convexe</h2>
-
-                <div class="content-row">
-
-                    <figure class="content-block media-block media-wide">
-
-                        <img src="Concave/convexe.gif"
-                             alt="Présentation de l'espace convexe"
-                             loading="lazy">
-
-                    </figure>
-
-                </div>
-
-                <div class="content-row media-gallery">
-
-                    <figure class="content-block media-block">
-                        <img src="Concave/convexe1.png" alt="Espace convexe 1" loading="lazy">
-                    </figure>
-
-                    <figure class="content-block media-block">
-                        <img src="Concave/convexe2.png" alt="Espace convexe 2" loading="lazy">
-                    </figure>
-
-                    <figure class="content-block media-block">
-                        <img src="Concave/convexe3.png" alt="Espace convexe 3" loading="lazy">
-                    </figure>
-
-                </div>
-
-
-                <!-- -------------------------------------
-                     ESPACE CONCAVE
-                -------------------------------------- -->
-
-                <h2 class="section-title">Espace concave</h2>
-
-                <div class="content-row">
-
-                    <figure class="content-block media-block media-wide">
-
-                        <img src="Concave/concave.gif"
-                             alt="Présentation de l'espace concave"
-                             loading="lazy">
-
-                    </figure>
-
-                </div>
-
-                <div class="content-row media-gallery">
-
-                    <figure class="content-block media-block">
-                        <img src="Concave/concave1.png" alt="Espace concave 1" loading="lazy">
-                    </figure>
-
-                    <figure class="content-block media-block">
-                        <img src="Concave/concave2.png" alt="Espace concave 2" loading="lazy">
-                    </figure>
-
-                    <figure class="content-block media-block">
-                        <img src="Concave/concave3.png" alt="Espace concave 3" loading="lazy">
-                    </figure>
-
-                </div>
-
-            </section>
-
+            </div>
         </div>
 
     </main>
@@ -177,6 +234,7 @@
 
     <!-- Ajustement automatique des blocs -->
     <script src="./js/project-layout.js" defer></script>
+    <script src="./js/project-nav-color.js" defer></script>
 
 </body>
 </html>
