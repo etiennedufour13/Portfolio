@@ -59,6 +59,7 @@
     background: #222;
     box-shadow: 0px 5px 8px rgba(0, 0, 0, .7);
     border-radius: 5px;
+    max-height: 540px;
 }
 
 
@@ -92,11 +93,38 @@
     opacity: 0;
 }
 
+/* Assombrissement de l'image fixe uniquement */
+.project-image,
+.project-pixel-canvas {
+    filter: brightness(0.85);
+}
+
+/* Désactivation des effets de hover pendant l'introduction */
+.project-card.is-intro-active:hover .project-image-hover {
+    opacity: 0;
+    transform: none;
+}
+
+.project-card.is-intro-active:hover .project-description {
+    opacity: 0;
+    transform: translateY(25px);
+}
+
+.project-card.is-intro-active:hover .project-title {
+    opacity: 0;
+}
+
+/* Le titre reste masqué pendant la frappe, même au survol */
+.project-card.is-intro-active.is-typing:hover .project-title {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
 
 /* Léger agrandissement au survol */
 
 .project-card:hover img {
     transform: scale(1.04);
+    filter: none;
 }
 
 
@@ -111,9 +139,11 @@
     transform: translate(-50%, -50%);
     width: 90%;
     text-align: center;
-    font-size: clamp(1.2rem, 2vw, 2rem);
-    font-weight: 500;
+    font-size: clamp(1.8rem, 3vw, 3rem);
+    font-weight: 300;
     z-index: 2;
+    font-family: 'Dirtyline 36Daysoftype 2022', sans-serif;
+    text-shadow: 0px 5px 8px rgba(0, 0, 0, 1);
     /* Le titre disparaît au survol */
     opacity: 1;
     transition: opacity 0.35s ease, transform 0.35s ease;
@@ -271,7 +301,7 @@
    RESPONSIVE
 ========================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
 
     .gallery-section {
         padding: 0 15px;
@@ -294,7 +324,7 @@
 
 
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
 
     /* Un projet visible sur petit écran */
     .project-card {
@@ -306,28 +336,28 @@
 /* La fenêtre prend uniquement l'espace restant
    entre les deux flèches de navigation. */
 
-.gallery - viewport {
+.gallery-viewport {
     flex: 1;
-    min - width: 0;
+    min-width: 0;
 }
 
 /* Empêche les flèches de perdre leur dimension
    lorsque la fenêtre devient plus étroite. */
 
-.gallery - arrow {
-    flex - shrink: 0;
+.gallery-arrow {
+    flex-shrink: 0;
 }
 
 /* Désactive les animations pour les utilisateurs
        ayant demandé une réduction des mouvements. */
 
-@media(prefers - reduced - motion: reduce) {
+@media(prefers-reduced-motion: reduce) {
 
-    .gallery - track,
-    .project - card img,
-    .project - description,
-    .project - title {
-        transition - duration: 0.01ms;
+    .gallery-track,
+    .project-card img,
+    .project-description,
+    .project-title {
+        transition-duration: 0.01ms;
     }
 }
 
@@ -377,3 +407,117 @@
 .contact-section {
     background: transparent;
 }
+
+
+
+/* =========================================
+   PIXELISATION DES IMAGES
+========================================= */
+
+/* Canvas généré par JavaScript */
+
+.project-pixel-canvas {
+
+    position: absolute;
+    inset: 0;
+
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    image-rendering: pixelated;
+
+    pointer-events: none;
+
+}
+
+/* Organisation des différentes couches */
+
+.project-card .project-image {
+    z-index: 0;
+}
+
+.project-card .project-image-hover {
+    z-index: 2;
+}
+
+.project-card .project-title {
+    z-index: 3;
+}
+
+.project-card .project-description {
+    z-index: 4;
+}
+
+/* Masquage de l'image originale lorsque le canvas est prêt */
+
+.project-card.has-pixel-canvas .project-image {
+    opacity: 0;
+}
+
+
+/* =========================================
+   ANIMATION DU TITRE
+========================================= */
+
+/* État initial : titre invisible */
+
+.project-card.is-intro .project-title {
+
+    opacity: 0;
+
+}
+
+/* Écriture progressive */
+
+.project-card.is-typing .project-title {
+
+    opacity: 1;
+
+    transform: translate(-50%, -50%);
+
+}
+
+/* Point animé */
+
+.project-title .typing-dot {
+
+    display: inline-block;
+
+    opacity: 0;
+
+    transition: opacity 0.08s ease;
+
+}
+
+/* Disparition habituelle au survol */
+
+.project-card:hover .project-title {
+
+    opacity: 0;
+
+    transform: translate(-50%, -40%);
+
+}
+
+
+/* =========================================
+   ACCESSIBILITÉ
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .project-card.is-intro .project-title,
+    .project-card.is-typing .project-title {
+
+        opacity: 1;
+
+        transform: translate(-50%, -50%);
+
+    }
+
+}
+
